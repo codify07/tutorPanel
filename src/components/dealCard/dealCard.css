@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.deal-card-container{
+    height: 17rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-position-x: center;
+    padding: 10px 30px;
+
+}
+.deal-card-content-wrapper{
+    padding: 20px 20px;
+}
+.deal-card-secondary-heading{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 49px;
+}
+.deal-card-primary-heading{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 49px; 
+}
+.deal-card-description{
+    color: gray;
+    width: 50%;
+    margin-bottom: 30px;
+}
+.deal-card-prshase-btn{
+    background-color: black !important;
+    color: white !important;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 4px;
+    margin-top: 12px !important;
+
+}

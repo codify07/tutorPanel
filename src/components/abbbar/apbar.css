@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+
+.main-appbar-container{
+    background-color: white;
+}
+
+.upper-header-container{
+    background-color: #97005E;
+}
+.upper-header-content-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    
+    
+}
+.button-with-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white !important;
+    text-transform: lowercase !important ;
+    margin-right: 4px;
+}
+.icon{
+    margin-right: 7px;
+}
+.support-button-wraper{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-appbar-container{
+    background-color: white;
+}
+.main-appbar-content-wraper{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+}
+
+.logo-container{
+    width: 120px;
+    height: 50px;
+    
+}
+.logo-container >img{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 30%;
+}
+.nav-links-btn{
+    
+    color: black !important ;
+    margin-right: 10px;
+}
+
+.sign-up-btn{
+    text-transform: capitalize !important;
+    color: white !important ;
+    background-color: #97005E !important ;
+}
+
+
+@media screen and (max-width:960px){
+    .upper-header-content-wraper{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
