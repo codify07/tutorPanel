@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login-body-container{
+    margin-top: 50px;
+    height: auto;
+}
+.login-content-wrapper{
+    width: 85%;
+    margin: auto;
+}
+.login-content-container{
+    height: 632px;
+    
+    background-color: #F9F9F9;
+    
+}
+.login-right-side-div-container{
+    padding-top: 30px;
+    padding-left: 50px;
+    
+}
+.login-right-side-div-container >h1{
+    color: #97005E;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.login-right-side-div-container >p{
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.login-field-container >p{
+    margin-top: 30px;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.login-field-container >input{
+    width: 90% !important;
+    padding: 12px;
+    border: none;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.login-field-container >input:focus{
+    outline: none !important;
+}
+.login-radio-btn-container{
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+.login-forgot-password{
+    color: black !important;
+    text-transform: capitalize !important;
+
+}
+.login-login-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px !important;
+    width: 60%;
+    margin: auto;
+}
+.login-login-btn{
+    
+    width: 100% !important;
+    color: white !important;
+    background-color: #97005E !important;
+
+}
+
+.login-login-create-account-container{
+    margin-top: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-create-accountbtn{
+    color: black !important;
+    text-transform: capitalize !important;
+    border-bottom: 1px solid #97005E !important;
+    color: #97005E !important;
+    border-radius: 0px !important;
+    font-weight: bold !important;
+
+}
+
+
+
+
+
+@media screen and (max-width:960px){
+    .login-body-container{
+        margin-top: 30px;
+    }
+    .login-content-wrapper{
+        width: 90%;
+        margin: auto;
+    } 
+    .login-content-container{
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: #F9F9F9;
+        padding-left: 30px;
+    }
+    .login-right-side-div-container{
+        padding-top: 30px;
+        padding-left: 5px;
+        
+    }  
+}
+
+
+

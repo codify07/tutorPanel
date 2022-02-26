@@ -100,15 +100,16 @@
 }
 
 .home-description-style{
-    width: 60%;
+    width: 70%;
     margin-top: 10px;
     color: #757575;
     font-size: 15px;
-    line-height: 21px;
+    line-height: 25px;
+    font-size: 19px;
 }
 
-.home-heading-slyle{
-    font-size: 33px;
+.home-heading-style{
+    font-size: 48px;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -139,11 +140,11 @@
         align-items: flex-start;
         justify-content: space-between;
         flex-direction: column; 
-        height: 7rem;
+        height: auto;
 
     }
     .deal-card-wraper{
-        width: 90%;
+        width: 95%;
         margin: auto;
     }
     .knowledge-bank-section-container{
@@ -151,4 +152,488 @@
         width: 95%;
         margin: auto;
     }  
+    .home-description-style{
+        width: 90%;
+        margin-top: 10px;
+        color: #757575;
+        font-size: 15px;
+        line-height: 25px;
+        font-size: 19px;
+    }
+}
+
+
+/* Knowledge bank section  */
+
+.knowledge-bank-section-container{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0px;
+    margin-top: 20px;
+    
+    
+}
+.knowledge-bank-section-left-side-wraper{
+    height: 25rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.knowledge-bank-section-right-side-wraper{
+    height: 25rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+.knowledge-bank-section-right-side-wraper >img{
+    width: 460px;
+    height: 410px;
+}
+
+.home-primary-btn{
+    color: white !important;
+    background-color: #97005E !important;
+    margin-top: 18px !important;
+    font-size: larger !important;
+
+
+}
+
+@media screen and (max-width:960px){
+    .knowledge-bank-section-container{
+        width: 95%;
+        margin: auto;
+        padding: 20px 0px;
+        margin-top: 10px;
+    }
+    
+.knowledge-bank-section-left-side-wraper{
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+.knowledge-bank-section-right-side-wraper{
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+}
+
+
+/* explore categoy section */
+
+.explore-top-category-container{
+    width: 100%;
+    height: 683px;
+    background-size: 100% 100%;
+    margin-top: 100px;
+    background-blend-mode: saturation;
+    background: #F9F9F9;
+    
+     
+}
+
+.explore-top-content-wrapper{
+    width: 85%;
+    margin: auto;
+    padding-top: 80px;
+
+}
+.explore-top-category-left-side-content-wraper{
+    margin-top: 30px;
+}
+.explore-top-category-left-side-content-wraper >.home-description-style {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.view-all-category-btn{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    
+}
+
+.home-arrow-btn{
+    font-size: 20px !important;
+    color: black !important;
+}
+.home-arrow-btn >p {
+    margin-right: 20px;
+    
+}
+
+.expolore-card-style{
+    
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 124px;
+}
+.explore-card-pic{
+    width: 62.5px;
+    height: 68.75px;
+    margin-left: 50px;
+}
+.explore-card-text{
+    font-size: 30px;
+    margin-left: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:960px){
+    .explore-top-content-wrapper{
+        width: 90%;
+        margin: auto;
+
+    }
+    .explore-top-category-container{
+        width: 100%;
+        height: auto;
+        background-size: 100% 100%;
+        margin-top: 50px;
+        background-blend-mode: saturation;
+        background: #F9F9F9;
+        
+         
+    }
+    
+}
+
+
+/* home secondary cards style */
+
+.home-secondary-card-container{
+    width: 85%;
+    
+    margin: auto;
+    margin-top: 100px;
+}
+
+.home-secondary-card-content-wrapper{
+    padding: 20px 50px;
+    background-color: #F9F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 330px;
+    margin-top: 40px;
+}
+
+
+
+@media screen and (max-width:960px){
+    .home-secondary-card-container{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .home-secondary-card-content-wrapper{
+        padding: 20px 50px;
+        background-color: #F9F9F9;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: auto;
+    } 
+    .homw-secondary-card-img{
+        margin-top: 50px;
+    }  
+}
+
+
+/* our courses section style */
+
+.our-courses-container{
+    
+    margin-top: 50px;
+    background-color: #F9F9F9;
+}
+.our-courses-content-wrapper{
+    padding: 40px 0px;
+    height: 1420px;
+    width: 85%;
+    margin: auto;
+
+}
+.our-courses-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.courses-tabs-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.courses-tabs-btn{
+    color: black !important;
+    background-color: white !important;
+    font-size: 17px !important;
+    margin: 12px !important;
+    font-weight: 400;
+}
+.courses-card-deck{
+    margin-top: 60px;
+    padding: 5px 10px;
+}
+.courses-card-container{
+    padding: 40px;
+    border: 1px solid #E0E0E0;
+    height: 420px;
+    border-radius: 5px;
+}
+.courses-card-img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+
+}
+.courses-card-title{
+    font-size: 26px;
+    font-weight: 400px;
+    line-height: 32px;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.courses-card-description{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    font-size: 22px;
+
+}
+.courses-card-description >p{
+    color: gray;
+    margin-left: 15px;
+}
+.courses-card-actions-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+.courses-card-price-btrn{
+    background-color: #97005E !important;
+    color: white !important;
+    text-transform: capitalize;
+    font-size: 25px !important;
+    
+    
+}
+.courses-card-know-more-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black !important;
+    text-transform: capitalize !important;
+}
+.courses-card-know-more-btn >p {
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width:960px){
+    .our-courses-container{
+        
+        margin-top: 30px;
+    }
+    .our-courses-content-wrapper{
+        padding: 20px 0px;
+        height: auto;
+        width: 90%;
+        margin: auto;
+        
+    }
+    .our-courses-header-container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        
+    }
+    .courses-tabs-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        margin-top: 50px;
+    }
+    .courses-card-container{
+        padding: 40px;
+        border: 1px solid #E0E0E0;
+        height: auto;
+        border-radius: 5px;
+    }
+    .courses-card-actions-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        
+    }
+    .courses-card-price-btrn{
+        background-color: #97005E !important;
+        color: white !important;
+        text-transform: capitalize;
+        font-size: larger !important;
+        width: 100%;
+        
+    }
+    .courses-card-know-more-btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: black !important;
+        text-transform: capitalize !important;
+        margin-top: 30px !important;
+    }
+}
+
+
+/* our student says section styling */
+
+.our-student-says{
+    margin-top: 70px;
+    background-color: #F9F9F9;
+}
+.our-student-says-content-wrapper{
+    width: 85%;
+    margin: auto;
+    height: 610px;
+    padding: 60px 0px;
+    
+}
+.our-student-says-heading-container{
+    padding: 2px 2px;
+}
+.our-student-says-heading-container >h1{
+    font-size: 48px;
+    font-weight: 620;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.our-student-says-heading-container >p{
+    font-size: 18px;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+.our-student-says-cards-container{
+    margin-top: 80px;
+}
+.our-student-says-card-container{
+    height: 320px;
+    padding: 20px;
+    border: 1px solid #E0E0E0;
+    background-color: white;
+    border-radius: 5px;
+    
+
+}
+.our-student-says-card-avatar{
+    width: 77px !important;
+    height: 77px !important;
+}
+.our-student-says-card-container >p{
+    font-size: 19px;
+    font-weight: 400px;
+    line-height: 26px;
+    width: 70%;
+    margin-top: 20px;
+    
+}
+.our-student-says-card-container >h5{
+    margin-top: 60px;
+    font-size: 20px;
+}
+.our-student-says-card-container >h6{
+    margin-top: 5px;
+    font-size: 14px;
+    color: gray;
+}
+
+@media screen and (max-width:960px){
+    .our-student-says-content-wrapper{
+        width: 90%;
+        margin: auto;
+        height: auto;
+        padding: 30px 0px;
+        
+    }
+    .our-student-says-heading-container >p{
+        font-size: 18px;
+        width: 100%;
+        margin: auto;
+    }
+    .our-student-says-card-container{
+        height: auto;
+        padding: 20px;
+        border: 1px solid #E0E0E0;
+        background-color: white;
+        border-radius: 5px;
+        
+    
+    }
+}
+
+/* subscriber footer styling */
+
+.subscribe-footer-container{
+    margin-top: 30px;
+}
+.subscribe-footer-content-wrapper{
+    width: 85%;
+    margin: auto;
+    background-color: black;
+    padding-bottom: 50px;
+}
+.subscribe-footer-content-wrapper >h1{
+    text-align: center;
+    margin-top: 20px !important;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 48px;
+}
+.subscribe-footer-content-wrapper >p{
+    text-align: center;
+    color: white;
+    padding: 0px 350px;
+    font-size: 18px;
+
+}
+.subscriber-footer-search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:960px){
+    .subscribe-footer-content-wrapper{
+        width: 90%;
+        margin: auto;
+    }
 }

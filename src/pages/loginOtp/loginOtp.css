@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login-otp-container{
+    width: 85%;
+    margin: auto;
+    height: 495px;
+    margin-top: 50px;
+    background-color: #F9F9F9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login-otp-text{
+    width: 25%;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.login-otp-digits-container{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-otp-digits-container >p{
+    background-color: lightgray;
+    font-weight: bold;
+    padding: 12px 19px;
+    font-size: 18px;
+    margin: 15px;
+    
+}
+.login-otp-submit-btn{
+    margin-top: 15px;
+    
+}
+.otp-submit-btn{
+    color: white !important;
+    background-color: #97005E !important;
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+    letter-spacing: 1px !important;
+
+    
+}
+
+
+
+@media screen and (max-width:960px){
+    .login-otp-container{
+        width: 90%;
+        margin: auto;
+        height: auto;
+        margin-top: 50px;
+        padding: 30px;
+    }
+    .login-otp-text{
+        width: 70%;
+        text-align: center;
+        margin-top: 30px;
+        line-height: 25px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .otp-submit-btn{
+        color: white !important;
+        background-color: #97005E !important;
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+        letter-spacing: 1px !important;
+        
+        
+    }
+
+}
