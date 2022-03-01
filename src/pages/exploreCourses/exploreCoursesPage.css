@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.explore-courses-body-cards-container{
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+}
+.explore-courses-page-footer-container{
+    margin-top: 40px;
+}
+
+@media screen and (max-width:960px) {
+    .explore-courses-body-cards-container{
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+}

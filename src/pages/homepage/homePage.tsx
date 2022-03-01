@@ -11,6 +11,9 @@ import ArrowRightAltSharpIcon from '@mui/icons-material/ArrowRightAltSharp';
 import { DealCard } from '../../components/dealCard/dealCard'
 import rect from '../../assets/Rct.png'
 import vector from '../../assets/Vector.png'
+import bussiness from '../../assets/bussiness.png'
+import art from '../../assets/art.png'
+import marketting from '../../assets/marketting.png'
 import laptopman from '../../assets/Group.png'
 import group3 from '../../assets/Group-3.png'
 import group56 from '../../assets/group56.png'
@@ -78,7 +81,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export const HomePage = () => {
     return (
-        <div style={{ paddingBottom: '100px' }} >
+        <div  >
             {/* _____ APP BAR _____ */}
 
             <div>
@@ -140,10 +143,10 @@ export const HomePage = () => {
                             createBrowserHistory().push('/deals');
                             window.location.reload();
                         }} >
-                            <p style={{ marginRight: '30px'  }} >
+                            <p style={{ marginRight: '30px',fontSize:'18px'  }} >
                                 view all deals
                             </p>
-                            <ArrowRightAltSharpIcon style={{ fontSize: '45px' }} />
+                            <img src={arrow} alt="arrow" style={{width:'30px'}} />
                         </Button>
                     </div>
                 </div>
@@ -202,7 +205,7 @@ export const HomePage = () => {
                                     <p>
                                         view all category
                                     </p>
-                                    <ArrowRightAltSharpIcon style={{ fontSize: '30px' }} />
+                                    <img src={arrow} alt="arrow" style={{width:'30px'}} />
                                 </Button>
                             </div>
                         </Grid>
@@ -221,11 +224,11 @@ export const HomePage = () => {
                         <Grid item xs={12} md={6} >
                             <div className="expolore-card-style" >
                                 <div>
-                                    <img src={vector} alt="pic" className="explore-card-pic" />
+                                    <img src={bussiness} alt="pic" className="explore-card-pic" />
                                 </div>
                                 <div>
                                     <p className="explore-card-text" >
-                                        data & science
+                                        Business
                                     </p>
                                 </div>
                             </div>
@@ -233,11 +236,11 @@ export const HomePage = () => {
                         <Grid item xs={12} md={6} >
                             <div className="expolore-card-style" >
                                 <div>
-                                    <img src={vector} alt="pic" className="explore-card-pic" />
+                                    <img src={art} alt="pic" className="explore-card-pic" />
                                 </div>
                                 <div>
                                     <p className="explore-card-text" >
-                                        data & science
+                                        art & design
                                     </p>
                                 </div>
                             </div>
@@ -245,11 +248,11 @@ export const HomePage = () => {
                         <Grid item xs={12} md={6} >
                             <div className="expolore-card-style" >
                                 <div>
-                                    <img src={vector} alt="pic" className="explore-card-pic" />
+                                    <img src={marketting} alt="pic" className="explore-card-pic" />
                                 </div>
                                 <div>
                                     <p className="explore-card-text" >
-                                        data & science
+                                        marketing
                                     </p>
                                 </div>
                             </div>
@@ -344,7 +347,10 @@ export const HomePage = () => {
                         </div>
 
                         <div className="view-all-category-btn" >
-                            <Button variant='text' className='home-arrow-btn'  >
+                            <Button variant='text' className='home-arrow-btn' onClick={()=>{
+                                createBrowserHistory().push('/our-courses');
+                                window.location.reload();
+                            }}  >
                                 <p>
                                     view all courses
                                 </p>

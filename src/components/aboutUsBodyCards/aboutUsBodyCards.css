@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.achieve-your-goal-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.acieve-your-goal-content-wrapper{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.achieve-your-goal-left-div-upper{
+    width: 70%;
+}
+
+.achieve-your-goal-right-div >h1{
+    font-size: 35px;
+    font-weight: 600;
+    
+}
+.achieve-your-goal-right-div >p{
+    color: #757575;
+    font-size: 18px;
+    line-height: 25px;
+    padding-right: 30%;
+    margin-top: 20px;
+}
+.achieve-ticks-section-container{
+    margin-top: 20px;
+}
+.achieve-ticke-section-content-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.achieve-ticke-section-content-wrapper >p{
+    margin-left: 10px;
+    font-size: 18px;
+    line-height: 40px;
+    word-spacing: 2px;
+    font-weight: 400;
+
+}
+
+.why-chose-me-content-wrapper{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-direction: row-reverse;
+}
+.over-vision-left-div{
+    transform: translateX(25%);
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.over-vision-right-div-container{
+    height: 580px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.over-vision-right-div{
+    height: 580px;
+    background-color: #97005E;
+    
+    width: 760px;
+    border-radius: 20px;
+    
+}
+.over-vision-right-div >h3{
+    color: white;
+    margin-top: 20px;
+    margin-left: 20%;
+    font-weight: lighter;
+    padding-top: 15%;
+}
+.over-vision-right-div >h1{
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 15%;
+    color: white; 
+    margin-top: 20px;
+}
+.over-vision-right-div >p{
+    width: 60%;
+    font-size: 18px;
+    font-weight: lighter;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+
+
+
+.our-vision-tick-section-container{
+    margin-top: 20px;
+    margin-left: 20%;
+}
+.our-vision-tick-section-content-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.our-vision-tick-section-content-wrapper >p{
+    margin-left: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+@media screen and (max-width:960px) {
+    .acieve-your-goal-content-wrapper{
+        width: 90%;
+        margin: auto;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }   
+    .achieve-your-goal-left-div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .achieve-your-goal-left-div-upper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .achieve-your-goal-right-div{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-direction: column;
+        
+        
+    }
+    .achieve-your-goal-right-div >h1{
+        font-size: 35px;
+        font-weight: 600;
+       margin-top: 30px; 
+    }
+    
+    .achieve-your-goal-right-div >p{
+        color: #757575;
+        font-size: 18px;
+        line-height: 25px;
+        padding-right: 0%;
+        
+        margin-top: 20px;
+    }
+    .why-chose-me-content-wrapper{
+        width: 90%;
+        margin: auto;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+    }
+    .over-vision-right-div >h3{
+        color: white;
+        margin-top: 20px;
+        margin-left: 5%;
+        font-weight: lighter;
+        padding-top: 15%;
+    }
+    .over-vision-right-div >h1{
+        font-size: 30px;
+        font-weight: 600;
+        margin-left: 5%;
+        color: white; 
+        margin-top: 20px;
+    }
+    .over-vision-right-div >p{
+        width: 60%;
+        font-size: 18px;
+        font-weight: lighter;
+        color: white;
+        margin-top: 20px;
+        margin-left: 5%;
+    }
+    
+    
+    
+    .our-vision-tick-section-container{
+        margin-top: 20px;
+        margin-left: 5%;
+    }
+    .over-vision-left-div{
+        transform: translateX(90%);
+        height: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+
+
+
+/* our mission  */
+
+
+.our-mission-container{
+    margin-top: 60px;
+    width: 85%;
+    margin: auto;
+}
+.about-us-over-mission-heading {
+    padding: 20px 0px;
+}
+.about-us-over-mission-heading >h1{
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.about-us-over-mission-heading >p{
+    color: #757575;
+    margin-top: 15px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+.about-us-our-mission-card-container{
+    padding: 40px 0px;
+    border-bottom: 1px solid lightgray;
+}
+.abou-us-ouver-mission-inner-heading{
+    padding-bottom: 5px;
+}
+.abou-us-ouver-mission-inner-heading >p{
+    font-size: 30px;
+    font-weight: 600;
+    padding-right: 30%;
+    text-transform: uppercase;
+}
+.abou-us-ouver-mission-inner-description >P{
+    font-size: 18px;
+    padding-right: 30%;
+    color: #757575;
+}
+
+@media screen and (max-width:960px) {
+    .our-mission-container{
+        margin-top: 30px;
+        width: 85%;
+        margin: auto;
+    } 
+    .about-us-over-mission-heading >p{
+        color: #757575;
+        margin-top: 15px;
+        width: 95%;
+        margin-bottom: 20px;
+    }  
+    .abou-us-ouver-mission-inner-heading >p{
+        font-size: 30px;
+        font-weight: 600;
+        padding-right: 3%;
+        text-transform: uppercase;
+    }
+    .abou-us-ouver-mission-inner-description >P{
+        font-size: 18px;
+        padding-right: 3%;
+        color: #757575;
+    }
+}

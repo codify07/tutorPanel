@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.explore-courses-header-container{
+    background-color: #F6F6F6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.explore-courses-header-cotent-wrapper{
+    width: 85%;
+    margin: auto;
+}

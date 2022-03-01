@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.courses-header-container{
+    margin-top: 2px;
+    
+    
+}
+
+.courses-header-left-div{
+    height: 467px;
+    background-color: #FBFAFA;
+    padding-left: 13%;
+    
+}
+.courses-header-left-div >h1{
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 80px;
+}
+.courses-header-left-div >p{
+    font-size: 18px;
+    width: 90%;
+    margin-top: 20px;
+    line-height: 25.5px;
+}
+.courses-header-read-more-btn{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    background-color: #97005E !important;
+    color: white !important;
+    margin-top: 30px !important;
+}
+.courses-field-container >p{
+    text-transform: capitalize;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 6px;
+    
+}
+.courses-field-container >input{
+    width: 100% !important;
+    padding: 12px;
+    border: none;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    font-size: 18px;
+    
+}
+
+.courses-field-container >input:focus {
+    
+    outline: none !important;
+}
+
+.courses-main-content-container{
+    width: 85%;
+    margin: auto;
+}
+.courses-field-container >select{
+    width: 100% !important;
+    padding: 12px;
+    border: none;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.courses-field-container >select:focus{
+    width: 100% !important;
+    padding: 12px;
+    border: none;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+}
+.courses-filter-apply-button{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    background-color: #97005E !important;
+    color: white !important;
+    margin-top: 30px !important;
+}
+
+
+@media screen and (max-width:900px){
+    .courses-header-left-div >p{
+        font-size: 18px;
+        width: 95%;
+        margin-top: 20px;
+        line-height: 25.5px;
+    }   
+    .courses-header-left-div{
+        height: auto;
+        background-color: #FBFAFA;
+        padding: 30px;
+        
+    }
+    .courses-header-left-div >h1{
+        padding-top: 20px;
+    }
+    .courses-main-content-container{
+        width: 90%;
+        margin: auto;
+    }
+    .courses-filter-apply-button{
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        background-color: #97005E !important;
+        color: white !important;
+        margin-top: 0px !important;
+    }
+}

@@ -109,7 +109,7 @@
 }
 
 .home-heading-style{
-    font-size: 48px;
+    font-size: 35px;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -264,12 +264,15 @@
 }
 
 .home-arrow-btn{
-    font-size: 20px !important;
+    font-size: 18px !important;
     color: black !important;
 }
 .home-arrow-btn >p {
-    margin-right: 20px;
+    margin-right: 18px;
     
+}
+.home-arrow-btn >img{
+    width: 35px;
 }
 
 .expolore-card-style{
@@ -394,7 +397,7 @@
     padding: 5px 10px;
 }
 .courses-card-container{
-    padding: 40px;
+    padding: 30px 20px;
     border: 1px solid #E0E0E0;
     height: 420px;
     border-radius: 5px;
@@ -435,7 +438,9 @@
     background-color: #97005E !important;
     color: white !important;
     text-transform: capitalize;
-    font-size: 25px !important;
+    font-size: 18px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
     
     
 }
@@ -447,8 +452,11 @@
     text-transform: capitalize !important;
 }
 .courses-card-know-more-btn >p {
-    font-size: 22px;
+    font-size: 18px;
     margin-right: 20px;
+}
+.courses-card-know-more-btn >img{
+    width: 30px;
 }
 
 

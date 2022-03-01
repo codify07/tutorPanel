@@ -2,6 +2,9 @@ import { Button, Grid } from '@mui/material'
 import React from 'react'
 import footer from '../../assets/footer.png'
 import logo from '../../assets/logo.png'
+import fb from '../../assets/fb.png'
+import linkedin from '../../assets/linkedin.png'
+import twiter from '../../assets/twiter.png'
 import './footer.css'
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
@@ -15,7 +18,7 @@ export const Footer = () => {
                 <div className="footer-component-content-wrapper" >
                     <div className="footer-component-upper-content" >
                         <Grid container spacing={2} >
-                            <Grid item xs={12} md-={6} lg={3} >
+                            <Grid item xs={6} md={4} lg={3} >
                                 <div className="footer-component-inner-content-wrapper" >
                                     <div className='footer-component-heading-div' >
                                         <img src={logo} alt="" />
@@ -29,7 +32,7 @@ export const Footer = () => {
                                     </div>
                                 </div>
                             </Grid>
-                            <Grid item xs={12} md-={6} lg={3} >
+                            <Grid item xs={6} md={4} lg={3} >
                                 <div className="footer-component-inner-content-wrapper" >
                                     <div className='footer-component-heading-div' >
                                         <p>
@@ -54,7 +57,7 @@ export const Footer = () => {
                                     </div>
                                 </div>
                             </Grid>
-                            <Grid item xs={12} md-={6} lg={3} >
+                            <Grid item xs={6} md={4} lg={3} >
                                 <div className="footer-component-inner-content-wrapper" >
                                     <div className='footer-component-heading-div' >
                                         <p  >
@@ -63,18 +66,23 @@ export const Footer = () => {
                                     </div>
                                     <div className='footer-component-list-items-div' >
                                         <div>
-                                            <Button variant="contained" style={{ backgroundColor: 'black', color: 'white', padding: '11px 30px',  }} >
+                                            <Button variant="contained" style={{ backgroundColor: 'black', color: 'white', padding: '11px 30px', }} >
                                                 google play
                                             </Button> <br />
                                             <Button variant="text" style={{ backgroundColor: 'black', color: 'white', padding: '11px 30px', marginTop: '15px' }}>
                                                 App store
                                             </Button><br />
+                                            <div className="footer-social-icons-container"  >
+                                                <img src={fb} alt="pic" style={{ backgroundColor: '#97005E', borderRadius: '60%' }} />
+                                                <img src={linkedin} alt="pic" />
+                                                <img src={twiter} alt="pic" style={{ backgroundColor: '#97005E', borderRadius: '60%' }} />
+                                            </div>
 
                                         </div>
                                     </div>
                                 </div>
                             </Grid>
-                            <Grid item xs={12} md-={6} lg={3} >
+                            <Grid item xs={6} md={4} lg={3} >
                                 <div className="footer-component-inner-content-wrapper" >
                                     <div className='footer-component-heading-div' >
                                         <p>
@@ -99,14 +107,31 @@ export const Footer = () => {
                             </Grid>
                         </Grid>
                     </div>
-                    <div className='footer-component-lower-content' >
-                        <Grid container  >
-                            <Grid item xs={12} lg={4} >
 
-                            </Grid>
-                        </Grid>
-                    </div>
                 </div>
+            </div>
+            <div className='footer-component-lower-content' >
+                <Grid container  >
+                    <Grid item xs={12}>
+                        <div className="footer-component-lower-content-container" >
+                            <div>
+                                <p>
+                                    ©2022 Amafclasses private ltd. all rights reserved
+                                </p>
+                            </div>
+
+
+                            <div className='footer-terms-privacy-btns-contaner' >
+                                <Button variant='text' className='footer-component-privacy-btn' >
+                                    terms of service
+                                </Button>
+                                <Button variant='text' className='footer-component-privacy-btn' >
+                                    privacy policy
+                                </Button>
+                            </div>
+                        </div>
+                    </Grid>
+                </Grid>
             </div>
         </>
     )

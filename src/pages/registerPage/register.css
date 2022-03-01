@@ -60,11 +60,11 @@
 
 }
 .register-tabs-btn{
-    background-color: #E0E0E0 !important;
+    background-color: #E0E0E0 ;
     padding-left: 60px !important;
     padding-right: 60px !important;
     font-size: 18px !important;
-    color: black !important;
+    color: black ;
     margin: 15px !important;
     font-weight: 450 !important;
 
@@ -156,6 +156,10 @@
     align-items: center;
     justify-content: center;
     margin-top: 70px;
+}
+.css-1ujnqem-MuiTabs-root{
+    width: 70% !important;
+    margin: auto !important;
 }
 
 

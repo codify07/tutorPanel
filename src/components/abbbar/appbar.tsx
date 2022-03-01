@@ -93,10 +93,16 @@ export const AppBar = () => {
                                         <p> courses </p>
                                         <img src={droparrow} alt="arrow" style={{ marginLeft: '10px' }} />
                                     </Button>
-                                    <Button className='nav-links-btn' variant='text'  >
+                                    <Button className='nav-links-btn' variant='text' onClick={()=>{
+                                        createBrowserHistory().push('/about-us');
+                                        window.location.reload();
+                                    }} >
                                         about us
                                     </Button>
-                                    <Button className='nav-links-btn' variant='text'  >
+                                    <Button className='nav-links-btn' variant='text'  onClick={()=>{
+                                        createBrowserHistory().push('/contact-us');
+                                        window.location.reload();
+                                    }} >
                                         contact us
                                     </Button>
 
@@ -178,7 +184,10 @@ export const AppBar = () => {
                                             Construction and Engineering
                                         </p>
                                     </Button> <br />
-                                    <Button variant='text' className='courses-popup-btn' >
+                                    <Button variant='text' className='courses-popup-btn' onClick={()=>{
+                                        createBrowserHistory().push('/courses');
+                                        window.location.reload();
+                                    }} >
                                         <img src={vectorright} alt="" />
                                         <p>
                                             Education and Teaching

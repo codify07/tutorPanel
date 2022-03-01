@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.courses-main-card-container{
+    margin-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.courses-main-card-content-wraper{
+    width: 85%;
+    margin: auto;
+}
+.courses-main-card-text-container{
+    
+   
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 217px;
+
+}
+.courses-main-card-img{
+    width: 100%;
+    height: 217px;
+}
+.courses-main-card-text-container >h1{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.courses-main-card-location{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.courses-main-card-location >p{
+    margin-left: 13px;
+}
+.courses-main-card-text-container >p{
+    
+    font-size: 18px;
+    color: #303030;
+}
+.courses-main-card-view-course-btn{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    background-color: #97005E !important;
+    color: white !important;
+    
+
+}
+.courses-main-card-career-outcomes{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    background: white;
+    padding: 10px;
+    height: 189px;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+.courses-main-card-career-outcomes >h1{
+    font-size: 18px;
+    text-align: center;
+    color: #97005E;
+    margin: 5px 0px;
+
+}
+.courses-main-card-career-outcomes >p{
+    font-size: 14px;
+    margin: 5px 0px;
+    
+}
+.courses-main-card-career-outcomes >ul{
+    margin-left: 10%;
+    font-size: 12px;
+    margin-top: 10px;
+    
+}
+.courses-main-card-career-outcome-li{
+    margin: 5px 0px;
+}
+
+
+
+@media screen and (max-width:900px){
+    .courses-main-card-content-wraper{
+        width: 90%;
+        margin: auto;
+    }
+    .courses-main-card-img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
