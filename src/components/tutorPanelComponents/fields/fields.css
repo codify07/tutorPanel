@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tutor-panel-search-field-container >p{
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.tutor-panel-search-field-input {
+    border: 2px solid #E5E5E5;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 100%;
+    border-radius: 4px;
+    width: 97%;
+}
+.tutor-panel-search-field-input:focus {
+    outline: none;
+}

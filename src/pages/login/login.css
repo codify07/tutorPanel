@@ -23,7 +23,7 @@
     
 }
 .login-right-side-div-container >h1{
-    color: #97005E;
+    color: #6c0740;
     font-size: 36px;
     font-weight: 600;
     text-transform: capitalize;
@@ -78,7 +78,7 @@
     
     width: 100% !important;
     color: white !important;
-    background-color: #97005E !important;
+    background-color: #6c0740 !important;
 
 }
 
@@ -91,8 +91,8 @@
 .login-create-accountbtn{
     color: black !important;
     text-transform: capitalize !important;
-    border-bottom: 1px solid #97005E !important;
-    color: #97005E !important;
+    border-bottom: 1px #6c0740 !important;
+    color: #6c0740 !important;
     border-radius: 0px !important;
     font-weight: bold !important;
 

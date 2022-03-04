@@ -9,7 +9,7 @@
 }
 
 .upper-header-container{
-    background-color: #97005E;
+    background-color: #6c0740;
 }
 .upper-header-content-wraper{
     display: flex;
@@ -77,8 +77,8 @@
 
 .sign-up-btn{
     text-transform: capitalize !important;
-    color:  #97005E !important ;
-    border: 2px solid #97005E !important;
+    color:  #6c0740 !important ;
+    border: 2px solid #6c0740 !important;
     margin-right: 10px !important;
     font-weight: bold !important;
     font-size: 14px !important;

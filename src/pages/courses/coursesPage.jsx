@@ -5,6 +5,7 @@ import coursespic from '../../assets/coursespic.png'
 import './courses.css'
 import { CoursesMainCard } from '../../components/coursesCard/coursesMainCard'
 import { Footer } from '../../components/footer/footer'
+import { CoursesTabs } from '../../components/coursesPageTabs/coursesPageTabs'
 
 
 
@@ -36,8 +37,8 @@ export const CoursesPage = () => {
                         </div>
                     </Grid>
                     <Grid item xs={12} md={6} >
-                        <div style={{ width: '100%' }} >
-                            <img src={coursespic} alt="pic" width='100%' height='467px' />
+                        <div className='courses-img-mask' >
+                            <img src={coursespic} alt="pic"  />
                         </div>
                     </Grid>
                 </Grid>
@@ -80,6 +81,13 @@ export const CoursesPage = () => {
 
 
 
+            </div>
+
+
+            {/* courses tabs */}
+
+            <div className='page-courses-tabs-container' >
+                <CoursesTabs />
             </div>
 
 

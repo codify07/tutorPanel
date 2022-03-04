@@ -8,7 +8,7 @@
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    color: #97005E;
+    color: #6c0740;
     font-size: 30px;
     text-transform: capitalize;
 }
@@ -51,7 +51,7 @@
 .component-register-register-btn{
     padding-left: 120px !important;
     padding-right: 120px !important;
-    background-color: #97005E !important;
+    background-color: #6c0740 !important;
     color: white !important;
     font-size: 20px !important;
 }

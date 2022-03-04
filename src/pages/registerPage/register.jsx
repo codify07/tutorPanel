@@ -16,10 +16,10 @@ import TabPanel from '@mui/lab/TabPanel';
 
 
 export const Register = () => {
-    const [phoneNumber, setPhoneNumber] = useState<any>('')
+    const [phoneNumber, setPhoneNumber] = useState('')
     const [value, setValue] = React.useState('1');
 
-    const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+    const handleChange = (event, newValue) => {
         setValue(newValue);
     };
 
@@ -57,12 +57,12 @@ export const Register = () => {
                         {/* tabs */}
 
                         <TabContext value={value}  >
-                            <TabList onChange={handleChange} aria-label="lab API tabs example" className='' >
+                            <TabList centered={true} onChange={handleChange} aria-label="lab API tabs example" style={{marginTop:'50px'}}  >
 
-                                <Tab className="css-1aquho2-MuiTabs-indicator" value="1" label='student' style={{ backgroundColor: value == '1' ? '#97005E' : '', color: value == '1' ? 'white' : '' }} />
-                                <Tab className="register-tabs-btn" value='2' label='tutor' style={{ backgroundColor: value == '2' ? '#97005E' : '', color: value == '2' ? 'white' : '' }} />
-                                <Tab className="register-tabs-btn" value='3' label='institute' style={{ backgroundColor: value == '3' ? '#97005E' : '', color: value == '3' ? 'white' : '' }} />
-                                <Tab className="register-tabs-btn" label='parents' value='4' style={{ backgroundColor: value == '4' ? '#97005E' : '', color: value == '4' ? 'white' : '' }} />
+                                <Tab className="register-tabs-btn" value="1" label='student' style={{ backgroundColor: value == '1' ? '#6c0740' : 'lightgray', color: value == '1' ? 'white' : 'gray',width:'200px' }} />
+                                <Tab className="register-tabs-btn" value='2' label='tutor' style={{ backgroundColor: value == '2' ? '#6c0740' : 'lightgray', color: value == '2' ? 'white' : 'gray' }} />
+                                <Tab className="register-tabs-btn" value='3' label='institute' style={{ backgroundColor: value == '3' ? '#6c0740' : 'lightgray', color: value == '3' ? 'white' : 'gray' }} />
+                                <Tab className="register-tabs-btn" label='parents' value='4' style={{ backgroundColor: value == '4' ? '#6c0740' : 'lightgray', color: value == '4' ? 'white' : 'gray' }} />
 
 
                             </TabList>
@@ -76,7 +76,7 @@ export const Register = () => {
                                                 <p>
                                                     first name
                                                 </p>
-                                                <input type='text' placeholder='First Name' />
+                                                <input type='text'  />
                                             </div>
                                         </Grid>
                                         <Grid item xs={12} md={6} >
@@ -84,7 +84,7 @@ export const Register = () => {
                                                 <p>
                                                     last name
                                                 </p>
-                                                <input type='text' placeholder='Last Name' />
+                                                <input type='text'  />
                                             </div>
                                         </Grid>
                                         <Grid item xs={12} >
@@ -92,7 +92,7 @@ export const Register = () => {
                                                 <p>
                                                     email
                                                 </p>
-                                                <input type='email' placeholder='Email' />
+                                                <input type='email' />
                                             </div>
                                         </Grid>
                                         {/* birth date */}
@@ -102,7 +102,7 @@ export const Register = () => {
                                                     birthdate
                                                 </p>
                                                 <select id="month" name="month">
-                                                    <option>Month</option>
+                                                    <option value='' disabled selected >Month</option>
                                                     <option value="01">January</option>
                                                     <option value="02">February</option>
                                                     <option value="03">March</option>
@@ -122,7 +122,7 @@ export const Register = () => {
                                             <div className='register-field-container' >
 
                                                 <select style={{ marginTop: '30px' }} id="date" name="date">
-                                                    <option>Date</option>
+                                                    <option vlaue='' disabled selected >Date</option>
                                                     <option value="01">01</option>
                                                     <option value="02">02</option>
                                                     <option value="03">03</option>
@@ -162,7 +162,7 @@ export const Register = () => {
                                             <div className='register-field-container' >
 
                                                 <select style={{ marginTop: '30px' }} id="year" name="year">
-                                                    <option>Year</option>
+                                                    <option value='' disabled selected >Year</option>
                                                     <option value="1940">1940</option>
                                                     <option value="1941">1941</option>
                                                     <option value="1942">1942</option>
@@ -257,7 +257,7 @@ export const Register = () => {
                                                     gender
                                                 </p>
                                                 <select id="gender" name="gender">
-                                                    <option value="Male">Male</option>
+                                                    <option value=""></option>
                                                     <option value="Female">Female</option>
                                                     <option value="Other">Other</option>
                                                 </select>
@@ -269,8 +269,8 @@ export const Register = () => {
                                                     Language
                                                 </p>
                                                 <select id="language" name="language">
-                                                    <option>language</option>
-                                                    <option value="arabic">Arabic</option>
+                                                    <option></option>
+                                                    <option value="">arabic</option>
                                                     <option value="english">English</option>
 
                                                 </select>
@@ -283,7 +283,7 @@ export const Register = () => {
                                                     Country
                                                 </p>
                                                 <select id="country" name="country">
-                                                    <option>country</option>
+                                                    <option></option>
                                                     <option value="dubai">dubai</option>
 
                                                 </select>
@@ -295,7 +295,7 @@ export const Register = () => {
                                                     State
                                                 </p>
                                                 <select id="country" name="country">
-                                                    <option value="state">state</option>
+                                                    <option value=""></option>
 
                                                 </select>
                                             </div>
@@ -307,7 +307,7 @@ export const Register = () => {
                                                     mobile number
                                                 </p>
                                                 <PhoneInput
-                                                    placeholder="Enter phone number"
+                                                    
                                                     value={phoneNumber}
                                                     onChange={setPhoneNumber} className="PhoneInputInput" />
                                             </div>
@@ -318,7 +318,7 @@ export const Register = () => {
                                                 <p>
                                                     Address
                                                 </p>
-                                                <input type='text' placeholder='Address' />
+                                                <input type='text'  />
                                             </div>
                                         </Grid>
                                         {/* password and confirm password bar */}
@@ -327,7 +327,7 @@ export const Register = () => {
                                                 <p>
                                                     password
                                                 </p>
-                                                <input type='password' placeholder='Password' />
+                                                <input type='password'  />
                                             </div>
                                         </Grid>
                                         <Grid item xs={12} md={6} >
@@ -335,7 +335,7 @@ export const Register = () => {
                                                 <p>
                                                     confirm password
                                                 </p>
-                                                <input type='password' placeholder='confirm password' />
+                                                <input type='password'  />
                                             </div>
                                         </Grid>
                                         {/* select interest bar */}
@@ -345,7 +345,7 @@ export const Register = () => {
                                                     Select your Interest
                                                 </p>
                                                 <select id="interest" name="interest">
-                                                    <option value="state">interest</option>
+                                                    <option value=""></option>
 
                                                 </select>
                                             </div>
@@ -398,7 +398,7 @@ export const Register = () => {
                                                 <p>
                                                     first name
                                                 </p>
-                                                <input type='text' placeholder='First Name' />
+                                                <input type='text'  />
                                             </div>
                                         </Grid>
                                         <Grid item xs={12} md={6} >
@@ -406,7 +406,7 @@ export const Register = () => {
                                                 <p>
                                                     last name
                                                 </p>
-                                                <input type='text' placeholder='Last Name' />
+                                                <input type='text'  />
                                             </div>
                                         </Grid>
                                         <Grid item xs={12} >
@@ -414,7 +414,7 @@ export const Register = () => {
                                                 <p>
                                                     email
                                                 </p>
-                                                <input type='email' placeholder='Email' />
+                                                <input type='email'  />
                                             </div>
                                         </Grid>
                                         {/* birth date */}
@@ -484,7 +484,7 @@ export const Register = () => {
                                             <div className='register-field-container' >
 
                                                 <select style={{ marginTop: '30px' }} id="year" name="year">
-                                                    <option>Year</option>
+                                                    <option>Year</option >
                                                     <option value="1940">1940</option>
                                                     <option value="1941">1941</option>
                                                     <option value="1942">1942</option>
@@ -579,7 +579,7 @@ export const Register = () => {
                                                     gender
                                                 </p>
                                                 <select id="gender" name="gender">
-                                                    <option value="Male">Male</option>
+                                                    <option value=""></option>
                                                     <option value="Female">Female</option>
                                                     <option value="Other">Other</option>
                                                 </select>
@@ -591,7 +591,7 @@ export const Register = () => {
                                                     Language
                                                 </p>
                                                 <select id="language" name="language">
-                                                    <option>language</option>
+                                                    <option></option>
                                                     <option value="arabic">Arabic</option>
                                                     <option value="english">English</option>
 
@@ -605,7 +605,7 @@ export const Register = () => {
                                                     Country
                                                 </p>
                                                 <select id="country" name="country">
-                                                    <option>country</option>
+                                                    <option></option>
                                                     <option value="dubai">dubai</option>
 
                                                 </select>
@@ -617,7 +617,7 @@ export const Register = () => {
                                                     State
                                                 </p>
                                                 <select id="country" name="country">
-                                                    <option value="state">state</option>
+                                                    <option value=""></option>
 
                                                 </select>
                                             </div>
@@ -629,7 +629,7 @@ export const Register = () => {
                                                     mobile number
                                                 </p>
                                                 <PhoneInput
-                                                    placeholder="Enter phone number"
+                                                    
                                                     value={phoneNumber}
                                                     onChange={setPhoneNumber} className="PhoneInputInput" />
                                             </div>
@@ -640,7 +640,7 @@ export const Register = () => {
                                                 <p>
                                                     Address
                                                 </p>
-                                                <input type='text' placeholder='Address' />
+                                                <input type='text'  />
                                             </div>
                                         </Grid>
                                         {/* password and confirm password bar */}
@@ -649,7 +649,7 @@ export const Register = () => {
                                                 <p>
                                                     password
                                                 </p>
-                                                <input type='password' placeholder='Password' />
+                                                <input type='password'  />
                                             </div>
                                         </Grid>
                                         <Grid item xs={12} md={6} >
@@ -657,7 +657,7 @@ export const Register = () => {
                                                 <p>
                                                     confirm password
                                                 </p>
-                                                <input type='password' placeholder='confirm password' />
+                                                <input type='password'  />
                                             </div>
                                         </Grid>
                                         {/* select interest bar */}
@@ -666,8 +666,8 @@ export const Register = () => {
                                                 <p>
                                                     add your educatioin
                                                 </p>
-                                                <select id="education" name="education" placeholder='Education'  >
-                                                    <option>Education</option>
+                                                <select id="education" name="education"   >
+                                                    <option></option>
 
                                                 </select>
                                             </div>
@@ -677,8 +677,8 @@ export const Register = () => {
                                                 <p>
                                                     what subject are you Expert in?
                                                 </p>
-                                                <select id="subject" name="subject" placeholder='Subject'  >
-                                                    <option>Subject</option>
+                                                <select id="subject" name="subject"   >
+                                                    <option></option>
 
                                                 </select>
                                             </div>
@@ -688,8 +688,8 @@ export const Register = () => {
                                                 <p>
                                                     Add your Experience
                                                 </p>
-                                                <select id="experience" name="experience" placeholder='Experience'  >
-                                                    <option>Experience</option>
+                                                <select id="experience" name="experience"  >
+                                                    <option></option>
 
                                                 </select>
                                             </div>

@@ -23,9 +23,13 @@ import courses2 from '../../assets/courses2.png'
 import locationIcon from '../../assets/location-icon.png'
 import group9 from '../../assets/group9.png'
 import student1 from '../../assets/student1.png'
-import {Footer} from '../../components/footer/footer'
+import { Footer } from '../../components/footer/footer'
 import { createBrowserHistory } from "history";
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 
 
 
@@ -68,7 +72,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
         // vertical padding + font size from searchIcon
         paddingLeft: `calc(1em + ${theme.spacing(0)})`,
         transition: theme.transitions.create('width'),
-        width: '100%',
+        width: '90%',
         [theme.breakpoints.up('sm')]: {
             width: '200px',
             '&:focus': {
@@ -139,14 +143,14 @@ export const HomePage = () => {
                         </p>
                     </div>
                     <div className="top-deals-right-side-content-container" >
-                        <Button variant='text' className='top-deals-btn' onClick={()=>{
+                        <Button variant='text' className='top-deals-btn' onClick={() => {
                             createBrowserHistory().push('/deals');
                             window.location.reload();
                         }} >
-                            <p style={{ marginRight: '30px',fontSize:'18px'  }} >
+                            <p style={{ marginRight: '30px', fontSize: '18px' }} >
                                 view all deals
                             </p>
-                            <img src={arrow} alt="arrow" style={{width:'30px'}} />
+                            <img src={arrow} alt="arrow" style={{ width: '30px' }} />
                         </Button>
                     </div>
                 </div>
@@ -154,8 +158,27 @@ export const HomePage = () => {
 
             {/* ____ DEAL CARD  ____ */}
 
-            <div className="deal-card-wraper" >
-                <DealCard />
+            <div  >
+                <Swiper modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                    spaceBetween={30}
+                    slidesPerView={1.2}
+                    navigation
+                    centeredSlides={true}
+                    autoplay={{
+                        delay: 3500,
+                        disableOnInteraction: false,
+                    }}
+                    pagination={{ clickable: true }}
+                    scrollbar={{ draggable: true }}
+                >
+                    <SwiperSlide><DealCard /></SwiperSlide>
+                    <SwiperSlide><DealCard /></SwiperSlide>
+                    <SwiperSlide><DealCard /></SwiperSlide>
+                    <SwiperSlide><DealCard /></SwiperSlide>
+
+                </Swiper>
+            
+
             </div>
 
             {/*____ KNOWLEDGE BANK SECTION ____ */}
@@ -205,7 +228,7 @@ export const HomePage = () => {
                                     <p>
                                         view all category
                                     </p>
-                                    <img src={arrow} alt="arrow" style={{width:'30px'}} />
+                                    <img src={arrow} alt="arrow" style={{ width: '30px' }} />
                                 </Button>
                             </div>
                         </Grid>
@@ -347,7 +370,7 @@ export const HomePage = () => {
                         </div>
 
                         <div className="view-all-category-btn" >
-                            <Button variant='text' className='home-arrow-btn' onClick={()=>{
+                            <Button variant='text' className='home-arrow-btn' onClick={() => {
                                 createBrowserHistory().push('/our-courses');
                                 window.location.reload();
                             }}  >
@@ -679,7 +702,7 @@ export const HomePage = () => {
             {/* ____________ F O O T E R _______ */}
 
             <div className="footer-container" >
-                <Footer/>
+                <Footer />
             </div>
 
 

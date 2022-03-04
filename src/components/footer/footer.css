@@ -52,7 +52,7 @@
     margin-top: 10px !important;
 }
 .footer-component-lower-content{
-    background-color: #7c034e;
+    background-color: #6c0740;
 }
 .footer-component-lower-content-container{
     width: 85%;
@@ -78,7 +78,7 @@
 }
 
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1200px){
     .footer-component-container{
         margin-top: 30px;
         height: auto !important;
@@ -103,7 +103,7 @@
     
     }   
     .footer-component-lower-content-container{
-        background-color: #97005E;
+        background-color: #6c0740;
         padding: 8px 0px;
         display: flex;
         align-items: center;

@@ -11,7 +11,7 @@
     background-blend-mode: darken;
     backdrop-filter: blur(5px);
     
-    background: rgba(151, 20, 82, 0.8);
+    background: rgba(108, 7, 64, 0.8);
     padding: 20px 50px ;
         
 }
@@ -44,7 +44,7 @@
 
 .register-body-heading{
     margin-top: 20px;
-    color: #97005E;
+    color: #6c0740;
     text-align: center;
 }
 .register-body-heading >h1{
@@ -147,7 +147,7 @@
 .register-register-btn{
     padding-left: 120px !important;
     padding-right: 120px !important;
-    background-color: #97005E !important;
+    background-color: #6c0740 !important;
     color: white !important;
     font-size: 20px !important;
 }
@@ -157,9 +157,15 @@
     justify-content: center;
     margin-top: 70px;
 }
-.css-1ujnqem-MuiTabs-root{
-    width: 70% !important;
-    margin: auto !important;
+
+.MuiTabs-root{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
 }
 
 
@@ -186,8 +192,9 @@
         padding-left: 60px !important;
         padding-right: 60px !important;
         font-size: 18px !important;
-        color: #97005E !important;
+        color: #6c0740 !important;
         margin: 15px !important;
     
     }
+    
 }

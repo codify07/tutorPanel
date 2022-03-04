@@ -8,6 +8,8 @@ import twiter from '../../assets/twiter.png'
 import './footer.css'
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import googleplay from '../../assets/googlepaly.png'
+import appstore from '../../assets/appstore.png'
 
 
 
@@ -18,7 +20,7 @@ export const Footer = () => {
                 <div className="footer-component-content-wrapper" >
                     <div className="footer-component-upper-content" >
                         <Grid container spacing={2} >
-                            <Grid item xs={6} md={4} lg={3} >
+                            <Grid item xs={6}  lg={3} >
                                 <div className="footer-component-inner-content-wrapper" >
                                     <div className='footer-component-heading-div' >
                                         <img src={logo} alt="" />
@@ -32,7 +34,7 @@ export const Footer = () => {
                                     </div>
                                 </div>
                             </Grid>
-                            <Grid item xs={6} md={4} lg={3} >
+                            <Grid item xs={6}  lg={3} >
                                 <div className="footer-component-inner-content-wrapper" >
                                     <div className='footer-component-heading-div' >
                                         <p>
@@ -57,7 +59,7 @@ export const Footer = () => {
                                     </div>
                                 </div>
                             </Grid>
-                            <Grid item xs={6} md={4} lg={3} >
+                            <Grid item xs={6}  lg={3} >
                                 <div className="footer-component-inner-content-wrapper" >
                                     <div className='footer-component-heading-div' >
                                         <p  >
@@ -66,11 +68,11 @@ export const Footer = () => {
                                     </div>
                                     <div className='footer-component-list-items-div' >
                                         <div>
-                                            <Button variant="contained" style={{ backgroundColor: 'black', color: 'white', padding: '11px 30px', }} >
-                                                google play
+                                            <Button variant="text" style={{  }} >
+                                                <img src={googleplay} alt="" style={{ width:"100%" }} />
                                             </Button> <br />
-                                            <Button variant="text" style={{ backgroundColor: 'black', color: 'white', padding: '11px 30px', marginTop: '15px' }}>
-                                                App store
+                                            <Button variant="text" style={{  marginTop: '15px' }}>
+                                                <img src={appstore} alt="" style={{ width:"100%" }} />
                                             </Button><br />
                                             <div className="footer-social-icons-container"  >
                                                 <img src={fb} alt="pic" style={{ backgroundColor: '#97005E', borderRadius: '60%' }} />
@@ -82,7 +84,7 @@ export const Footer = () => {
                                     </div>
                                 </div>
                             </Grid>
-                            <Grid item xs={6} md={4} lg={3} >
+                            <Grid item xs={6}  lg={3} >
                                 <div className="footer-component-inner-content-wrapper" >
                                     <div className='footer-component-heading-div' >
                                         <p>
@@ -90,7 +92,7 @@ export const Footer = () => {
                                         </p>
                                     </div>
                                     <div className='footer-component-list-items-div' >
-                                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', marginTop: '20px' }} >
+                                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', marginTop: '20px',flexWrap:'wrap' }} >
                                             <EmailIcon style={{ marginRight: '15px' }} />
                                             <p>
                                                 Support@amafclasses.com

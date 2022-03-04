@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.tutor-dashboard-page-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    border-bottom: 1px solid #E0E0E0;
+}
+.tutor-dashboard-page-header-content-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+
+}
+.tutor-dashboard-page-header-content-wrapper-profile-logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.tutor-dashboard-page-header-content-wrapper-profile-logo >p{
+    text-transform: capitalize;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}

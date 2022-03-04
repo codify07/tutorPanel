@@ -43,8 +43,8 @@ export const ContactUs = () => {
                 {/* contact us form */}
 
                 <div className="contact-us-form-container" >
-                    <Grid container columnSpacing={6} rowSpacing={2} >
-                        <Grid item xs={12} md={8}  >
+                    <Grid container columnSpacing={3} rowSpacing={2} >
+                        <Grid item xs={12} lg={7}  >
                             <Grid container columnSpacing={6} rowSpacing={4} >
                                 <Grid item xs={12} md={6} >
                                     <div className='contact-us-field-container' >
@@ -75,7 +75,7 @@ export const ContactUs = () => {
                                 </Grid>
                             </Grid>
                         </Grid>
-                        <Grid item xs={12} md={4} >
+                        <Grid item xs={12} lg={5} >
                             <div className='contact-us-office-card' >
                                 <div className="contact-us-office-card-content" >
                                     <img src={locationOffice} alt="pic"  />
@@ -95,7 +95,7 @@ export const ContactUs = () => {
                                         <h5>
                                             Email
                                         </h5>
-                                        <p  >
+                                        <p style={{wordWrap:'break-word'}}  >
                                             support@amafclasses.com
                                         </p>
                                         <p  >

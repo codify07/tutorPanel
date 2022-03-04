@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.react-calendar{
+    background-color: #F9F9F9;
+    border: none;
+}

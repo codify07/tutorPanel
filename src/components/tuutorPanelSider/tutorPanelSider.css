@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tutor-panel-sider-container{
+    background-color: white;
+    box-shadow: 4px 20px 10px rgba(0, 0, 0, 0.2);
+    height: 92rem;
+    z-index: 1;
+    
+}
+.tutor-panel-sider-logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    border-bottom: 1px solid #E0E0E0;
+}
+.tutor-panel-sider-list-item{
+    list-style: none;
+    margin-left: 15px;
+    padding: 10px;
+    
+    
+}
+.tutor-panel-sider-list-item:hover >.tutor-panel-sider-link{
+    color: #97005E;
+}
+
+.tutor-panel-sider-link{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 450;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.tutor-panel-sider-link >img{
+    margin-right: 15px;
+}

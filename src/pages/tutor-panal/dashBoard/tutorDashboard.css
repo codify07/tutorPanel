@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tutor-dashboard-body-container{
+    
+    
+    background-color: #F9F9F9;
+    height: 85rem;
+    margin-left: 2px;
+    padding-bottom: 30px;
+}
+.tutor-dashboard-body-left-side-container{
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+
+}
+.tutor-dashboard-body-left-side-container >h2 {
+    font-weight: 550;
+    font-size: 25px;
+}
+.tutor-dashboard-body-left-side-map-container{
+    width: 99% ;
+    height: 284px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 20px;
+}
+.tutor-dashboard-body-left-side-cards-container{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tutor-dashboard-body-left-side-card-left{
+    width: 48%;
+}
+.tutor-dashboard-body-left-side-card-right{
+    width: 48%;
+}
+.tutor-dashboard-body-left-side-earning-chart-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.tutor-dashboard-body-left-side-earning-chart-header >p{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+}
+.tutor-dashboard-body-left-side-earning-chart{
+    margin-top: 30px;
+}
+.tutor-dashboard-body-left-side-progress-chart{
+    margin-top: 30px;
+}
+.tutor-dashboard-body-right-side-container{
+    border-left: 1px solid #E0E0E0;
+    padding-left: 20px;
+    height: 85rem;
+    padding-right: 20px;
+}
+.tutor-dashboard-body-right-side-upcomming-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.tutor-dashboard-body-right-side-upcomming-div >p{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.tutor-dashboard-body-right-side-upcomming-div >button{
+    background-color: #F9F9F9;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+@media screen and (max-width:900px) {
+    .tutor-dashboard-body-left-side-card-left{
+        width: 100%;
+    }
+    .tutor-dashboard-body-left-side-card-right{
+        width: 100%;
+        margin-top: 20px;
+    } 
+    .tutor-dashboard-body-left-side-cards-container{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }  
+    .tutor-dashboard-body-right-side-container{
+        border-left: 1px solid #E0E0E0;
+        padding-left: 20px;
+        height: auto;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    .tutor-dashboard-body-container{
+        background-color: #F9F9F9;
+        height: auto;
+        margin-left: 2px;
+        padding-bottom: 30px;
+    }
+}

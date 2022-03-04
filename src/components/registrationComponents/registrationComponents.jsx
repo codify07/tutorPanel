@@ -135,7 +135,7 @@ export const TutorCertificates = () => {
                         <Grid item xs={12} >
                             <div className='component-register-register-btn-container' >
                                 <Button variant='text' className='component-register-register-btn' onClick={() => {
-                                    createBrowserHistory().push('/tutor-certificates');
+                                    createBrowserHistory().push('/tutor-home');
                                     window.location.reload();
                                 }} >
                                     save & continue

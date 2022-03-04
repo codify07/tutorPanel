@@ -16,7 +16,7 @@ export const AchieveYourGoals = () => {
             <div className='achieve-your-goal-container' >
                 <div className='acieve-your-goal-content-wrapper' >
                     <div className='achieve-your-goal-left-div-upper' >
-                        <img src={achieve} alt="pic" width='528px' height='528px' />
+                        <img src={achieve} alt="pic"  />
                     </div>
                     <div className='achieve-your-goal-right-div' >
                         <h1>
@@ -71,7 +71,7 @@ export const WhyChoseMe = () => {
             <div className='achieve-your-goal-container' style={{ backgroundColor: '#F9F9F9', paddingTop: '30px', paddingBottom: '30px' }} >
                 <div className='why-chose-me-content-wrapper'  >
                     <div className='achieve-your-goal-left-div' >
-                        <img src={mask2} alt="pic" width='528px' height='528px' />
+                        <img src={mask2} alt="pic"  />
                     </div>
                     <div className='achieve-your-goal-right-div' >
                         <h3 style={{ color: '#97005E', letterSpacing: '1px', textTransform: 'uppercase', lineHeight: '25px', marginTop: '20px', marginBottom: '20px' }} >
@@ -129,12 +129,12 @@ export const OurVision = () => {
             <div className='achieve-your-goal-container' style={{marginTop:'80px'}}  >
                 <div className='why-chose-me-content-wrapper'  >
                     <Grid container rowSpacing={4}  >
-                        <Grid item xs={12} md={6} >
+                        <Grid item xs={12} md={5}  >
                             <div className='over-vision-left-div' >
-                                <img src={mask3} alt="pic" width='519px' height='418px' />
+                                <img src={mask3} alt="pic"  />
                             </div>
                         </Grid>
-                        <Grid item xs={12} md={6} >
+                        <Grid item xs={12} md={7}  >
                             <div className='over-vision-right-div-container'  >
                                 <div className='over-vision-right-div' >
                                     <h3>
@@ -186,7 +186,7 @@ export const OurVision = () => {
 }
 
 
-// our mision
+// our mision section
 
 
 export const OurMission = () => {

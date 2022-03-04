@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.tutor-total-earing-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #FFEFE3;
+    padding: 25px;
+    border-radius: 10px;
+}
+.tutor-total-earing-card-icon-container{
+    margin-right: 30px;
+}
+.tutor-total-earing-card-text-container >h4{
+    color: #9D4300;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.tutor-total-earing-card-text-container >p{
+    font-weight: 500;
+}
+
+
+/* total booking */
+
+.tutor-total-booking-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #FBDCFF;
+    padding: 25px;
+    border-radius: 10px;
+}
+.tutor-total-booking-card-icon-container{
+    margin-right: 30px;
+}
+.tutor-total-booking-card-text-container >h4{
+    color: #690077;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.tutor-total-booking-card-text-container >p{
+    font-weight: 500;
+}
+
+
+/* upcomming card style */
+
+.tutor-upcomming-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+.tutor-upcomming-card-left-container h4{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.tutor-upcomming-card-left-container p{
+    color: white;
+    font-size: 13px;
+    
+    text-transform: capitalize;
+}
+
+.tutor-upcomming-card-text-container >p{
+    font-weight: 300;
+    color: white;
+    font-size: 14px;
+}
+
+/* math */
+
+.tutor-upcomming-math-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EFEFEF;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.tutor-upcomming-math-card-left-container h4{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.tutor-upcomming-math-card-left-container p{
+    color: black;
+    font-size: 13px;
+    opacity: 0.5;
+    text-transform: capitalize;
+}
+
+.tutor-upcomming-card-math-text-container >p{
+    font-weight: 200;
+    color: black;
+    font-size: 14px;
+}
+
+
+/* courses mini card */
+
+.tutor-courses-card-container{
+    padding: 20px 20px;
+    border: 1px solid #E0E0E0;
+    height: auto;
+    border-radius: 5px;
+}
+.tutor-courses-card-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+
+}
+.tutor-courses-card-title{
+    font-size: 20px;
+    font-weight: 500px;
+    line-height: 32px;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.tutor-courses-card-description{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    font-size: 18px;
+
+}
+.tutor-courses-card-description >p{
+    color: gray;
+    margin-left: 15px;
+}
+.tutor-courses-card-actions-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+
+}
+.tutor-courses-card-price-btrn{
+    background-color: #76AC2D !important;
+    color: white !important;
+    text-transform: capitalize;
+    font-size: 18px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    font-size: 16px !important;
+    
+}
+.tutor-courses-card-know-more-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black !important;
+    text-transform: capitalize !important;
+}
+.tutor-courses-card-know-more-btn >p {
+    font-size: 16px;
+    margin-right: 20px;
+}
+.tutor-courses-card-know-more-btn >img{
+    width: 22px;
+}
+
+
+@media screen and (max-width:960px){
+    
+    .tutor-courses-card-container{
+        padding: 40px;
+        border: 1px solid #E0E0E0;
+        height: auto;
+        border-radius: 5px;
+    }
+    .tutor-courses-card-actions-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        
+    }
+    .tutor-courses-card-price-btrn{
+        background-color: #76AC2D !important;
+        color: white !important;
+        text-transform: capitalize;
+        font-size: larger !important;
+        width: 100%;
+        
+    }
+    .tutor-courses-card-know-more-btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: black !important;
+        text-transform: capitalize !important;
+        margin-top: 30px !important;
+    }
+}

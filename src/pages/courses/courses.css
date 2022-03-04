@@ -30,7 +30,7 @@
 .courses-header-read-more-btn{
     padding-left: 50px !important;
     padding-right: 50px !important;
-    background-color: #97005E !important;
+    background-color: #6c0740 !important;
     color: white !important;
     margin-top: 30px !important;
 }
@@ -81,11 +81,26 @@
 .courses-filter-apply-button{
     padding-left: 50px !important;
     padding-right: 50px !important;
-    background-color: #97005E !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    background-color: #6c0740 !important;
     color: white !important;
     margin-top: 30px !important;
 }
-
+.page-courses-tabs-container{
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.courses-img-mask{
+    width: 100%;
+    height: 467px;
+}
+.courses-img-mask >img{
+    width: 100%;
+    height: 467px;
+}
 
 @media screen and (max-width:900px){
     .courses-header-left-div >p{
@@ -110,8 +125,31 @@
     .courses-filter-apply-button{
         padding-left: 50px !important;
         padding-right: 50px !important;
-        background-color: #97005E !important;
+        background-color: #6c0740 !important;
         color: white !important;
         margin-top: 0px !important;
+    }
+    .page-courses-tabs-container{
+        width: 100%;
+        margin: auto;
+    }
+    .courses-img-mask{
+        width: 95%;
+        height: 95%;
+        margin: auto;
+    }
+    .courses-img-mask >img{
+        width: 95%;
+        height: 95%;
+        
+    }
+    .courses-field-container >input{
+        width: 94% !important;
+        padding: 12px;
+        border: none;
+        border: 1px solid #E0E0E0;
+        border-radius: 5px;
+        font-size: 18px;
+        
     }
 }
