@@ -6,9 +6,26 @@
 .tutor-panel-sider-container{
     background-color: white;
     box-shadow: 4px 20px 10px rgba(0, 0, 0, 0.2);
-    height: 92rem;
+    height: 40rem;
     z-index: 1;
+    padding-bottom: 60px;
+    position: fixed;
+    overflow-y: scroll;
+    direction: rtl;
+    width: 16.9%;
     
+}
+.tutor-panel-sider-container::-webkit-scrollbar{
+    width: 7px;
+    
+}
+.tutor-panel-sider-container::-webkit-scrollbar-thumb{
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(118,172,45,0.8); 
+}
+.tutor-panel-sider-content-wraper{
+    direction: ltr;
 }
 .tutor-panel-sider-logo-container{
     display: flex;
@@ -21,11 +38,11 @@
     list-style: none;
     margin-left: 15px;
     padding: 10px;
-    
+    margin-top: 8px;
     
 }
 .tutor-panel-sider-list-item:hover >.tutor-panel-sider-link{
-    color: #97005E;
+    color: #76AC2D;
 }
 
 .tutor-panel-sider-link{
@@ -38,6 +55,18 @@
     align-items: center;
     justify-content: flex-start;
 }
-.tutor-panel-sider-link >img{
-    margin-right: 15px;
+.tutor-panel-sider-link >p{
+    margin-left: 15px;
+}
+.first-tutor-panel-sider-log-out-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px solid #E5E5E5;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-weight: 450;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import './fields.css'
+import SearchIcon from '@mui/icons-material/Search';
 
 export const SearchByCouseName = () => {
     return (
@@ -59,6 +60,21 @@ export const SearchByDate = () => {
                 </div>
             </div>
 
+        </>
+    )
+}
+
+// search field
+
+export const SearchFieldWithIcon = () => {
+    return(
+        <>
+
+            <div className='tutor-panel-component-search-field-container' >
+                <SearchIcon  style={{marginLeft:'12px'}} />
+                <input  type='text' placeholder='search...' />
+            </div>
+        
         </>
     )
 }

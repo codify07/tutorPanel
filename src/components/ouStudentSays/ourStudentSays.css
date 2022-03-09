@@ -10,7 +10,7 @@
 .our-student-says-content-wrapper{
     width: 85%;
     margin: auto;
-    height: 610px;
+    height: auto;
     padding: 60px 0px;
     
 }
@@ -34,7 +34,7 @@
     margin-top: 80px;
 }
 .our-student-says-card-container{
-    height: 320px;
+    height: auto;
     padding: 20px;
     border: 1px solid #E0E0E0;
     background-color: white;
@@ -50,7 +50,7 @@
     font-size: 19px;
     font-weight: 400px;
     line-height: 26px;
-    width: 70%;
+    width: 100%;
     margin-top: 20px;
     
 }
@@ -72,6 +72,14 @@
         padding: 30px 0px;
         
     }
+    .our-student-says-heading-container >h1{
+        font-size: 28px;
+        font-weight: 620;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: center;
+        padding-top: 20px;
+    }
     .our-student-says-heading-container >p{
         font-size: 18px;
         width: 100%;
@@ -79,11 +87,11 @@
     }
     .our-student-says-card-container{
         height: auto;
-        padding: 20px;
+        padding: 25 20px;
         border: 1px solid #E0E0E0;
         background-color: white;
         border-radius: 5px;
         
-    
+        
     }
 }

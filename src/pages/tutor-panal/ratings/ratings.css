@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.first-tutor-panel-ratings-content-wraper{
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.first-tutor-panel-ratings-page-download-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.first-tutor-panel-ratings-page-download-btn-container >button{
+    background-color: #76AC2D;
+    color: white;
+    padding: 8px 20px;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.first-tutor-panel-ratings-page-search-field-container >p{
+    font-size: 16px;
+    font-weight: 550;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.first-tutor-panel-ratings-page-search-field-container >select{
+    border: none !important;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    width: 100%;
+}
+.first-tutor-panel-ratings-page-search-field-container >select:focus{
+    outline: none;
+}
+
+.first-tutor-panel-ratings-page-search-field-input-container{
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.first-tutor-panel-ratings-page-search-field-input-container >input{
+    border: none !important;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    width: 100%;
+}
+.first-tutor-panel-ratings-page-search-field-input-container >input:focus{
+    outline: none;
+}
+.first-tutor-panel-ratings-page-btn-style-con >button{
+    background-color: #76AC2D;
+    color: white;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.first-tutor-ratings-prpgress-content-wraper{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    background-color: white;
+    margin-top: 20px;
+    margin-top: 20px;
+  
+}
+.first-tutor-ratings-prpgress-inner-content-wraper{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+.first-tutor-panel-ratings-page-rating-card-container{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.first-tutor-panel-ratings-page-rating-card-container >p{
+    font-size:40px;
+    font-weight: bolder;
+    margin-bottom: 12px;
+}
+.first-tuttor-panal-ratings-page-rating-stars-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first-tuttor-panal-ratings-page-rating-stars-container >p{
+    margin-left: 2px;
+    font-size: 14px;
+    color: gray;
+}
+
+.ratings-r-colored-star{
+    color: #EBAF1E;
+    
+}
+.ratings-page-progressbar-content-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.css-1l6rwmg-MuiLinearProgress-root .MuiLinearProgress-bar{
+    background-color: #EBAF1E !important;
+}

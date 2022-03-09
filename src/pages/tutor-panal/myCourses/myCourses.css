@@ -93,6 +93,12 @@
     margin-top: 20px;
 }
 
+.first-tutor-panel-courses-add-new-course-btn:hover{
+    cursor: pointer;
+    
+    
+}
+
 
 @media screen and (max-width:900px) {
     .tutor-panel-view-courses-header-container{
@@ -119,3 +125,121 @@
         padding: 20px 20px;
     }
 }
+
+
+
+/* course detail page */
+
+.first-tutor-panel-course-detail-page-container{
+    width: 95%;
+    margin: auto;
+    margin-top: 15px;
+    padding-bottom: 40px;
+}
+.first-tutor-panel-course-detail-page-heading-text-container >h2{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.first-tutor-panel-course-detail-page-hading-location-div-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 8px;
+}
+.first-tutor-panel-course-detail-page-hading-location-div-container >img{
+    margin-right: 15px;
+}
+.first-tutor-panel-course-detail-page-hading-location-div-container >p{
+    font-size: 14px;
+}
+.first-tutor-panel-curse-detail-page-edit-course-btn{
+    display: flex;
+}
+.first-tutor-panel-curse-detail-page-edit-course-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.first-tutor-panel-curse-detail-page-edit-course-btn >button{
+    background-color: #76AC2D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.first-tutor-panel-curse-detail-page-mask-img-container img{
+    width: 100%;
+    border-radius: 8px;
+}
+.first-tutor-panel-curse-detail-page-description{
+    padding: 20px;
+}
+.first-tutor-panel-curse-detail-page-description >p{
+    font-size: 16px;
+    word-spacing: 1px;
+    line-height: 25.5px;
+    font-weight: 450;
+    margin-top: 15px;
+}
+
+.first-tutor-panel-curse-detail-page-course-module-heading{
+    background-color: #EFEFEF;
+    padding: 17px;
+    border-radius: 4px;
+}
+.first-tutor-panel-curse-detail-page-course-module-heading >p{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.first-tutor-panel-course-detail-page-assessment-container{
+    padding: 12px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.first-tutor-panel-course-detail-page-assessment-add-btn:hover{
+    cursor: pointer;
+}
+.first-tutor-panel-course-detail-page-assessment-container >p{
+    margin-left: 12px;
+}
+.first-tutor-panel-course-detail-page-component-double-heading-container{
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 17.5px;
+    
+}
+.first-tutor-panel-course-detail-page-component-double-heading-container >p{
+    text-transform: capitalize;
+}
+
+@media screen and (max-width:900px) {
+    .first-tutor-panel-curse-detail-page-edit-course-btn  {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .first-tutor-panel-curse-detail-page-edit-course-btn >button {
+        width: 100%;
+        padding: 10px 20px;
+        
+    }
+}
+

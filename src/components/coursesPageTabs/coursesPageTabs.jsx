@@ -4,7 +4,7 @@ import './coursesPageTabs.css'
 
 
 
-export const CoursesTabs = () => {
+export const All = () => {
     return (
         <>
 
@@ -14,44 +14,75 @@ export const CoursesTabs = () => {
                         all
                     </Button>
                 </div>
-                <div>
-                    <Button variant='text' className="component-courses-tabs-btn" >
-                        Art & design
-                    </Button>
-                </div>
-                <div>
-                    <Button variant='text' className="component-courses-tabs-btn" >
-                        Data & science
-                    </Button>
-                </div>
-                <div>
-                    <Button variant='text' className="component-courses-tabs-btn" >
-                        business
-                    </Button>
-                </div>
-                <div>
-                    <Button variant='text' className="component-courses-tabs-btn" >
-                        marketing
-                    </Button>
-                </div>
-                <div>
-                    <Button variant='text' className="component-courses-tabs-btn" >
-                        Art & design
-                    </Button>
-                </div>
-                <div>
-                    <Button variant='text' className="component-courses-tabs-btn" >
-                        Data & science
-                    </Button>
-                </div>
-                <div>
-                    <Button variant='text' className="component-courses-tabs-btn" >
-                        business
-                    </Button>
-                </div>
+                
             </div>
 
 
         </>
     )
+
+}
+
+// art and disign
+
+export const ArtAndDesign = () => {
+    return (
+        <>
+            <div>
+                <Button variant='text' className="component-courses-tabs-btn" >
+                    Art & design
+                </Button>
+            </div>
+
+        </>
+    )
+
+}
+
+// data and science
+
+export const DataAndScience = () => {
+    return (
+        <>
+            <div>
+                <Button variant='text' className="component-courses-tabs-btn" >
+                    data & science
+                </Button>
+            </div>
+
+        </>
+    )
+
+}
+
+// bussiness
+
+export const BusinessTab = () => {
+    return (
+        <>
+            <div>
+                <Button variant='text' className="component-courses-tabs-btn" >
+                    Business
+                </Button>
+            </div>
+
+        </>
+    )
+
+}
+
+// marketting 
+
+export const Marketing = () => {
+    return (
+        <>
+            <div>
+                <Button variant='text' className="component-courses-tabs-btn" >
+                    marketing
+                </Button>
+            </div>
+
+        </>
+    )
+
 }

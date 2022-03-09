@@ -105,3 +105,27 @@
     font-size: 14px;
     margin-top: 2px;
 }
+
+
+/* dialogs */
+
+.tutor-profile-edit-contact-dialog-container{
+    padding-top: 0px;
+    padding-bottom: 30px;
+    background-color: #F9F9F9;
+}
+.first-tutor-panel-dialog-close-btn-icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.first-tutor-panel-dialog-close-icon{
+    background-color: #76AC2D !important;
+    color: whitesmoke !important;
+}
+.first-tutor-penal-profile-page-ask-reco-p:hover{
+    cursor: pointer;
+}

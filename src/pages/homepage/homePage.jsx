@@ -147,7 +147,7 @@ export const HomePage = () => {
                             createBrowserHistory().push('/deals');
                             window.location.reload();
                         }} >
-                            <p style={{ marginRight: '30px', fontSize: '18px' }} >
+                            <p style={{ marginRight: '30px', fontSize: '16px' }} >
                                 view all deals
                             </p>
                             <img src={arrow} alt="arrow" style={{ width: '30px' }} />
@@ -212,21 +212,21 @@ export const HomePage = () => {
             <div className="explore-top-category-container" style={{ backgroundImage: `url(${rect})`, }} >
                 <div className="explore-top-content-wrapper" >
                     <Grid container spacing={2} >
-                        <Grid item xs={12} md={9} >
+                        <Grid item xs={12} md={7} >
                             <div className="explore-top-category-left-side-content-wraper" >
                                 <p className="home-heading-style" >
                                     Explore Top Category
                                 </p>
-                                <p className="home-description-style" >
+                                <p className="home-description-style" style={{width:'80%'}} >
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultricies finibus ligula. In at convallis magna.
                                 </p>
                             </div>
                         </Grid>
-                        <Grid item xs={12} md={3} >
+                        <Grid item xs={12} md={5} >
                             <div className="view-all-category-btn" >
                                 <Button variant='text' className='home-arrow-btn'  >
                                     <p>
-                                        view all category
+                                        view all category 
                                     </p>
                                     <img src={arrow} alt="arrow" style={{ width: '30px' }} />
                                 </Button>
@@ -369,7 +369,7 @@ export const HomePage = () => {
                             </p>
                         </div>
 
-                        <div className="view-all-category-btn" >
+                        <div className="view-all-course-btn" >
                             <Button variant='text' className='home-arrow-btn' onClick={() => {
                                 createBrowserHistory().push('/our-courses');
                                 window.location.reload();
@@ -399,7 +399,7 @@ export const HomePage = () => {
                             marketing
                         </Button>
                     </div>
-                    {/* cards-deck */}
+                    {/* cards-deck  */}
                     <div className="courses-card-deck" >
                         <Grid container spacing={4} >
                             <Grid item xs={12} md={6} lg={4} >

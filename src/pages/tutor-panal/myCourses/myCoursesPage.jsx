@@ -12,7 +12,8 @@ import { SearchByCouseName } from '../../../components/tutorPanelComponents/fiel
 import { SearchByPrice } from '../../../components/tutorPanelComponents/fields/searchFields'
 import { SearchByDate } from '../../../components/tutorPanelComponents/fields/searchFields'
 import { CoursesMiniCard } from '../../../components/tutorPanelComponents/cards/cards'
-
+import { Link } from 'react-router-dom'
+import AddIcon from '@mui/icons-material/Add';
 
 
 
@@ -92,23 +93,29 @@ export const MyCoursesPage = () => {
                     <div className='tutor-panel-my-courses-body-heading-add-btns' >
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', marginRight: '15px' }} >
                             <div>
-                                <p style={{ fontSize: '16px', marginRight: '10px', textTransform: 'capitalize' }} >
+                                <Link to='add-new-package' style={{ fontSize: '16px', marginRight: '10px', textTransform: 'capitalize', textDecoration: 'none', colorl: 'black' }} >
                                     Add packages
-                                </p>
+                                </Link>
                             </div>
-                            <IconButton>
-                                <img src={plus} alt="" width='16px' />
-                            </IconButton>
+                            <Link to='add-new-package' >
+                                <IconButton>
+                                    <AddIcon style={{ color: '#76AC2D' }} />
+                                </IconButton>
+                            </Link>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', marginRight: '15px' }} >
                             <div>
-                                <p style={{ fontSize: '16px', marginRight: '10px', textTransform: 'capitalize' }} >
+                                <Link to='add-new-course' style={{ fontSize: '16px', marginRight: '10px', textTransform: 'capitalize', textDecoration: 'none' }} >
                                     Add New Course
-                                </p>
+                                </Link>
                             </div>
-                            <IconButton>
-                                <img src={plus} alt="" width='16px' />
-                            </IconButton>
+                            <div>
+                                <Link to='add-new-course' className='first-tutor-panel-courses-add-new-course-btn' >
+                                    <IconButton>
+                                        <AddIcon style={{ color: '#76AC2D' }} />
+                                    </IconButton>
+                                </Link>
+                            </div>
                         </div>
 
                     </div>

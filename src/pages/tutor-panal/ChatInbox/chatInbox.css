@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.first-tutor-add-new-course-text-field-with-calendar-contain-two >p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom:12px;
+    text-transform: capitalize;
+    
+}
+.first-tutor-add-new-course-text-field-with-calendar-two{
+    padding: 2px 20px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    width: 93%;
+    margin-top: 12px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.first-tutor-add-new-course-text-field-with-calendar-two >input{
+    border: none !important;
+    outline: none;
+    width: 96%;
+}
+.first-tutor-add-new-course-text-field-with-calendar-two >input:focus{
+    outline: none !important;
+
+}
+.first-tutor-panel-chat-inbox-page-container{
+    width: 95%;
+    margin: auto;
+    
+}
+.firt-tutor-panel-chat-inbox-page-apply-btn{
+    margin-left: 10px;
+}
+.firt-tutor-panel-chat-inbox-page-apply-btn >p{
+    margin-bottom: 12px;
+    opacity: 0;
+}
+.firt-tutor-panel-chat-inbox-page-apply-btn >button{
+    background-color: #76AC2D;
+    padding: 8px 40px;
+    
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    border: none !important;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.firt-tutor-panel-chat-inbox-page-apply-btn >button:hover{
+    cursor: pointer;
+}
+
+.first-tutor-panel-chat-inbox-page-container-box{
+    margin-top: 40px;
+    background-color: white;
+    padding-bottom: 10px;
+    padding-top: 0px;
+
+}
+
+

@@ -166,6 +166,7 @@
     justify-content: space-between;
     color: black !important;
     text-transform: capitalize !important;
+    text-decoration: none;
 }
 .tutor-courses-card-know-more-btn >p {
     font-size: 16px;
@@ -173,6 +174,20 @@
 }
 .tutor-courses-card-know-more-btn >img{
     width: 22px;
+}
+.first-tutor-panel-course-module-time-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-left: 3%;
+}
+.first-tutor-panel-course-module-time-container >p{
+    background-color:#EFEFEF ;
+    padding: 7px;
+    margin-right: 15px;
+    border-radius: 4px;
 }
 
 
@@ -206,5 +221,172 @@
         color: black !important;
         text-transform: capitalize !important;
         margin-top: 30px !important;
+    }
+    .first-tutor-panel-course-module-time-container{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0px 20px;
+        padding-left: 1%;
+
+    }
+    .first-tutor-panel-course-module-time-container >p{
+        background-color:#EFEFEF ;
+        padding: 7px;
+        margin-right: 15px;
+        border-radius: 4px;
+        margin-top: 10px;
+        width: 70%;
+        text-align: center;
+        
+    }
+}
+
+
+/* course module */
+
+
+.first-tutor-panel-course-module-card-container{
+    border: 2px solid #E5E5E5;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+}
+.first-tutor-panel-course-module-card-expended-btn-container{
+    border-bottom: 2px solid #E5E5E5;
+    padding: 5px;
+    
+}
+.first-tutor-panel-course-module-card-expended-btn-container >button{
+    background-color: white !important;
+    font-size: 16px;
+    font-weight: 450;
+    text-transform: capitalize;
+    border: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.first-tutor-panel-course-module-card-expended-btn-container >button:hover{
+    cursor: pointer;
+}
+.first-tutor-panel-course-maodule-card-modules-container{
+    padding: 10px;
+}
+.first-tutor-panel-course-maodule-card-modules-container >li{
+    margin-top: 13px;
+    font-size: 17px;
+    text-transform: capitalize;
+    
+}
+.first-tutor-panel-course-maodule-card-modules-container >li::before{
+    font-weight: bold;
+    content: '';
+      display: inline-block;
+      font-weight: bold;
+      
+      width: 5px;
+    
+}
+
+/* package card style */
+
+.MyCoursesDetialPackageOne-container{
+    margin-top: 12px;
+}
+.first-tutor-panel-courses-detail-package-card-container{
+    border: 2px solid #E5E5E5;
+    padding: 20px 40px;
+    border-radius: 5px;
+    background-color: white;
+}
+.first-tutor-panel-courses-detail-package-card-upper-heading-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.first-tutor-panel-courses-detail-package-card-upper-heading-left-side-div >h4{
+    font-size: 17px;
+    font-weight: 580;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.first-tutor-panel-courses-detail-package-card-upper-heading-left-side-div >p{
+    font-size: 14px;
+    color: #76AC2D;
+    text-transform: capitalize;
+}
+.first-tutor-panel-courses-detail-package-card-upper-heading-right-side-div{
+    padding-right: 20px;
+}
+.first-tutor-panel-courses-detail-package-card-upper-heading-right-side-div >p{
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+.first-tutor-panel-courses-detail-package-card-upper-heading-right-side-div >button{
+    background-color: #76AC2D;
+    color: white;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    border: none !important;
+    text-align: center;
+    font-size: 16px;
+
+}
+.first-tutor-panel-courses-detail-package-card-package-description-container >p{
+    line-height: 25px;
+    font-size: 15px;
+    word-spacing: 1px;
+    text-transform: capitalize;
+}
+.first-tutor-panel-courses-detail-package-card-package-terms-conditions-container{
+    margin-top: 25px;
+
+}
+.first-tutor-courses-detail-package-card-terms-btn{
+    padding-bottom: 2px;
+    color: gray;
+}
+
+@media screen and (max-width:900px) {
+    .first-tutor-panel-courses-detail-package-card-upper-heading-container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .first-tutor-panel-courses-detail-package-card-upper-heading-right-side-div{
+        
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+    .first-tutor-panel-courses-detail-package-card-upper-heading-right-side-div >p{
+        font-size: 17px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 8px;
+        
+    }
+    .first-tutor-panel-courses-detail-package-card-upper-heading-right-side-div >button{
+        background-color: #76AC2D;
+        color: white;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        border: none !important;
+        text-align: center;
+        font-size: 16px;
+        text-align: center;
+        
     }
 }

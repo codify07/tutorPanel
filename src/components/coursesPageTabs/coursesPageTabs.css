@@ -15,8 +15,7 @@
 .component-courses-tabs-btn{
     color: black !important;
     background-color: #F9F9F9 !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    width: 150px !important;
     text-transform: uppercase !important;
     border: 1px solid #E0E0E0 !important;
     margin-right: 20px !important;

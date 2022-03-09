@@ -1,7 +1,8 @@
 import React from 'react'
-import { AppBar } from '../../components/abbbar/appbar'
+import { TutorAppBar } from '../../components/abbbar/appbar'
 import { Footer } from '../../components/footer/footer'
 import { TutorCertificates } from '../../components/registrationComponents/registrationComponents'
+import {TutorFooter} from '../../components/footer/footer'
 
 
 
@@ -14,7 +15,7 @@ export const TutorCertificatesPage = () => {
             {/* appbar */}
 
             <div>
-                <AppBar />
+                <TutorAppBar />
             </div>
 
             {/* body */}
@@ -26,7 +27,7 @@ export const TutorCertificatesPage = () => {
             {/* footer */}
 
             <div>
-                <Footer />
+                <TutorFooter />
             </div>
         </>
     )

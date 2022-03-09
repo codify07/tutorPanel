@@ -5,7 +5,13 @@ import coursespic from '../../assets/coursespic.png'
 import './courses.css'
 import { CoursesMainCard } from '../../components/coursesCard/coursesMainCard'
 import { Footer } from '../../components/footer/footer'
-import { CoursesTabs } from '../../components/coursesPageTabs/coursesPageTabs'
+// import { CoursesTabs } from '../../components/coursesPageTabs/coursesPageTabs'
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import {ArtAndDesign,BusinessTab,DataAndScience,Marketing,All} from '../../components/coursesPageTabs/coursesPageTabs'
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 
@@ -38,7 +44,7 @@ export const CoursesPage = () => {
                     </Grid>
                     <Grid item xs={12} md={6} >
                         <div className='courses-img-mask' >
-                            <img src={coursespic} alt="pic"  />
+                            <img src={coursespic} alt="pic" />
                         </div>
                     </Grid>
                 </Grid>
@@ -86,8 +92,29 @@ export const CoursesPage = () => {
 
             {/* courses tabs */}
 
-            <div className='page-courses-tabs-container' >
+            {/* <div className='page-courses-tabs-container' >
                 <CoursesTabs />
+            </div> */}
+
+            <div className="courses-tabs-swiper-container" >
+                <Swiper modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                    spaceBetween={20}
+                    slidesPerView={6}
+                    navigation
+                    centeredSlides={true}
+                    hiddenClass='swiper-button-hidden'
+                    
+                    
+                    scrollbar={{ draggable: true }}
+                >
+                    <SwiperSlide><All /></SwiperSlide>
+                    <SwiperSlide><DataAndScience /></SwiperSlide>
+                    <SwiperSlide><ArtAndDesign /></SwiperSlide>
+                    <SwiperSlide><BusinessTab /></SwiperSlide>
+                    <SwiperSlide><Marketing /></SwiperSlide>
+                    <SwiperSlide><ArtAndDesign /></SwiperSlide>
+                    <SwiperSlide><BusinessTab /></SwiperSlide>
+                </Swiper>
             </div>
 
 
@@ -98,14 +125,14 @@ export const CoursesPage = () => {
                 <CoursesMainCard />
                 <CoursesMainCard />
                 <CoursesMainCard />
-                
+
 
             </div>
 
             {/* footer */}
 
             <div>
-                <Footer/>
+                <Footer />
             </div>
 
         </>

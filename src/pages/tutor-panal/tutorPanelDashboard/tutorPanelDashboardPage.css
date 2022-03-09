@@ -10,6 +10,7 @@
     justify-content: center;
     height: 5rem;
     border-bottom: 1px solid #E0E0E0;
+    
 }
 .tutor-dashboard-page-header-content-wrapper{
     display: flex;
@@ -29,4 +30,61 @@
     margin-right: 20px;
     font-size: 16px;
     font-weight: 500;
+}
+.css-fqe407-MuiBadge-badge{
+    background-color: #76AC2D !important;
+}
+
+.first-tutor-doashboard-notification-wraper{
+    height: 10rem;
+    overflow-y: scroll;
+    width: 14rem;
+    
+}
+.first-tutor-doashboard-notification-wraper::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+
+/* Handle */
+.first-tutor-doashboard-notification-wraper::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(118,172,45,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.first-tutor-doashboard-notification-wraper::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(118,172,45,0.4); 
+}
+.first-tutor-dashboard-notification-msg-link{
+    text-decoration: none;
+    margin-top: 10px;
+}
+.first-tutor-dashboard-notification-content-container{
+    padding: 12px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+    width: 10rem;
+    overflow: hidden;
+
+}
+.first-tutor-dashboard-notification-content-container >h2{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: black;
+}
+.first-tutor-dashboard-notification-content-container >p{
+    margin-top: 4px;
+    color: gray;
+    text-overflow: ellipsis;
+    height: 2rem;
+    overflow: hidden;
+    font-size: 13px;
+}
+.first-tutor-dashboard-notification-time-span{
+    color: gray;
+    font-size: 11px;
+    margin-left: 4px;
 }

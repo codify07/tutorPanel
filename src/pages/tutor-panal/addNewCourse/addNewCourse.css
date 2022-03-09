@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.first-tutor-panel-add-course-page-container{
+    width: 95%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.first-tutor-panel-add-course-page-save-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.first-tutor-panel-add-course-page-save-btn{
+    background-color: #76AC2D;
+    padding: 8px 40px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    border: none !important;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.first-tutor-panel-add-course-page-save-btn:hover{
+    cursor: pointer;
+}
+.first-tutor-panel-add-course-page-cancel-btn{
+    background-color: black;
+    padding: 8px 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    border: none !important;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.first-tutor-panel-add-course-page-cancel-btn:hover{
+    cursor: pointer;
+}
+
+.first-tutor-panel-add-course-heading-card{
+    padding: 12px;
+    background-color: #EFEFEF;
+    border-radius: 5px;
+}
+.first-tutor-panel-add-course-heading-card  >p{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+.first-tutor-panel-add-course-text-field-container >p{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.first-tutor-panel-add-course-text-field-container >input{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    width: 96%;
+    margin-top: 12px;
+
+}
+.first-tutor-panel-add-course-text-field-container >input:focus{
+    outline: none !important;
+}
+.first-tutor-panel-selection-btn-container >p{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;  
+}
+.first-tutor-panel-selection-btn-container >select{
+    padding: 10px 20px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 12px;
+    background-color: white;
+}
+.first-tutor-panel-selection-btn-container >select:focus{
+    outline: none !important;
+}
+.first-tutor-panel-add-course-upload-pic-container{
+    height: 12rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E5E5;
+
+}
+.first-tutor-panel-add-course-uploadp-guidelines-container{
+    height: 9rem;
+}
+.first-tutor-panel-add-course-uploadp-guidelines-container >p{
+    margin-top: 4px;
+    color: gray;
+    
+}
+.first-tutor-panel-addcourse-r-side-con{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.first-tutor-panel-add-course-upload-image-btn{
+    background-color: #76AC2D;
+    padding: 8px 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    border: none !important;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+        
+}
+.first-tutor-panel-add-new-course-textar-area-container >p{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.first-tutor-panel-add-new-course-textar-area-container >textarea{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    width: 96%;
+    margin-top: 12px;
+    resize: vertical;
+    height: 5rem;
+}
+.first-tutor-add-new-course-text-fields-with-actions-heading-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.first-tutor-add-new-course-text-fields-with-actions-heading-container >p{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.first-tutor-add-new-course-text-fields-with-actions-right-div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.first-tutor-add-new-course-text-fields-with-actions-right-div >p{
+    margin-left: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.first-tutor-add-new-course-text-fields-with-actions-field-container{
+    margin-top: 12px;
+}
+.first-tutor-add-new-course-text-fields-with-actions-field-container >p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom:12px;
+}
+.first-tutor-add-new-course-text-fields-with-actions-field-show{
+    background-color: white;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    width: 96%;
+    color: #A6A6A6;
+
+}
+
+.first-tutor-add-new-course-text-field-with-calendar-contain >p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom:12px;
+}
+.first-tutor-add-new-course-text-field-with-calendar{
+    padding: 2px 20px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    width: 93%;
+    margin-top: 12px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.first-tutor-add-new-course-text-field-with-calendar >input{
+    border: none !important;
+    outline: none;
+    width: 96%;
+}
+.first-tutor-add-new-course-text-field-with-calendar >input:focus{
+    outline: none !important;
+
+}
+.first-tutor-panel-add-new-course-set-time{
+    padding: 2px 4px;
+    background-color: #E5E5E5;
+    width:220px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 12px;
+    border-radius: 10px;
+}
+.first-tutor-add-new-course-text-fields-with-actions-field-set-time{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    width: 97%;
+    color: #A6A6A6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 7px;
+
+}
+
+.first-tutor-panel-add-new-course-course-module-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.first-tutor-panel-add-new-course-course-module-section-h-text{
+    width: 80%;
+}
+.first-tutor-panel-add-new-course-course-module-section-h-text >p{
+    padding-left: 3%;
+    font-size: 15px;
+    font-weight: 500;
+}
+.first-tutor-panel-add-course-module-lacture-name{
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.first-tutor-panel-add-course-module-lacture-name-left-div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.first-tutor-panel-add-course-module-lacture-name-left-div >p{
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.first-tutor-panel-add-course-add-section-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first-tutor-panel-add-course-add-section-button-container >button{
+    background-color: #76AC2D;
+    padding: 8px 20px;
+    width: 30%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    border: none !important;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    
+}
+.first-tutor-panel-add-course-add-section-button-container >button:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width:900px) {
+    .first-tutor-panel-add-course-text-field-container >input{
+        background-color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        border: 1px solid #E5E5E5;
+        border-radius: 5px;
+        width: 95%;
+        margin-top: 12px;
+    
+    }
+    .first-tutor-panel-selection-btn-container >select{
+        padding: 10px 20px;
+        border: 1px solid #E5E5E5;
+        border-radius: 5px;
+        width: 100%;
+        margin-top: 12px;
+        background-color: white;
+    }
+    .first-tutor-panel-addcourse-r-side-con{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .first-tutor-panel-add-course-uploadp-guidelines-container{
+        height: 6rem;
+    }
+    .first-tutor-panel-add-course-upload-pic-container{
+        height: 12rem;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #E5E5E5;
+    
+    }
+    .first-tutor-panel-add-course-add-section-button-container >button{
+        background-color: #76AC2D;
+        padding: 8px 20px;
+        width: 70%;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        border: none !important;
+        margin-left: 5px;
+        border-radius: 5px;
+        font-size: 15px;
+        
+    }
+}

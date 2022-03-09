@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.first-tutor-panel-my-bookings-content-wraper-p{
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+
+.tutor-my-booking-download-btn-container-p-mb{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.tutor-my-booking-download-btn-container-p-mb >button{
+    background-color: #76AC2D;
+    color: white;
+    padding: 8px 20px;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.tutor-my-booking-search-field-container{
+    width: 95%;
+}
+.tutor-my-booking-search-field-container >p{
+    font-size: 15px;
+    font-weight: 550;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+.tutor-my-booking-search-field-container >input{
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    border: none;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+.tutor-my-booking-search-field-container >input:focus{
+    outline: none !important;
+}
+.first-tutor-add-new-course-text-field-with-calendar-three{
+    padding: 2px 10px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 12px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.first-tutor-add-new-course-text-field-with-calendar-three >input{
+    border: none !important;
+    outline: none;
+    width: 96%;
+}
+.first-tutor-add-new-course-text-field-with-calendar-three >input:focus{
+    outline: none !important;
+
+}
+.status-filter-dropdown-content{
+    margin-top: 10px;
+    text-align: center;
+
+}
+.status-filter-dropdown-content >p{
+    text-transform: capitalize;
+}
+.status-filter-dropdown-content >p:hover{
+    color: #76AC2D;
+}
+
+.status-filter-dropdown-content-container{
+    height: 6rem;
+    overflow-y: scroll;
+    width: 80px;
+
+}

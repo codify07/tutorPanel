@@ -54,6 +54,9 @@
 .footer-component-lower-content{
     background-color: #6c0740;
 }
+.footer-component-lower-content-tutor{
+    background-color: #76AC2D;
+}
 .footer-component-lower-content-container{
     width: 85%;
     padding: 7px 0px;
@@ -113,8 +116,31 @@
         margin: auto;
         color: white;
     }
+    .footer-component-lower-content-container-tutor{
+        background-color: #76AC2D;
+        padding: 8px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        color: white;
+    }
     .footer-social-icons-container >img{
         margin: 20px 0px;
         margin-right: 20px;
     }
+}
+
+/* mobile */
+
+
+/* mobile */
+
+.footer-component-container-mobile{
+    background: linear-gradient(#76AC2D,#a4e253);
+}
+.footer-component-container-primary-mobile{
+    background: linear-gradient(#6c0740,#91185c);
 }
