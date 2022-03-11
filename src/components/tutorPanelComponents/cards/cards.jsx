@@ -5,10 +5,15 @@ import totalBookings from '../../../assets/colorMyBooking.png'
 import arrow from '../../../assets/arrow.png'
 import courses2 from '../../../assets/courses2.png'
 import locationIcon from '../../../assets/locationicon.png'
-import { Button } from '@mui/material'
+import { Button, IconButton } from '@mui/material'
 import { Link } from 'react-router-dom'
 import RemoveIcon from '@mui/icons-material/Remove';
 import Collapse from '@mui/material/Collapse';
+import ModeEditIcon from '@mui/icons-material/ModeEdit';
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import AddIcon from '@mui/icons-material/Add';
+import visaLogo from '../../../assets/visa.png'
+import masterCardLogo from '../../../assets/masterCard.png'
 
 
 
@@ -359,7 +364,7 @@ export const MyCoursesDetialPackageOne = () => {
                         </p>
                     </div>
                     <div className='first-tutor-panel-courses-detail-package-card-package-terms-conditions-container' >
-                        <Link  to='' className='first-tutor-courses-detail-package-card-terms-btn' >
+                        <Link to='' className='first-tutor-courses-detail-package-card-terms-btn' >
                             Terms & Conditions Apply
                         </Link>
                     </div>
@@ -409,11 +414,179 @@ export const MyCoursesDetialPackagetwo = () => {
                         </p>
                     </div>
                     <div className='first-tutor-panel-courses-detail-package-card-package-terms-conditions-container' >
-                        <Link  to='' className='first-tutor-courses-detail-package-card-terms-btn' >
+                        <Link to='' className='first-tutor-courses-detail-package-card-terms-btn' >
                             Terms & Conditions Apply
                         </Link>
                     </div>
                 </div>
+            </div>
+
+        </>
+    )
+}
+
+
+// wallet visa card 
+
+
+export const BankCard = () => {
+    return (
+        <>
+            <div className='visa-card-add-card-container' >
+                <div className='visa-card-add-card-header--' >
+                    <p>
+                        cards
+                    </p>
+                </div>
+                <div className='visa-card-add-card-body-content-container' >
+                    <div className='visa-card-add-card-body-content-left-div' >
+                        <img src={visaLogo} alt="logo" />
+                        <p>1234 1234 1234 1234</p>
+                    </div>
+                    <div className='visa-card-add-card-body-content-center-div' >
+                        <p>
+                            Visa
+                        </p>
+                    </div>
+                    <div className='visa-card-add-card-body-content-right-div' >
+                        <p>
+                            04/25
+                        </p>
+                        <p>
+                            David Anderson
+                        </p>
+                        <IconButton style={{ padding: '7px ', marginLeft: '5px' }} >
+                            <ModeEditIcon />
+                        </IconButton>
+                        <IconButton style={{ padding: '7px' }} >
+                            <DeleteOutlineIcon />
+                        </IconButton>
+                    </div>
+                </div>
+                <div className='visa-card-add-card-body-content-container' >
+                    <div className='visa-card-add-card-body-content-left-div' >
+                        <div className='visa-card-logo-continer' >
+                            <img src={masterCardLogo} alt="logo" />
+                        </div>
+                        <p>1234 1234 1234 1234</p>
+                    </div>
+                    <div className='visa-card-add-card-body-content-center-div' >
+                        <p>
+                            master card
+                        </p>
+                    </div>
+                    <div className='visa-card-add-card-body-content-right-div' >
+                        <p>
+                            04/25
+                        </p>
+                        <p>
+                            David Anderson
+                        </p>
+                        <IconButton style={{ padding: '7px ', marginLeft: '5px' }} >
+                            <ModeEditIcon />
+                        </IconButton>
+                        <IconButton style={{ padding: '7px' }} >
+                            <DeleteOutlineIcon />
+                        </IconButton>
+                    </div>
+                </div>
+                <div className='visa-card-add-card-footer-container' >
+                    <button>
+                        <p style={{ marginLeft: '12px' }} >
+                            Add new Card
+                        </p>
+                        <AddIcon />
+                    </button>
+                </div>
+
+            </div>
+
+        </>
+    )
+}
+
+
+// withdrawal your money with card
+
+
+export const WithdrawalMoneyCard = () => {
+    return (
+        <>
+            <div className='visa-card-add-card-container' >
+                <div className='visa-card-add-card-header--' >
+                    <p>
+                        withdraw your money
+                    </p>
+                </div>
+                <div className='visa-card-add-card-body-content-container' >
+                    <div className='visa-card-add-card-body-content-left-div' >
+                        <img src={visaLogo} alt="logo" />
+                        <p>1234 1234 1234 1234</p>
+                    </div>
+                    <div className='visa-card-add-card-body-content-center-div' >
+                        <p>
+                            Visa
+                        </p>
+                    </div>
+                    <div className='visa-card-add-card-body-content-right-div' >
+                        <p>
+                            04/25
+                        </p>
+                        <p>
+                            David Anderson
+                        </p>
+                        <IconButton style={{ padding: '7px ', marginLeft: '5px' }} >
+                            <ModeEditIcon />
+                        </IconButton>
+                        <IconButton style={{ padding: '7px' }} >
+                            <DeleteOutlineIcon />
+                        </IconButton>
+                    </div>
+                </div>
+                <div className='visa-card-add-card-body-content-container' >
+                    <div className='visa-card-add-card-body-content-left-div' >
+                        <div className='visa-card-logo-continer' >
+                            <img src={masterCardLogo} alt="logo" />
+                        </div>
+                        <p>1234 1234 1234 1234</p>
+                    </div>
+                    <div className='visa-card-add-card-body-content-center-div' >
+                        <p>
+                            master card
+                        </p>
+                    </div>
+                    <div className='visa-card-add-card-body-content-right-div' >
+                        <p>
+                            04/25
+                        </p>
+                        <p>
+                            David Anderson
+                        </p>
+                        <IconButton style={{ padding: '7px ', marginLeft: '5px' }} >
+                            <ModeEditIcon />
+                        </IconButton>
+                        <IconButton style={{ padding: '7px' }} >
+                            <DeleteOutlineIcon />
+                        </IconButton>
+                    </div>
+                </div>
+                <div className='withdraw-money-card-footer-container--' >
+                    <div className='withdraw-money-card-footer-text-container--' >
+                        <h3>
+                            $65,000
+                        </h3>
+                        <p>
+                            current Balance
+                        </p>
+                    </div>
+                    <div className='withdraw-money-card-footer-withdraw-money-btn--' >
+                        <button>
+                            Withdraw money
+                        </button>
+                    </div>
+
+                </div>
+
             </div>
 
         </>

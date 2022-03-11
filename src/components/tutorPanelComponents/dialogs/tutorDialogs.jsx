@@ -182,7 +182,7 @@ export const EditEperience = () => {
                     <Grid item xs={12} >
                         <div>
                             <input type="checkbox" id="workingRole" name="workingRole" style={{ marginLeft: '6px' }} />
-                            <label for="forWorkingRole" style={{ fontSize: '15px', marginLeft: '12px' }} > I am currently working in this role </label><br />
+                            <label htmlFor="forWorkingRole" style={{ fontSize: '15px', marginLeft: '12px' }} > I am currently working in this role </label><br />
                         </div>
                     </Grid>
                     <Grid item xs={12} >
@@ -571,7 +571,7 @@ export const AddNewGroupChatNextDialog = () => {
                         <div className='first-tutor-chat-inbox-add-grp-dialog-upload-img-container' >
                             <div>
                                 <input type="file" id="grp-pic-upload" style={{ display: 'none' }} />
-                                <label for='grp-pic-upload' >
+                                <label htmlFor='grp-pic-upload' >
                                     <Avatar style={{ padding: '12px 12px' }} >
                                         <img src={uploadPic} alt="pic" className='first-upload-grp-pic' />
                                     </Avatar>

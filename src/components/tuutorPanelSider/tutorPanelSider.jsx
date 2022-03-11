@@ -82,7 +82,7 @@ export const TutotPanelSidBar = () => {
                             </Link>
                         </li>
                         <li className="tutor-panel-sider-list-item" >
-                            <Link to='my-promotion' className='tutor-panel-sider-link' >
+                            <Link to='my-promotions' className='tutor-panel-sider-link' >
                                 <CampaignIcon />
                                 <p>my promotions</p>
                             </Link>

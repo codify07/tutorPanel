@@ -72,8 +72,8 @@ export const LoginPage = () => {
                     <div className='login-content-container' >
                         <Grid container spacing={0} >
                             <Grid item xs={12} md={6} >
-                                <div style={{ width: '100%', height: '632px' }} >
-                                    <img src={loginpic} alt="loginpic" width='100%' height="632px" />
+                                <div style={{ width: '100%',disply:'flex',alignItems:'center',justifyContent:'center'  }} >
+                                    <img src={loginpic} alt="loginpic" width='100%' />
                                 </div>
                             </Grid>
                             <Grid item xs={12} md={6} >

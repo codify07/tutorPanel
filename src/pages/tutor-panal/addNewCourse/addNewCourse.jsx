@@ -100,7 +100,7 @@ export const AddNewCourse = () => {
                                 Total Course durations
                             </p>
                             <select id="experience" name="experience"  >
-                                <option value="" disabled selected hidden >Total Hours</option>
+                                <option value="" disabled  hidden >Total Hours</option>
 
                             </select>
                         </div>
@@ -112,7 +112,7 @@ export const AddNewCourse = () => {
                                 Total Course durations
                             </p>
                             <select id="experience" name="experience"  >
-                                <option value="" disabled selected hidden >Total Minutes</option>
+                                <option value="" disabled  hidden >Total Minutes</option>
 
                             </select>
                         </div>
@@ -274,7 +274,7 @@ export const AddNewCourse = () => {
                                 How Maney student in class
                             </p>
                             <select id="experience" name="experience"  >
-                                <option value="" disabled selected hidden >Select...</option>
+                                <option value="" disabled  hidden >Select...</option>
 
                             </select>
                         </div>

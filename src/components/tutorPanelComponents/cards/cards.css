@@ -390,3 +390,101 @@
         
     }
 }
+
+
+
+/* bank card   */
+
+.visa-card-add-card-container{
+    background-color: white;
+}
+.visa-card-add-card-header--{
+    padding: 10px 10px;
+    border-bottom: 2px solid #E5E5E5;
+}
+.visa-card-add-card-header-- >p{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.visa-card-add-card-body-content-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+
+.visa-card-add-card-body-content-left-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.visa-card-add-card-body-content-left-div >p{
+    margin-left: 10px;
+}
+.visa-card-logo-continer{
+    width: 50px;
+   
+}
+.visa-card-logo-continer >img{
+    width: 100%;
+}
+.visa-card-add-card-body-content-center-div{
+    text-transform: capitalize;
+}
+.visa-card-add-card-body-content-right-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.visa-card-add-card-body-content-right-div >p{
+    margin-left: 10px;
+}
+.visa-card-add-card-footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 23px 10px;
+    border-top: 2px solid #E5E5E5;
+    
+}
+.visa-card-add-card-footer-container >button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    text-transform: uppercase;
+    border: none !important;
+    font-size: 13px;
+    
+}
+.visa-card-add-card-footer-container >button:hover{
+    cursor: pointer;
+}
+
+.withdraw-money-card-footer-container--{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-top: 2px solid #E5E5E5;
+}
+.withdraw-money-card-footer-text-container-- >p{
+    margin-top: 5px;
+    font-size: 15px;
+    color: gray;
+    text-transform: capitalize;
+}
+.withdraw-money-card-footer-withdraw-money-btn-- >button{
+    background-color: #76AC2D;
+        color: white;
+        padding: 10px 20px;
+        text-transform: capitalize;
+        border: none !important;
+        text-align: center;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 4px;
+}

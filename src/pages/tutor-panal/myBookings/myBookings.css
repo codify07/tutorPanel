@@ -85,3 +85,64 @@
     width: 80px;
 
 }
+.tutor-my-booking-table-head-container{
+    height: 3.5rem ;
+    text-transform: capitalize;
+}
+.tutor-mybooking-table-student-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.tutor-mybooking-table-student-container >p{
+    margin-left: 10px;
+}
+.tutor-my-booking-table-status-style{
+    padding: 5px 2px;
+    border-radius: 5px;
+    text-align: center; 
+}
+.first-tutor-my-booking-apply-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.first-tutor-my-booking-apply-button-container >button{
+    background-color: #76AC2D;
+    padding: 8px 40px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+/* for analytics */
+
+.tutor-analytics-page-container{
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.tutor-mybooking-analytics-page-header-cont{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.tutor-mybooking-analytics-page-header-text{
+    margin-left: 10px;
+}
+.tutor-mybooking-analytics-page-header-text >h2{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.tutor-mybooking-analytics-page-header-text >p{
+    font-size: 15px;
+    color: gray;
+    text-transform: capitalize;
+}

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tutor-my-promotions-page-container--{
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.tutor-my-promotions-page-header-btns-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+
+
+}
+.tutor-my-promotions-page-header-btns-container >button{
+    padding: 10px 30px;
+    background-color: #76AC2D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-right: 15px;
+}
+.tutor-my-promotions-page-header-btns-container >button:hover{
+    cursor: pointer;
+}
+.tutor-my-promotions-page-header-link-create-promotion{
+    padding: 8.5px 30px;
+    background-color: #76AC2D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    text-transform: capitalize;
+    margin-right: 15px;
+    text-decoration: none;
+    text-align: center;
+    
+    
+}
+.tutor-promotion-apply-btn--{
+    padding: 8px 30px;
+    background-color: #76AC2D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-right: 15px;
+    
+    
+}
+.tutor-promotion-apply-btn--:hover{
+    cursor: pointer;
+}
+
+
+/* create promotion */
+
+.tutor-create-promotion-page-container--{
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 200px;
+    height: auto;
+}
+.tutor-create-promotion-upload-pic-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.img-icon-to-upload--:hover{
+    cursor: pointer;
+}
+.tutor-create-promotion-upload-img-guidlines-text{
+    color: gray;
+    word-spacing: 1px;
+    line-height: 25,5;
+}
+.tutor-create-promotion-upld-img-btn--{
+    padding: 8px 30px;
+    background-color: #76AC2D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-right: 15px;
+    margin-top: 30px;
+    width: 120px;
+    text-align: center;
+    
+}
+.tutor-create-promotion-upld-img-btn--:hover{
+    cursor: pointer;
+}
+.tutor-create-promotion-submit-btn{
+    padding: 8px 80px;
+    background-color: #76AC2D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    margin-top: 30px;
+    
+    text-align: center;
+    
+}
+.tutor-create-promotion-submit-btn:hover{
+    cursor: pointer;
+}
+
+

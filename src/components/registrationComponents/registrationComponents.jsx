@@ -262,7 +262,7 @@ export const StudentRegistration = () => {
                                             birthdate
                                         </p>
                                         <select id="month" name="month">
-                                            <option value='' disabled selected >Month</option>
+                                            <option value='' disabled >Month</option>
                                             <option value="01">January</option>
                                             <option value="02">February</option>
                                             <option value="03">March</option>
@@ -282,7 +282,7 @@ export const StudentRegistration = () => {
                                     <div className='register-field-container' >
 
                                         <select style={{ marginTop: '30px' }} id="date" name="date">
-                                            <option vlaue='' disabled selected >Date</option>
+                                            <option vlaue='' disabled >Date</option>
                                             <option value="01">01</option>
                                             <option value="02">02</option>
                                             <option value="03">03</option>
@@ -322,7 +322,7 @@ export const StudentRegistration = () => {
                                     <div className='register-field-container' >
 
                                         <select style={{ marginTop: '30px' }} id="year" name="year">
-                                            <option value='' disabled selected >Year</option>
+                                            <option value='' disabled  >Year</option>
                                             <option value="1940">1940</option>
                                             <option value="1941">1941</option>
                                             <option value="1942">1942</option>

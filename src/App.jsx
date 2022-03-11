@@ -24,6 +24,14 @@ import { TutorRegistration } from './components/registrationComponents/registrat
 import {RegisterTutor} from './pages/registerPage/tutor-register'
 import {Ratings} from './pages/tutor-panal/ratings/ratings'
 import {MyBookings} from './pages/tutor-panal/myBookings/myBookings'
+import {Analytics} from './pages/tutor-panal/myBookings/analytics'
+import {MyBookingParentPage} from './pages/tutor-panal/myBookings/myBookingParentPage'
+import {PromotionParentPage} from './pages/tutor-panal/promotion/promotionMainPage'
+import {MyPromotions} from './pages/tutor-panal/promotion/promotion'
+import {CreatePromotion} from './pages/tutor-panal/promotion/createPromotion'
+import {Notification} from './pages/tutor-panal/notification/notification'
+import {MyWallet} from './pages/tutor-panal/myWallet/myWallet'
+
 
 
 function App() {
@@ -59,7 +67,17 @@ function App() {
             </Route>
             <Route path='chat-inbox' element={<ChatInbox />} />
             <Route path='ratings' element={<Ratings/>} />
-            <Route path='my-booking' element={<MyBookings/>}  />
+            <Route path='my-booking' element={<MyBookingParentPage/>}  >
+            <Route path='' element={<MyBookings />} />
+              <Route path='analytics' element={<Analytics />} />
+             </Route>
+             <Route path='my-promotions' element={<PromotionParentPage />} >
+                <Route path='' element={<MyPromotions/>} />
+                <Route path='create-promotion' element={<CreatePromotion/>} />
+             </Route>
+              <Route path='notifications' element={<Notification />} /> 
+              <Route path='my-wallet' element={<MyWallet />} /> 
+
           </Route>
 
 

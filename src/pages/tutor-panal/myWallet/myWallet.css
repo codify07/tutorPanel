@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tutor-my-wallet-page-container-{
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.tutor-my-wallet-page-header-card-container-{
+    padding: 20px 30px;
+    background-color: #FBDCFF;
+    border-radius: 5px;
+}
+.tutor-my-wallet-page-header-card-main-content-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+.tutor-my-wallet-page-header-card-text-container{
+    margin-left: 25px;
+    
+}
+.tutor-my-wallet-page-header-card-text-container >h2{
+    font-size: 18px;
+    font-weight: 630;
+    text-transform: capitalize;
+    color: #690077;
+
+}
+.tutor-my-wallet-page-header-card-text-container >p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+.tutor-my-wallet-page-header-card-add-money-btn-cont-{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.tutor-my-wallet-page-header-card-add-money-btn-cont- >button{
+    border: none;
+    border-bottom: 1px solid #690077;
+    color: #690077;
+    text-transform: capitalize;
+    align-self: flex-end;
+    background-color: none !important;
+    background: none !important;
+}
+.tutor-my-wallet-page-header-card-add-money-btn-cont- >button:hover{
+    cursor: pointer;
+}
+
+
+/* total earning card  */
+
+.tutor-my-wallet-page-header-card-te-container-{
+    padding: 30px 30px;
+    background-color: #FFEFE3;
+    border-radius: 5px;
+}
+.tutor-my-wallet-page-header-card-te-main-content-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+.tutor-my-wallet-page-header-card-te-text-container{
+    margin-left: 25px;
+    
+}
+.tutor-my-wallet-page-header-card-te-text-container >h2{
+    font-size: 18px;
+    font-weight: 630;
+    text-transform: capitalize;
+    color: #9D4300;
+
+}
+.tutor-my-wallet-page-header-card-te-text-container >p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+.tutor-my-wallet-page-header-card-te-add-money-btn-cont-{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.tutor-my-wallet-page-header-card-te-add-money-btn-cont- >button{
+    border: none;
+    border-bottom: 1px solid #690077;
+    color: #690077;
+    text-transform: capitalize;
+    align-self: flex-end;
+    background-color: none !important;
+    background: none !important;
+}
+.tutor-my-wallet-page-header-card-te-add-money-btn-cont- >button:hover{
+    cursor: pointer;
+}
+
+/* total widthdraw */
+
+.tutor-my-wallet-page-header-card-tw-container-{
+    padding: 30px 30px;
+    background-color: #DCECFF;
+    border-radius: 5px;
+}
+.tutor-my-wallet-page-header-card-tw-main-content-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+.tutor-my-wallet-page-header-card-tw-text-container{
+    margin-left: 25px;
+    
+}
+.tutor-my-wallet-page-header-card-tw-text-container >h2{
+    font-size: 18px;
+    font-weight: 630;
+    text-transform: capitalize;
+    color: #003371;
+
+}
+.tutor-my-wallet-page-header-card-tw-text-container >p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+.tutor-my-wallet-page-header-card-tw-add-money-btn-cont-{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.tutor-my-wallet-page-header-card-tw-add-money-btn-cont- >button{
+    border: none;
+    border-bottom: 1px solid #690077;
+    color: #690077;
+    text-transform: capitalize;
+    align-self: flex-end;
+    background-color: none !important;
+    background: none !important;
+}
+.tutor-my-wallet-page-header-card-tw-add-money-btn-cont- >button:hover{
+    cursor: pointer;
+}
+

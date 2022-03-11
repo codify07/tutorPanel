@@ -83,14 +83,14 @@ export const Profile = () => {
                             <Grid item xs={12} >
                                 <div className="tutor-profile-upper-heading-container" >
                                     <img src={profilePic} alt="" />
-                                    <IconButton style={{ alignSelf: 'flex-end' }} >
-                                        <ModeEditIcon onClick={() => {
-                                            if (setIsEditContactOpen == true) {
-                                                setIsEditContactOpen(false)
-                                            } else {
-                                                setIsEditContactOpen(true)
-                                            }
-                                        }} />
+                                    <IconButton onClick={() => {
+                                        if (setIsEditContactOpen == true) {
+                                            setIsEditContactOpen(false)
+                                        } else {
+                                            setIsEditContactOpen(true)
+                                        }
+                                    }} style={{ alignSelf: 'flex-end' }} >
+                                        <ModeEditIcon />
                                     </IconButton>
                                 </div>
                             </Grid>
@@ -210,9 +210,9 @@ export const Profile = () => {
                                     </div>
                                     <div>
                                         <IconButton style={{ alignSelf: 'flex-end' }} onClick={() => {
-                                                setIsEditExperienceOpen(true)
-                                            }} >
-                                            <ModeEditIcon  />
+                                            setIsEditExperienceOpen(true)
+                                        }} >
+                                            <ModeEditIcon />
                                         </IconButton>
                                     </div>
                                 </div>
@@ -238,8 +238,8 @@ export const Profile = () => {
                                     </div>
                                     <div>
                                         <IconButton style={{ alignSelf: 'flex-end' }} onClick={() => {
-                                                setIsEditExperienceOpen(true)
-                                            }} >
+                                            setIsEditExperienceOpen(true)
+                                        }} >
                                             <ModeEditIcon />
                                         </IconButton>
                                     </div>

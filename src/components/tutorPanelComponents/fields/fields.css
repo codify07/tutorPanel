@@ -6,7 +6,8 @@
 .tutor-panel-search-field-container >p{
     font-size: 14px;
     margin-bottom: 8px;
-    font-weight: 600;
+    font-weight: 550;
+    text-transform: capitalize;
 }
 .tutor-panel-search-field-input {
     border: 2px solid #E5E5E5;
@@ -16,7 +17,7 @@
     padding-bottom: 7px;
     width: 100%;
     border-radius: 4px;
-    width: 97%;
+    width: 95%;
 }
 .tutor-panel-search-field-input:focus {
     outline: none;
@@ -43,4 +44,130 @@
 }
 .tutor-panel-component-search-field-container >input:focus{
     outline: none !important;
+}
+
+/* start date end date */
+
+
+.sded-start-date-end-date-container-heading{
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 550;
+    text-transform: capitalize;
+}
+.sd-ed-start-date-end-date-input-field{
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 95%;
+    border-radius: 4px;
+    
+    margin-left: 10px;
+    outline: none !important;
+    border: none !important;
+    
+}
+.sd-ed-start-date-end-date-input-field:focus{
+    outline: none !important;
+}
+
+.tutor-panel-search-start-date-end-date-fields-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid #E5E5E5;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.sd-ed-start-date-end-date-input-field-two{
+    margin-left: 50px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 95%;
+    border-radius: 4px;
+    width: 97%;
+    margin-left: 10px;
+    outline: none !important;
+    border: none !important;
+    text-align: center;
+}
+
+.promotion-type-select-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    width: 100%;
+    background-color: white;
+}
+.create-promotion-drop-down-items-style{
+    padding: 8px 20px;
+}
+.create-promotion-drop-down-items-style:hover{
+    background-color: #E5E5E5;
+    cursor: pointer;
+}
+
+.tutor-create-promotion-prive-before-container-- >p{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 550;
+    margin-bottom: 8px;
+
+}
+
+.tutor-create-promotion-price-before-field-container--{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid #E5E5E5;
+    border-radius: 5px;
+
+}
+.tutor-create-promotion-price-before-field-container-- >button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-right: 1px solid #E5E5E5;
+    padding-left: 10px;
+
+}
+.tutor-create-promotion-price-before-field-container-- >input{
+    border: none !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    width: 100%;
+
+}
+.tutor-create-promotion-price-before-field-container-- >input:focus{
+    outline: none !important;
+    
+}
+.tutor-create-promotion-price-before-field-container-- >button:hover{
+    cursor: pointer;
+}
+.tutor-create-promotion-select-field-container-{
+    background-color: white;
+    border: 2px solid #E5E5E5;
+    border-radius: 5px;
+}
+.text-area-container-style-- >p{
+    text-transform: capitalize;
+    font-weight: 550;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.text-area-container-style-- >textarea{
+    height: 8rem;
+    background-color: white;
+    border: 2px solid #E5E5E5;
+    border-radius: 5px;
+    padding: 15px;
+    resize: vertical;
+    width: 95%;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import './myBookings.css'
-import { Grid, IconButton } from '@mui/material'
+import { Grid, IconButton, Avatar } from '@mui/material'
 import Menu from '@mui/material/Menu';
 import { CalendarComponent } from '../../../components/calendar/calendar'
 import DateRangeIcon from '@mui/icons-material/DateRange';
@@ -13,6 +13,11 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import analytics from '../../../assets/analytics.png'
+import TablePagination from '@mui/material/TablePagination';
+import TableFooter from '@mui/material/TableFooter';
+import avatarPic from '../../../assets/avatar2.png'
+import {Link} from 'react-router-dom'
+
 
 
 
@@ -39,24 +44,183 @@ export const MyBookings = () => {
 
 
 
-    function createData(name, calories, fat, carbs, protein) {
-        return { name, calories, fat, carbs, protein };
-    }
 
-    const rows = [
-        createData('id', 159, 6.0, 24, 4.0),
-        createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-        createData('Eclair', 262, 16.0, 24, 6.0),
-        createData('Cupcake', 305, 3.7, 67, 4.3),
-        createData('Gingerbread', 356, 16.0, 49, 3.9),
+    const [page, setPage] = React.useState(0);
+    const [rowsPerPage, setRowsPerPage] = React.useState(10);
+
+    const handleChangePage = (event, newPage) => {
+        setPage(newPage);
+    };
+
+    const handleChangeRowsPerPage = (event) => {
+        setRowsPerPage(+event.target.value);
+        setPage(0);
+    };
+
+    const myBooking = [
+        {
+            id: '1',
+            createAt: 'JAN 4, 2022',
+            student: 'Samantha aryton',
+            course: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            price: '$20',
+            status: 'pending',
+            analytics: 'analytics',
+            avatar: `${avatarPic}`
+        },
+        {
+            id: '2',
+            createAt: 'JAN 5, 2022',
+            student: 'Johan smith',
+            course: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            price: '$20',
+            status: 'pending',
+            analytics: 'analytics',
+            avatar: `${avatarPic}`
+        },
+        {
+            id: '3',
+            createAt: 'JAN 6, 2022',
+            student: 'Samantha aryton',
+            course: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            price: '$20',
+            status: 'pending',
+            analytics: 'analytics',
+            avatar: `${avatarPic}`
+        },
+        {
+            id: '4',
+            createAt: 'JAN 7, 2022',
+            student: 'Samantha aryton',
+            course: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            price: '$20',
+            status: 'pending',
+            analytics: 'analytics',
+            avatar: `${avatarPic}`
+        },
+        {
+            id: '5',
+            createAt: 'JAN 8, 2022',
+            student: 'Samantha aryton',
+            course: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            price: '$20',
+            status: 'pending',
+            analytics: 'analytics',
+            avatar: `${avatarPic}`
+        },
+        {
+            id: '6',
+            createAt: 'JAN 8, 2022',
+            student: 'Samantha aryton',
+            course: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            price: '$20',
+            status: 'cancelled',
+            analytics: 'analytics',
+            avatar: `${avatarPic}`
+        },
+        {
+            id: '7',
+            createAt: 'JAN 9, 2022',
+            student: 'Samantha aryton',
+            course: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            price: '$20',
+            status: 'completed',
+            analytics: 'analytics',
+            avatar: `${avatarPic}`
+        },
+        {
+            id: '8',
+            createAt: 'JAN 10, 2022',
+            student: 'Samantha aryton',
+            course: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            price: '$20',
+            status: 'completed',
+            analytics: 'analytics',
+            avatar: `${avatarPic}`
+        },
+        {
+            id: '9',
+            createAt: 'JAN 11, 2022',
+            student: 'Samantha aryton',
+            course: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            price: '$20',
+            status: 'pending',
+            analytics: 'analytics',
+            avatar: `${avatarPic}`
+        },
+        {
+            id: '10',
+            createAt: 'JAN 12, 2022',
+            student: 'Samantha aryton',
+            course: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            price: '$20',
+            status: 'pending',
+            analytics: 'analytics',
+            avatar: `${avatarPic}`
+        },
+        {
+            id: '11',
+            createAt: 'JAN 13, 2022',
+            student: 'Samantha aryton',
+            course: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            price: '$20',
+            status: 'pending',
+            analytics: 'analytics',
+            avatar: `${avatarPic}`
+        },
+        {
+            id: '12',
+            createAt: 'JAN 12, 2022',
+            student: 'Samantha aryton',
+            course: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            price: '$20',
+            status: 'completed',
+            analytics: 'analytics',
+            avatar: `${avatarPic}`
+        },
+        {
+            id: '13',
+            createAt: 'JAN 12, 2022',
+            student: 'Samantha aryton',
+            course: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            price: '$20',
+            status: 'canceled',
+            analytics: 'analytics',
+            avatar: `${avatarPic}`
+        },
+        {
+            id: '14',
+            createAt: 'JAN 12, 2022',
+            student: 'Samantha aryton',
+            course: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            price: '$20',
+            status: 'pending',
+            analytics: 'analytics',
+            avatar: `${avatarPic}`
+        },
     ];
 
-
-
     return (
+
+
+
         <>
 
-            <div>
+            <div style={{ paddingBottom: '5rem' }} >
                 <div className='first-tutor-panel-my-bookings-content-wraper-p' >
 
                     {/* upper download button */}
@@ -72,7 +236,7 @@ export const MyBookings = () => {
                     </Grid>
 
                     {/* search fields container */}
-                    <div style={{ marginTop: '20px',marginBottom:'30px' }} >
+                    <div style={{ marginTop: '20px',marginBottom:'10px' }} >
                         <Grid container spacing={2} >
                             <Grid item xs={12} md={2} >
                                 <div className='tutor-my-booking-search-field-container' >
@@ -194,47 +358,90 @@ export const MyBookings = () => {
                         </Grid>
                     </div>
 
-                    {/* table */}
-                    <div style={{marginTop:'30px'}} >
-                        <div style={{ width: '98%', margin: 'auto' }} >
-                            <TableContainer component={Paper}>
-                                <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
-                                    <TableHead>
-                                        <TableRow>
-                                            <TableCell>id</TableCell>
-                                            <TableCell align="right">create at</TableCell>
-                                            <TableCell align="right">student</TableCell>
-                                            <TableCell align="right">course</TableCell>
-                                            <TableCell align="right">country</TableCell>
-                                            <TableCell align="right">price</TableCell>
-                                            <TableCell align="right">status</TableCell>
-                                            <TableCell align="right">analytics</TableCell>
-
-                                        </TableRow>
-                                    </TableHead>
-                                    <TableBody>
-                                        
-                                            <TableRow
-                                                
-                                                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                                            >
-                                                <TableCell component="th" scope="row">
-                                                    <p>1</p>
-                                                </TableCell>
-                                                <TableCell align="right"><p>JAN 4, 2022</p></TableCell>
-                                                <TableCell align="right"><p>Samantha aryton</p></TableCell>
-                                                <TableCell align="right"><p>Lorem ipsum dolor sit a...</p></TableCell>
-                                                <TableCell align="right"><p>burnside</p></TableCell>
-                                                <TableCell align="right"><p>$20</p></TableCell>
-                                                <TableCell align="right"><p>Panding</p></TableCell>
-                                                <TableCell align="right"><img src={analytics} alt="" /></TableCell>
-                                            </TableRow>
-                                        
-                                    </TableBody>
-                                </Table>
-                            </TableContainer>
-                        </div>
+                    <div style={{marginBottom:'30px'}} >
+                        <Grid container spacing={2} >
+                            <Grid item xs={12} >
+                                <div className='first-tutor-my-booking-apply-button-container' >
+                                    <button  >
+                                        apply
+                                    </button>
+                                </div>
+                            </Grid>
+                        </Grid>
                     </div>
+
+                    {/* table */}
+
+                    <TableContainer component={Paper} sx={{ maxHeight: 440 }} >
+                        <Table sx={{ minWidth: 650, }} size="small" stickyHeader aria-label="sticky table">
+                            <TableHead>
+                                <TableRow className='tutor-my-booking-table-head-container'  >
+                                    <TableCell>ID</TableCell>
+                                    <TableCell align="left">create at</TableCell>
+                                    <TableCell align="left">student</TableCell>
+                                    <TableCell align="left">course</TableCell>
+                                    <TableCell align="left">country</TableCell>
+                                    <TableCell align="center">price</TableCell>
+                                    <TableCell align="center">status</TableCell>
+                                    <TableCell align="center">analytics</TableCell>
+
+                                </TableRow>
+                            </TableHead>
+                            <TableBody  >
+
+                                {
+                                    myBooking.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(i => (
+                                        (
+                                            <>
+                                                <TableRow
+                                                    key={i.id}
+                                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                                >
+                                                    <TableCell component="th" scope="row">
+                                                        <p>{i.id}</p>
+                                                    </TableCell>
+                                                    <TableCell align="left"><p> {i.createAt} </p></TableCell>
+                                                    <TableCell align="left"  >
+                                                        <div className='tutor-mybooking-table-student-container' >
+                                                            <Avatar style={{ width: '38px', height: '38px' }} >
+                                                                <img src={i.avatar} alt="" width='100%' />
+                                                            </Avatar>
+                                                            <p>
+                                                                {i.student}
+                                                            </p>
+                                                        </div>
+                                                    </TableCell>
+                                                    <TableCell align="left"><p> {i.course} </p></TableCell>
+                                                    <TableCell align="left"><p> {i.country} </p></TableCell>
+                                                    <TableCell align="center"><p> {i.price} </p></TableCell>
+                                                    <TableCell align="center"><p style={{ backgroundColor: i.status == 'pending' ? '#FFD1B0' : i.status == 'completed' ? '#D2FFEB' : '#FFB0B0', color: i.status == 'pending' ? '#B84D00' : i.status == 'completed' ? '#098B51' : '#B80000' }} className="tutor-my-booking-table-status-style" > {i.status} </p></TableCell>
+                                                    <TableCell align="center"> <Link to='analytics' > <img src={analytics} alt="" /> </Link> </TableCell>
+                                                </TableRow>
+                                            </>
+                                        )
+                                    ))
+                                }
+
+                            </TableBody>
+                        </Table>
+
+                        <TableFooter>
+                            <TableRow>
+                                <TablePagination
+                                    rowsPerPageOptions={[5, 10, 50]}
+                                    count={myBooking.length}
+                                    rowsPerPage={rowsPerPage}
+                                    page={page}
+                                    onPageChange={handleChangePage}
+                                    onRowsPerPageChange={handleChangeRowsPerPage}
+                                    component='div'
+
+                                />
+                            </TableRow>
+                        </TableFooter>
+
+                    </TableContainer>
+
 
 
                 </div>

@@ -380,13 +380,13 @@ export const TutorPanelChatInbox = () => {
                                 <div className='write-msg-input-btns-container' >
                                     <div>
                                         <input id='file-input' type='file' style={{ display: 'none' }} />
-                                        <label for="file-input">
+                                        <label htmlFor="file-input">
                                             <EmojiEmotionsIcon className='chat-box-emoji-btn' />
                                         </label>
                                     </div>
                                     <div>
                                         <input id='input-file' type='file' style={{ display: 'none' }} />
-                                        <label for="input-file">
+                                        <label htmlFor="input-file">
                                             <AttachFileIcon className='chat-box-input-file-btn' />
                                         </label>
                                     </div>
