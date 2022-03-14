@@ -1,17 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './myWallet.css'
-import { Grid } from '@mui/material'
+import { Grid, Dialog, IconButton } from '@mui/material'
 import walletPic from '../../../assets/wallet2.png'
 import widthdrawIcon from '../../../assets/totalWidthdraw.png'
 import totalEarningIcon from '../../../assets/totalEarning.png'
 import { BankCard } from '../../../components/tutorPanelComponents/cards/cards'
 import { WithdrawalMoneyCard } from '../../../components/tutorPanelComponents/cards/cards'
-import {WithDrawHistoryTable,WalletEarnongHistoryTable} from '../../../components/tutorPanelComponents/tables/tables'
-
+import { WithDrawHistoryTable, WalletEarnongHistoryTable } from '../../../components/tutorPanelComponents/tables/tables'
+import CloseIcon from '@mui/icons-material/Close';
+import { AddMoneyDialog } from '../../../components/tutorPanelComponents/dialogs/tutorDialogs'
 
 
 
 export const MyWallet = () => {
+
+    const [isAddMoneyOpen, setIsAddMoneyOpen] = useState(false)
+
+    const handleAddMoneyClose = () => {
+        setIsAddMoneyOpen(false)
+    }
     return (
         <>
 
@@ -33,7 +40,9 @@ export const MyWallet = () => {
                                 </div>
                             </div>
                             <div className='tutor-my-wallet-page-header-card-add-money-btn-cont-' >
-                                <button>
+                                <button onClick={() => {
+                                    setIsAddMoneyOpen(true)
+                                }} >
                                     Add money
                                 </button>
                             </div>
@@ -78,18 +87,35 @@ export const MyWallet = () => {
                             <WithdrawalMoneyCard />
                         </div>
                     </Grid>
-                    
+
                 </Grid>
 
                 {/* tables */}
 
-                <div style={{marginTop:'30px'}} >
+                <div style={{ marginTop: '30px' }} >
                     <WithDrawHistoryTable />
                 </div>
 
-                <div style={{marginTop:'30px'}} >
+                <div style={{ marginTop: '30px' }} >
                     <WalletEarnongHistoryTable />
                 </div>
+
+                {/* ____ dialogs ____ */}
+
+                <Dialog open={isAddMoneyOpen} fullWidth maxWidth='sm' onClose={handleAddMoneyClose} >
+                    <div style={{paddingBottom:'40px'}} >
+                        <div className='first-tutor-panel-dialog-close-btn-icon-container' >
+                            <IconButton className='first-tutor-panel-dialog-close-icon' onClick={() => {
+                                handleAddMoneyClose();
+                            }} >
+                                <CloseIcon />
+                            </IconButton>
+                        </div>
+                        <div>
+                            <AddMoneyDialog />
+                        </div>
+                    </div>
+                </Dialog>
 
             </div>
 

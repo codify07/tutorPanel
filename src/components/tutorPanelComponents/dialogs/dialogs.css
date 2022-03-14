@@ -162,3 +162,18 @@
 .first-upload-grp-input-field-container >input:focus{
     outline: none;
 }
+
+.tutor-add-money-dialog-header-new-{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.tutor-add-money-dialog-header-new- >p{
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 26px;
+}

@@ -297,7 +297,7 @@ export const WithDrawHistoryTable = () => {
                 <Table sx={{ minWidth: 650, }} size="small" stickyHeader aria-label="sticky table">
                     <TableHead>
                         <TableRow style={{height:'3rem',}}  >
-                            <TableCell style={{fontWeight:'700'}} >Date</TableCell>
+                            <TableCell align='left' style={{fontWeight:'700,',width:'20%'}} >Date</TableCell>
                             <TableCell align='center' style={{fontWeight:'700'}}  >Mathod</TableCell>
                             <TableCell align='center' style={{fontWeight:'700'}} >Amount</TableCell>
                             <TableCell align='center' style={{fontWeight:'700'}} >Status</TableCell>
@@ -314,8 +314,9 @@ export const WithDrawHistoryTable = () => {
                                         <TableRow
                                             key={i.id}
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                            style={{height:'3rem',}}
                                         >
-                                            <TableCell scope="row">
+                                            <TableCell   >
                                                 <p>{i.date}</p>
                                             </TableCell>
                                             <TableCell align='center' >
@@ -325,7 +326,7 @@ export const WithDrawHistoryTable = () => {
                                                 <p>{i.amount}</p>
                                             </TableCell>
 
-                                            <TableCell align="center"  > <p className="tutor-my-booking-table-status-style" style={{ textTransform: 'capitalize', backgroundColor: i.status == 'pending' ? '#FFD1B0' : i.status == 'accept' ? '#D2FFEB' : '#FFB0B0', color: i.status == 'pending' ? '#B84D00' : i.status == 'accept' ? '#098B51' : '#B80000' }} >{i.status} </p> </TableCell>
+                                            <TableCell align="center"  > <p className="tutor-my-booking-table-status-style" style={{ textTransform: 'capitalize', backgroundColor: i.status == 'pending' ? '#FFD1B0' : i.status == 'accept' ? '#D2FFEB' : '#FFB0B0', color: i.status == 'pending' ? '#B84D00' : i.status == 'accept' ? '#098B51' : '#B80000',width:'30%',margin:'auto' }} >{i.status} </p> </TableCell>
 
                                         </TableRow>
                                     </>
@@ -452,6 +453,7 @@ export const WalletEarnongHistoryTable = () => {
                                         <TableRow
                                             key={i.id}
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                            style={{height:'3rem'}}
                                         >
                                             <TableCell scope="row">
                                                 <p>{i.date}</p>

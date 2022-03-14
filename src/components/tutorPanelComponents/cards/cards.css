@@ -403,7 +403,7 @@
     border-bottom: 2px solid #E5E5E5;
 }
 .visa-card-add-card-header-- >p{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: capitalize;
 }
@@ -411,7 +411,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 15px;
+    font-size: 12px;
     padding: 5px 10px;
 }
 
@@ -421,10 +421,11 @@
     justify-content: space-between;
 }
 .visa-card-add-card-body-content-left-div >p{
-    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .visa-card-logo-continer{
-    width: 50px;
+    width: 40px;
    
 }
 .visa-card-logo-continer >img{
@@ -440,7 +441,7 @@
 
 }
 .visa-card-add-card-body-content-right-div >p{
-    margin-left: 10px;
+    padding-left: 10px;
 }
 .visa-card-add-card-footer-container{
     display: flex;
@@ -473,7 +474,7 @@
 }
 .withdraw-money-card-footer-text-container-- >p{
     margin-top: 5px;
-    font-size: 15px;
+    font-size: 14px;
     color: gray;
     text-transform: capitalize;
 }
@@ -484,7 +485,7 @@
         text-transform: capitalize;
         border: none !important;
         text-align: center;
-        font-size: 14px;
+        font-size: 13px;
         text-align: center;
         border-radius: 4px;
 }

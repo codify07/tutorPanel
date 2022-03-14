@@ -8,6 +8,7 @@ import { CalendarComponent } from '../../../components/calendar/calendar';
 import Menu from '@mui/material/Menu';
 import { width } from '@mui/system';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import {WithdrawalMoneyCard} from '../cards/cards'
 
 
 export const SearchByCouseName = () => {
@@ -645,6 +646,133 @@ export const NotificationField = () => {
                         <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
                             Yearly
                         </p>
+                    </div>
+
+                </Menu>
+            </div>
+
+        </>
+    )
+}
+
+// add amount for wallet page 
+
+
+export const AddAmount = () => {
+
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+    return (
+        <>
+            <div className='tutor-create-promotion-prive-before-container--' >
+                <p>
+                    Add Ammount
+                </p>
+                <div className='tutor-create-promotion-price-before-field-container--' >
+                    <button id="demo-positioned-button"
+                        aria-controls={open ? 'demo-positioned-menu' : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={open ? 'true' : undefined}
+                        onClick={handleClick}  >
+                        <p>
+                            $
+                        </p>
+                        <IconButton >
+                            <KeyboardArrowDownIcon />
+                        </IconButton>
+                    </button>
+                    <input id="" type='text' />
+                </div>
+                <Menu
+
+                    anchorEl={anchorEl}
+                    open={open}
+                    onClose={handleClose}
+                    id="demo-positioned-menu"
+                    aria-labelledby="demo-positioned-button"
+                    anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'left',
+
+                    }}
+
+                >
+                    <div style={{ width: '60px' }} >
+                        <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                            $
+                        </p>
+                        <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                            $
+                        </p>
+                        <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                            $
+                        </p>
+                        <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                            $
+                        </p>
+                    </div>
+
+                </Menu>
+            </div>
+
+        </>
+    )
+}
+
+
+// select account
+
+export const SelectAccountField = () => {
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+    return (
+        <>
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    Select Account
+                </p>
+                <div className='tutor-panel-search-start-date-end-date-fields-container' id="demo-positioned-button"
+                    aria-controls={open ? 'demo-positioned-menu' : undefined}
+                    aria-haspopup="true"
+                    aria-expanded={open ? 'true' : undefined}
+                    onClick={handleClick} >
+
+                    <input id='' placeholder='end date' type='text' className="sd-ed-start-date-end-date-input-field" />
+                    <IconButton style={{ padding: '12px', marginRight: '5px' }}  >
+                        <DateRangeIcon style={{ fontSize: '15px' }} />
+                    </IconButton>
+                </div>
+                <Menu
+
+                    anchorEl={anchorEl}
+                    open={open}
+                    onClose={handleClose}
+                    id="demo-positioned-menu"
+                    aria-labelledby="demo-positioned-button"
+                    anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'left',
+
+                    }}
+
+                >
+                    <div onClick={handleClose}  >
+                        <div style={{ height: '200px' }} >
+                            <WithdrawalMoneyCard />
+                        </div>
+
                     </div>
 
                 </Menu>

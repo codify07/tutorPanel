@@ -6,7 +6,8 @@ import certificate from '../../../assets/documentpdf.png'
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import avatar2 from '../../../assets/avatar2.png'
 import CloseIcon from '@mui/icons-material/Close';
-
+import { AddAmount } from '../fields/searchFields'
+import {SelectAccountField} from '../fields/searchFields'
 
 
 export const EditContactDialog = () => {
@@ -553,7 +554,7 @@ export const AddNewGroupChatNextDialog = () => {
         <>
             <Grid container spacing={3} >
                 <Grid item xs={12} md={12} >
-                    
+
 
                     <div className='tutor-profile-contact-edit-dialog-contact-container-chat'  >
                         <p>
@@ -622,6 +623,55 @@ export const AddNewGroupChatNextDialog = () => {
                         </div>
                     </Grid>
                 </Grid>
+            </div>
+
+        </>
+    )
+}
+
+
+// my wallet add money dialog 
+
+export const AddMoneyDialog = () => {
+    return (
+        <>
+            <div>
+                <Grid container spacing={2} >
+                    <Grid item xs={12} md={12} >
+                        <div className='tutor-profile-contact-edit-dialog-contact-container-chat' >
+                            <p>
+                                Add Money
+                            </p>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} >
+                        <div className='tutor-add-money-dialog-header-new-' >
+                            <p>
+                                David Anderson
+                            </p>
+                            <p>
+                                wallet balance <br />
+                                <span>$65,000</span>
+                            </p>
+                        </div>
+                    </Grid>
+
+                </Grid>
+
+                <div style={{width:'92%',margin:'auto'}} >
+                    <Grid container spacing={2} >
+                        <Grid item xs={12} >
+                            <div style={{marginTop:'15px'}} >
+                                <AddAmount />
+                            </div>
+                        </Grid>
+                        <Grid item xs={12}  >
+                            <div style={{marginTop:'15px'}} >
+                                <SelectAccountField />
+                            </div>
+                        </Grid>
+                    </Grid>
+                </div>
             </div>
 
         </>

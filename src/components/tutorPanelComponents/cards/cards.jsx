@@ -456,10 +456,10 @@ export const BankCard = () => {
                             David Anderson
                         </p>
                         <IconButton style={{ padding: '7px ', marginLeft: '5px' }} >
-                            <ModeEditIcon />
+                            <ModeEditIcon style={{fontSize:'18px'}} />
                         </IconButton>
                         <IconButton style={{ padding: '7px' }} >
-                            <DeleteOutlineIcon />
+                            <DeleteOutlineIcon style={{fontSize:'18px'}} />
                         </IconButton>
                     </div>
                 </div>
@@ -483,10 +483,10 @@ export const BankCard = () => {
                             David Anderson
                         </p>
                         <IconButton style={{ padding: '7px ', marginLeft: '5px' }} >
-                            <ModeEditIcon />
+                            <ModeEditIcon style={{fontSize:'18px'}} />
                         </IconButton>
                         <IconButton style={{ padding: '7px' }} >
-                            <DeleteOutlineIcon />
+                            <DeleteOutlineIcon style={{fontSize:'18px'}} />
                         </IconButton>
                     </div>
                 </div>
@@ -536,10 +536,10 @@ export const WithdrawalMoneyCard = () => {
                             David Anderson
                         </p>
                         <IconButton style={{ padding: '7px ', marginLeft: '5px' }} >
-                            <ModeEditIcon />
+                            <ModeEditIcon style={{fontSize:'18px'}} />
                         </IconButton>
                         <IconButton style={{ padding: '7px' }} >
-                            <DeleteOutlineIcon />
+                            <DeleteOutlineIcon style={{fontSize:'18px'}} />
                         </IconButton>
                     </div>
                 </div>
@@ -563,10 +563,10 @@ export const WithdrawalMoneyCard = () => {
                             David Anderson
                         </p>
                         <IconButton style={{ padding: '7px ', marginLeft: '5px' }} >
-                            <ModeEditIcon />
+                            <ModeEditIcon style={{fontSize:'18px'}} />
                         </IconButton>
                         <IconButton style={{ padding: '7px' }} >
-                            <DeleteOutlineIcon />
+                            <DeleteOutlineIcon style={{fontSize:'18px'}} />
                         </IconButton>
                     </div>
                 </div>
