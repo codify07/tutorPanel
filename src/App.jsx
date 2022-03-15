@@ -31,6 +31,8 @@ import {MyPromotions} from './pages/tutor-panal/promotion/promotion'
 import {CreatePromotion} from './pages/tutor-panal/promotion/createPromotion'
 import {Notification} from './pages/tutor-panal/notification/notification'
 import {MyWallet} from './pages/tutor-panal/myWallet/myWallet'
+import {CreateQuizParent} from './pages/tutor-panal/createQuiz/createQuizParent'
+import {CreateQuizTable} from './pages/tutor-panal/createQuiz/createQuiz'
 
 
 
@@ -77,7 +79,9 @@ function App() {
              </Route>
               <Route path='notifications' element={<Notification />} /> 
               <Route path='my-wallet' element={<MyWallet />} /> 
-
+              <Route path='create-quiz' element={<CreateQuizParent />}>
+                <Route path='' element={<CreateQuizTable />}  />
+              </Route> 
           </Route>
 
 

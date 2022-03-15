@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import TablePagination from '@mui/material/TablePagination';
 import TableFooter from '@mui/material/TableFooter';
 import Table from '@mui/material/Table';
@@ -9,6 +9,14 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import promotionPic from '../../../assets/promotionImg.png'
+import quizPic from '../../../assets/quiz.png'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import PauseIcon from '@mui/icons-material/Pause';
+
+
+
+
+
 
 export const PromotionTable = () => {
 
@@ -290,17 +298,17 @@ export const WithDrawHistoryTable = () => {
 
             <TableContainer component={Paper} sx={{ maxHeight: 440 }} >
                 <div style={{ borderBottom: '2px solid #E5E5E5', padding: '8px 10px' }} >
-                    <p style={{fontWeight:'550'}} >
+                    <p style={{ fontWeight: '550' }} >
                         Withdraw History
                     </p>
                 </div>
                 <Table sx={{ minWidth: 650, }} size="small" stickyHeader aria-label="sticky table">
                     <TableHead>
-                        <TableRow style={{height:'3rem',}}  >
-                            <TableCell align='left' style={{fontWeight:'700,',width:'20%'}} >Date</TableCell>
-                            <TableCell align='center' style={{fontWeight:'700'}}  >Mathod</TableCell>
-                            <TableCell align='center' style={{fontWeight:'700'}} >Amount</TableCell>
-                            <TableCell align='center' style={{fontWeight:'700'}} >Status</TableCell>
+                        <TableRow style={{ height: '3rem', }}  >
+                            <TableCell align='left' style={{ fontWeight: '700,', width: '20%' }} >Date</TableCell>
+                            <TableCell align='center' style={{ fontWeight: '700' }}  >Mathod</TableCell>
+                            <TableCell align='center' style={{ fontWeight: '700' }} >Amount</TableCell>
+                            <TableCell align='center' style={{ fontWeight: '700' }} >Status</TableCell>
 
 
                         </TableRow>
@@ -314,7 +322,7 @@ export const WithDrawHistoryTable = () => {
                                         <TableRow
                                             key={i.id}
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                                            style={{height:'3rem',}}
+                                            style={{ height: '3rem', }}
                                         >
                                             <TableCell   >
                                                 <p>{i.date}</p>
@@ -326,7 +334,7 @@ export const WithDrawHistoryTable = () => {
                                                 <p>{i.amount}</p>
                                             </TableCell>
 
-                                            <TableCell align="center"  > <p className="tutor-my-booking-table-status-style" style={{ textTransform: 'capitalize', backgroundColor: i.status == 'pending' ? '#FFD1B0' : i.status == 'accept' ? '#D2FFEB' : '#FFB0B0', color: i.status == 'pending' ? '#B84D00' : i.status == 'accept' ? '#098B51' : '#B80000',width:'30%',margin:'auto' }} >{i.status} </p> </TableCell>
+                                            <TableCell align="center"  > <p className="tutor-my-booking-table-status-style" style={{ textTransform: 'capitalize', backgroundColor: i.status == 'pending' ? '#FFD1B0' : i.status == 'accept' ? '#D2FFEB' : '#FFB0B0', color: i.status == 'pending' ? '#B84D00' : i.status == 'accept' ? '#098B51' : '#B80000', width: '30%', margin: 'auto' }} >{i.status} </p> </TableCell>
 
                                         </TableRow>
                                     </>
@@ -384,40 +392,40 @@ export const WalletEarnongHistoryTable = () => {
         {
             id: '1',
             date: 'JAN 4, 2022, 10:04 am',
-           name:'Willow Anderson',
-           discription:'Lorem ipsum dolor sit a...',
-           country:'burnside',
-           amount:'$2000',
+            name: 'Willow Anderson',
+            discription: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            amount: '$2000',
 
         },
         {
             id: '2',
             date: 'JAN 4, 2022, 10:04 am',
-           name:'Willow Anderson',
-           discription:'Lorem ipsum dolor sit a...',
-           country:'burnside',
-           amount:'$2000',
+            name: 'Willow Anderson',
+            discription: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            amount: '$2000',
 
         },
         {
             id: '3',
             date: 'JAN 4, 2022, 10:04 am',
-           name:'Willow Anderson',
-           discription:'Lorem ipsum dolor sit a...',
-           country:'burnside',
-           amount:'$2000',
+            name: 'Willow Anderson',
+            discription: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            amount: '$2000',
 
         },
         {
             id: '4',
             date: 'JAN 4, 2022, 10:04 am',
-           name:'Willow Anderson',
-           discription:'Lorem ipsum dolor sit a...',
-           country:'burnside',
-           amount:'$2000',
+            name: 'Willow Anderson',
+            discription: 'Lorem ipsum dolor sit a...',
+            country: 'burnside',
+            amount: '$2000',
 
         },
-        
+
 
 
 
@@ -428,18 +436,18 @@ export const WalletEarnongHistoryTable = () => {
 
             <TableContainer component={Paper} sx={{ maxHeight: 440 }} >
                 <div style={{ borderBottom: '2px solid #E5E5E5', padding: '8px 10px' }} >
-                    <p style={{fontWeight:'550'}} >
+                    <p style={{ fontWeight: '550' }} >
                         Wallet Earning History
                     </p>
                 </div>
                 <Table sx={{ minWidth: 650, }} size="small" stickyHeader aria-label="sticky table">
                     <TableHead>
-                        <TableRow style={{height:'3rem',}}  >
-                            <TableCell style={{fontWeight:'700'}} >Date</TableCell>
-                            <TableCell align='center' style={{fontWeight:'700'}}  >Name</TableCell>
-                            <TableCell align='center' style={{fontWeight:'700'}} >Description</TableCell>
-                            <TableCell align='center' style={{fontWeight:'700'}} >Country</TableCell>
-                            <TableCell align='center' style={{fontWeight:'700'}} >Amount</TableCell>
+                        <TableRow style={{ height: '3rem', }}  >
+                            <TableCell style={{ fontWeight: '700' }} >Date</TableCell>
+                            <TableCell align='center' style={{ fontWeight: '700' }}  >Name</TableCell>
+                            <TableCell align='center' style={{ fontWeight: '700' }} >Description</TableCell>
+                            <TableCell align='center' style={{ fontWeight: '700' }} >Country</TableCell>
+                            <TableCell align='center' style={{ fontWeight: '700' }} >Amount</TableCell>
 
 
                         </TableRow>
@@ -453,7 +461,7 @@ export const WalletEarnongHistoryTable = () => {
                                         <TableRow
                                             key={i.id}
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                                            style={{height:'3rem'}}
+                                            style={{ height: '3rem' }}
                                         >
                                             <TableCell scope="row">
                                                 <p>{i.date}</p>
@@ -501,3 +509,186 @@ export const WalletEarnongHistoryTable = () => {
         </>
     )
 }
+
+
+// create quiz table 
+
+
+export const QuizTable = () => {
+
+    const [page, setPage] = React.useState(0);
+    const [rowsPerPage, setRowsPerPage] = React.useState(5);
+    const [isAudioTrue, setIsAudioTrue] = useState(false);
+
+    const handleChangePage = (event, newPage) => {
+        setPage(newPage);
+    };
+
+    const handleChangeRowsPerPage = (event) => {
+        setRowsPerPage(+event.target.value);
+        setPage(0);
+    };
+
+    const  handleAudioClick = () => {
+        setIsAudioTrue(!isAudioTrue)
+    }
+
+    const createQuiz = [
+
+        {
+            id: '1',
+            date: 'JAN 4, 2022, 10:04 am',
+            img: `${quizPic}`,
+            audio: '',
+            quizTitle: 'Pellentesque et purus pharetra, venenatis...',
+            NoOfQuest: '50',
+
+
+        },
+        {
+            id: '2',
+            date: 'JAN 4, 2022, 10:04 am',
+            img: `${quizPic}`,
+            audio: '',
+            quizTitle: 'Pellentesque et purus pharetra, venenatis...',
+            NoOfQuest: '50',
+
+
+        },
+        {
+            id: '3',
+            date: 'JAN 4, 2022, 10:04 am',
+            img: `${quizPic}`,
+            audio: '',
+            quizTitle: 'Pellentesque et purus pharetra, venenatis...',
+            NoOfQuest: '50',
+
+
+        },
+        {
+            id: '4',
+            date: 'JAN 4, 2022, 10:04 am',
+            img: `${quizPic}`,
+            audio: '',
+            quizTitle: 'Pellentesque et purus pharetra, venenatis...',
+            NoOfQuest: '50',
+
+
+        },
+        {
+            id: '5',
+            date: 'JAN 4, 2022, 10:04 am',
+            img: `${quizPic}`,
+            audio: '',
+            quizTitle: 'Pellentesque et purus pharetra, venenatis...',
+            NoOfQuest: '50',
+
+
+        },
+
+
+
+
+
+
+    ];
+    return (
+        <>
+
+            <TableContainer component={Paper} sx={{ maxHeight: 440 }} >
+                <Table sx={{ minWidth: 650, }} size="small" stickyHeader aria-label="sticky table">
+                    <TableHead>
+                        <TableRow style={{ height: '3rem', }}  >
+                            <TableCell style={{ fontWeight: '700' }} >Date</TableCell>
+                            <TableCell align='center' style={{ fontWeight: '700' }}  >Image</TableCell>
+                            <TableCell align='center' style={{ fontWeight: '700' }} >Audio</TableCell>
+                            <TableCell align='left' style={{ fontWeight: '700' }} >Quiz Title</TableCell>
+                            <TableCell align='center' style={{ fontWeight: '700' }} >No Of Questions</TableCell>
+                            <TableCell align='center' style={{ fontWeight: '700' }} >Status</TableCell>
+                            <TableCell align='center' style={{ fontWeight: '700' }} >Admin Status</TableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody  >
+
+                        {
+                            createQuiz.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(i => (
+                                (
+                                    <>
+                                        <TableRow
+                                            key={i.id}
+                                            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                            style={{ height: '3rem' }}
+                                        >
+                                            <TableCell scope="row">
+                                                <p>{i.date}</p>
+                                            </TableCell>
+                                            <TableCell align='center' >
+                                                <img src={i.img} alt="pic" />
+                                            </TableCell>
+                                            <TableCell align='center' >
+                                                <button onClick={handleAudioClick} style={{ border: 'none', padding: '7px 9px', backgroundColor: '#76AC2D', borderRadius: '10px' }} >
+                                                    {
+                                                        isAudioTrue ?
+                                                            <PauseIcon style={{color:'white'}} />
+                                                            :
+
+                                                            <PlayArrowIcon style={{color:'white'}} />
+
+                                                    }
+                                                </button>
+                                            </TableCell>
+                                            <TableCell align='left' style={{ width: '200px', overflow: 'hidden' }} >
+                                                <p>{i.quizTitle}</p>
+                                            </TableCell>
+                                            <TableCell align='center' >
+                                                <p>{i.NoOfQuest}</p>
+                                            </TableCell>
+                                            <TableCell align='center' >
+                                                <div>
+                                                    <p style={{backgroundColor:'#FFD1B0',padding:'5px',color:'#B84D00',borderRadius:'4px',width:'80px',margin:'auto'}} >
+                                                        pending
+                                                    </p>
+
+                                                </div>
+                                            </TableCell>
+
+                                            <TableCell align='center' >
+                                                <div>
+                                                    <p style={{backgroundColor:'black',padding:'5px',color:'white',borderRadius:'4px',width:'80px',margin:'auto'}} >
+                                                        Action
+                                                    </p>
+
+                                                </div>
+                                            </TableCell>
+
+
+                                        </TableRow>
+                                    </>
+                                )
+                            ))
+                        }
+
+                    </TableBody>
+                </Table>
+
+                <TableFooter>
+                    <TableRow>
+                        <TablePagination
+                            rowsPerPageOptions={[5, 10, 50]}
+                            count={createQuiz.length}
+                            rowsPerPage={rowsPerPage}
+                            page={page}
+                            onPageChange={handleChangePage}
+                            onRowsPerPageChange={handleChangeRowsPerPage}
+                            component='div'
+
+                        />
+                    </TableRow>
+                </TableFooter>
+
+            </TableContainer>
+
+        </>
+    )
+}
+

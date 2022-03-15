@@ -5,7 +5,7 @@ import totalBookings from '../../../assets/colorMyBooking.png'
 import arrow from '../../../assets/arrow.png'
 import courses2 from '../../../assets/courses2.png'
 import locationIcon from '../../../assets/locationicon.png'
-import { Button, IconButton } from '@mui/material'
+import { Button, IconButton, Grid, Dialog } from '@mui/material'
 import { Link } from 'react-router-dom'
 import RemoveIcon from '@mui/icons-material/Remove';
 import Collapse from '@mui/material/Collapse';
@@ -14,6 +14,9 @@ import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import AddIcon from '@mui/icons-material/Add';
 import visaLogo from '../../../assets/visa.png'
 import masterCardLogo from '../../../assets/masterCard.png'
+import CloseIcon from '@mui/icons-material/Close';
+import { MyWalletCardHolderName, MyWalletExpiryDate, MyWalletAccountNumber,MyWalletCw } from '../fields/searchFields'
+
 
 
 
@@ -430,6 +433,12 @@ export const MyCoursesDetialPackagetwo = () => {
 
 
 export const BankCard = () => {
+
+    const [isAddCardOpen, setIsAddCardOpen] = useState(false);
+
+    const handleAddCardClose = () => {
+        setIsAddCardOpen(false)
+    }
     return (
         <>
             <div className='visa-card-add-card-container' >
@@ -455,11 +464,13 @@ export const BankCard = () => {
                         <p>
                             David Anderson
                         </p>
-                        <IconButton style={{ padding: '7px ', marginLeft: '5px' }} >
-                            <ModeEditIcon style={{fontSize:'18px'}} />
+                        <IconButton style={{ padding: '7px ', marginLeft: '5px' }}  onClick={()=>{
+                            setIsAddCardOpen(true)
+                        }}>
+                            <ModeEditIcon style={{ fontSize: '18px' }} />
                         </IconButton>
                         <IconButton style={{ padding: '7px' }} >
-                            <DeleteOutlineIcon style={{fontSize:'18px'}} />
+                            <DeleteOutlineIcon style={{ fontSize: '18px' }} />
                         </IconButton>
                     </div>
                 </div>
@@ -482,22 +493,77 @@ export const BankCard = () => {
                         <p>
                             David Anderson
                         </p>
-                        <IconButton style={{ padding: '7px ', marginLeft: '5px' }} >
-                            <ModeEditIcon style={{fontSize:'18px'}} />
+                        <IconButton style={{ padding: '7px ', marginLeft: '5px' }} onClick={()=> {
+                            setIsAddCardOpen(true)
+                        }} >
+                            <ModeEditIcon style={{ fontSize: '18px' }} />
                         </IconButton>
                         <IconButton style={{ padding: '7px' }} >
-                            <DeleteOutlineIcon style={{fontSize:'18px'}} />
+                            <DeleteOutlineIcon style={{ fontSize: '18px' }} />
                         </IconButton>
                     </div>
                 </div>
                 <div className='visa-card-add-card-footer-container' >
-                    <button>
+                    <button onClick={() => {
+                        setIsAddCardOpen(true)
+                    }} >
                         <p style={{ marginLeft: '12px' }} >
                             Add new Card
                         </p>
                         <AddIcon />
                     </button>
                 </div>
+
+
+                {/* add new card dialog */}
+
+                <Dialog open={isAddCardOpen} fullWidth maxWidth='sm' onClose={handleAddCardClose} >
+                    <div style={{ paddingBottom: '40px', }} >
+                        <div className='first-tutor-panel-dialog-close-btn-icon-container' >
+                            <IconButton className='first-tutor-panel-dialog-close-icon' onClick={() => {
+                                handleAddCardClose();
+                            }} >
+                                <CloseIcon />
+                            </IconButton>
+                        </div>
+                        <div style={{fontSize:'17px',fontWeight:'600',paddingTop:'12px',paddingBottom:'12px',borderBottom:'2px solid #E5E5E5'}} >
+                            <p style={{textAlign:'center'}} >
+                                Add New Card
+                            </p>
+                        </div>
+                        <div style={{paddingLeft:'20px',paddingRight:'20px',marginTop:'20px'}} >
+                            <Grid container spacing={2} >
+                                <Grid item xs={12} >
+                                    <MyWalletCardHolderName />
+                                </Grid>
+                                <Grid item xs={12} >
+                                    <div>
+                                        <MyWalletAccountNumber />
+                                    </div>
+                                </Grid>
+                                <Grid item xs={12} lg={6} >
+                                    <div>
+                                        <MyWalletExpiryDate />
+                                    </div>
+                                </Grid>
+                                <Grid item xs={12} lg={6} >
+                                    <div>
+                                        <MyWalletCw />
+                                    </div>
+                                </Grid>
+                            </Grid>
+                        </div>
+                        <Grid item xs={12} >
+                            <div className='tutor-my-wallet-add-money-dialog-submit-btn-cont--' >
+                                <button type='submit' onClick={() => {
+                                    handleAddCardClose();
+                                }} >
+                                    submit
+                                </button>
+                            </div>
+                        </Grid>
+                    </div>
+                </Dialog>
 
             </div>
 
@@ -536,10 +602,10 @@ export const WithdrawalMoneyCard = () => {
                             David Anderson
                         </p>
                         <IconButton style={{ padding: '7px ', marginLeft: '5px' }} >
-                            <ModeEditIcon style={{fontSize:'18px'}} />
+                            <ModeEditIcon style={{ fontSize: '18px' }} />
                         </IconButton>
                         <IconButton style={{ padding: '7px' }} >
-                            <DeleteOutlineIcon style={{fontSize:'18px'}} />
+                            <DeleteOutlineIcon style={{ fontSize: '18px' }} />
                         </IconButton>
                     </div>
                 </div>
@@ -563,10 +629,10 @@ export const WithdrawalMoneyCard = () => {
                             David Anderson
                         </p>
                         <IconButton style={{ padding: '7px ', marginLeft: '5px' }} >
-                            <ModeEditIcon style={{fontSize:'18px'}} />
+                            <ModeEditIcon style={{ fontSize: '18px' }} />
                         </IconButton>
                         <IconButton style={{ padding: '7px' }} >
-                            <DeleteOutlineIcon style={{fontSize:'18px'}} />
+                            <DeleteOutlineIcon style={{ fontSize: '18px' }} />
                         </IconButton>
                     </div>
                 </div>

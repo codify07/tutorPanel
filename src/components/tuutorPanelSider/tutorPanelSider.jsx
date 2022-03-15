@@ -28,7 +28,8 @@ import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import GroupIcon from '@mui/icons-material/Group';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import PointOfSaleIcon from '@mui/icons-material/PointOfSale';
-
+import QuizIcon from '@mui/icons-material/Quiz';
+import StoreIcon from '@mui/icons-material/Store';
 
 
 
@@ -100,11 +101,24 @@ export const TutotPanelSidBar = () => {
                             </Link>
                         </li>
                         <li className="tutor-panel-sider-list-item" >
+                            <Link to='create-quiz' className='tutor-panel-sider-link' >
+                                <QuizIcon />
+                                <p>create quiz</p>
+                            </Link>
+                        </li>
+                        <li className="tutor-panel-sider-list-item" >
+                            <Link to='purchase-product' className='tutor-panel-sider-link' >
+                                <StoreIcon />
+                                <p>purchase product</p>
+                            </Link>
+                        </li>
+                        <li className="tutor-panel-sider-list-item" >
                             <Link to='invite-friend' className='tutor-panel-sider-link' >
                                 <GroupIcon />
                                 <p>invite friends</p>
                             </Link>
                         </li>
+
                         <li className="tutor-panel-sider-list-item" >
                             <Link to='dispute' className='tutor-panel-sider-link' >
                                 <PsychologyIcon />

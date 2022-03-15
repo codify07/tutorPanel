@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './fields.css'
 import SearchIcon from '@mui/icons-material/Search';
 import dateIcon from '../../../assets/startEndDate.png'
@@ -6,9 +6,8 @@ import DateRangeIcon from '@mui/icons-material/DateRange';
 import { IconButton } from '@mui/material'
 import { CalendarComponent } from '../../../components/calendar/calendar';
 import Menu from '@mui/material/Menu';
-import { width } from '@mui/system';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import {WithdrawalMoneyCard} from '../cards/cards'
+import { WithdrawalMoneyCard } from '../cards/cards'
 
 
 export const SearchByCouseName = () => {
@@ -616,7 +615,7 @@ export const NotificationField = () => {
 
                     <input id='' placeholder='All' type='text' className="sd-ed-start-date-end-date-input-field" />
                     <IconButton style={{ padding: '4px', marginRight: '5px' }}  >
-                    <KeyboardArrowDownIcon style={{ fontSize: '15px' }} />
+                        <KeyboardArrowDownIcon style={{ fontSize: '15px' }} />
                     </IconButton>
                 </div>
                 <Menu
@@ -749,9 +748,9 @@ export const SelectAccountField = () => {
                     aria-expanded={open ? 'true' : undefined}
                     onClick={handleClick} >
 
-                    <input id='' placeholder='end date' type='text' className="sd-ed-start-date-end-date-input-field" />
+                    <input id='' placeholder='select account' type='text' className="sd-ed-start-date-end-date-input-field" />
                     <IconButton style={{ padding: '12px', marginRight: '5px' }}  >
-                        <DateRangeIcon style={{ fontSize: '15px' }} />
+                        <KeyboardArrowDownIcon style={{ fontSize: '15px' }} />
                     </IconButton>
                 </div>
                 <Menu
@@ -776,6 +775,188 @@ export const SelectAccountField = () => {
                     </div>
 
                 </Menu>
+            </div>
+
+        </>
+    )
+}
+
+// card holder name 
+
+export const MyWalletCardHolderName = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    Card Holder SearchByCouseName
+                </p>
+                <div  >
+
+                    <input id='' placeholder='card holder name' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// account number 
+
+
+export const MyWalletAccountNumber = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    Account Number
+                </p>
+                <div  >
+
+                    <input id='' placeholder='xxxx xxxx xxxx xxxx' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// my wallet card expiry date 
+
+export const MyWalletExpiryDate = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    Expiry date
+                </p>
+                <div  >
+
+                    <input id='' placeholder='dd/mm' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// my wallet cw
+
+export const MyWalletCw = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    CW
+                </p>
+                <div  >
+
+                    <input id='' placeholder='xxx' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+
+// quiz title 
+
+
+export const Quiztitle = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    Search by quiz title
+                </p>
+                <div  >
+
+                    <input id='' placeholder='search by quiz title' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// quiz status filter 
+
+export const QuizStatus = () => {
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    Status
+                </p>
+                <div  >
+
+                    <div className='tutor-panel-search-start-date-end-date-fields-container' id="demo-positioned-button"
+                        aria-controls={open ? 'demo-positioned-menu' : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={open ? 'true' : undefined}
+                        onClick={handleClick} >
+
+                        <input id='' placeholder='All' type='text' className="sd-ed-start-date-end-date-input-field" />
+                        <IconButton style={{ padding: '6px', marginRight: '2px' }}  >
+                            <KeyboardArrowDownIcon style={{ fontSize: '18px' }} />
+                        </IconButton>
+                    </div>
+                    <Menu
+
+                        anchorEl={anchorEl}
+                        open={open}
+                        onClose={handleClose}
+                        id="demo-positioned-menu"
+                        aria-labelledby="demo-positioned-button"
+                        anchorOrigin={{
+                            vertical: 'bottom',
+                            horizontal: 'left',
+
+                        }}
+
+                    >
+                        <div style={{ width:'auto',padding:'10px 0px' }} >
+                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                                All
+                            </p>
+                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                                Pending
+                            </p>
+                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                                Active
+                            </p>
+                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                                Deactive
+                            </p>
+                        </div>
+
+                    </Menu>
+                </div>
             </div>
 
         </>

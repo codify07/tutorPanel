@@ -103,7 +103,7 @@ export const MyWallet = () => {
                 {/* ____ dialogs ____ */}
 
                 <Dialog open={isAddMoneyOpen} fullWidth maxWidth='sm' onClose={handleAddMoneyClose} >
-                    <div style={{paddingBottom:'40px'}} >
+                    <div style={{ paddingBottom: '40px' }} >
                         <div className='first-tutor-panel-dialog-close-btn-icon-container' >
                             <IconButton className='first-tutor-panel-dialog-close-icon' onClick={() => {
                                 handleAddMoneyClose();
@@ -114,6 +114,41 @@ export const MyWallet = () => {
                         <div>
                             <AddMoneyDialog />
                         </div>
+                        <Grid item xs={12} >
+                            <div className='tutor-my-wallet-add-money-dialog-submit-btn-cont--' >
+                                <button type='submit' onClick={() => {
+                                    handleAddMoneyClose();
+                                }} >
+                                    submit
+                                </button>
+                            </div>
+                        </Grid>
+                    </div>
+                </Dialog>
+
+                {/* add new card dialog */}
+
+                <Dialog open={isAddMoneyOpen} fullWidth maxWidth='sm' onClose={handleAddMoneyClose} >
+                    <div style={{ paddingBottom: '40px' }} >
+                        <div className='first-tutor-panel-dialog-close-btn-icon-container' >
+                            <IconButton className='first-tutor-panel-dialog-close-icon' onClick={() => {
+                                handleAddMoneyClose();
+                            }} >
+                                <CloseIcon />
+                            </IconButton>
+                        </div>
+                        <div>
+                            <AddMoneyDialog />
+                        </div>
+                        <Grid item xs={12} >
+                            <div className='tutor-my-wallet-add-money-dialog-submit-btn-cont--' >
+                                <button type='submit' onClick={() => {
+                                    handleAddMoneyClose();
+                                }} >
+                                    submit
+                                </button>
+                            </div>
+                        </Grid>
                     </div>
                 </Dialog>
 

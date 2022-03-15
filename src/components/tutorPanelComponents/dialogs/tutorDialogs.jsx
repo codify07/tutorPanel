@@ -10,6 +10,7 @@ import { AddAmount } from '../fields/searchFields'
 import {SelectAccountField} from '../fields/searchFields'
 
 
+
 export const EditContactDialog = () => {
     return (
         <>
@@ -670,6 +671,7 @@ export const AddMoneyDialog = () => {
                                 <SelectAccountField />
                             </div>
                         </Grid>
+                        
                     </Grid>
                 </div>
             </div>

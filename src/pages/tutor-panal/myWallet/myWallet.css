@@ -148,4 +148,22 @@
 .tutor-my-wallet-page-header-card-tw-add-money-btn-cont- >button:hover{
     cursor: pointer;
 }
+.tutor-my-wallet-add-money-dialog-submit-btn-cont-- {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.tutor-my-wallet-add-money-dialog-submit-btn-cont-- >button{
+    
+    padding: 8px 80px;
+    background-color: #76AC2D;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none !important;
+}
+.tutor-my-wallet-add-money-dialog-submit-btn-cont-- >button:hover{
+    cursor: pointer;
+}
 
