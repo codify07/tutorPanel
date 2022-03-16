@@ -6,6 +6,7 @@
 .tutor-create-quiz-parent-page-container--{
     width: 95%;
     margin: auto;
+    padding-bottom: 40px;
 }
 .tutor-create-quiz-parent-page-create-quiz-btn-contianer--{
     display: flex;
@@ -21,6 +22,18 @@
     border: none !important;
     text-transform: capitalize;
     font-size: 17px;
+}
+.tutor-create--quiz-btn{
+    background-color: #76AC2D;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: none !important;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+.tutor-create--quiz-btn:hover{
+    cursor: pointer;
 }
 .tutor-create-quiz-parent-page-create-quiz-btn-contianer-- >button:hover{
     cursor: pointer;
@@ -38,4 +51,246 @@
     margin-top:25px;
     text-transform: uppercase;
     font-size: 15.5px;
+}
+
+/* view page */
+
+.tutor-create-quiz-view-quiz-page-header-btns--cont{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.tutor-create-quiz-view-quiz-page-header-btns--cont >button{
+    background-color: #76AC2D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    margin-top:25px;
+    text-transform: capitalize;
+    font-size: 15.5px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.tutor-create-quiz-view-quiz-page-header-btns--cont >button:hover{
+    cursor: pointer;
+}
+.edit-link-tutor-quiz-{
+    background-color: #76AC2D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    margin-top:25px;
+    text-transform: capitalize;
+    font-size: 15.5px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none !important;
+}
+.tutor-view-quiz--header-p-container{
+    margin-top: 20px;
+}
+.tutor-view-quiz--header-p-container >p{
+    font-size: 17px;
+    font-weight: 550;
+}
+.tutor-quiz-q1-img-upload-container{
+    padding: 30px 40px;
+}
+.tutor-q1-progress-bar-content-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.tutor-view-quiz-play--btn{
+    background-color: #76AC2D;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 8px;
+}
+.tutor-view-quiz-play--btn:hover{
+    cursor: pointer;
+}
+.tutor-view-quiz-option-container{
+    background-color: #76AC2D;
+    padding: 6px 20px ;
+    border-radius: 5px;
+}
+.tutor-view-quiz-option-container:hover{
+    cursor: pointer;
+}
+.tutor-view-quiz-option-container >p{
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+
+}
+.tutor-view-quiz-option-container-guttor{
+    background-color: #EDEDED;
+    padding: 6px 20px ;
+    border-radius: 5px;
+}
+.tutor-view-quiz-option-container-guttor:hover{
+    cursor: pointer;
+}
+.tutor-view-quiz-option-container-guttor >p{
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+}
+
+/* edit quiz */
+.tutor-quiz-edit-quiz-header-container--{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.tutor-quiz-edit-quiz-header-container-- >button{
+    background-color: #76AC2D;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 20px;
+    margin-right: 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.tutor-quiz-edit-quiz-header-container-- >button:hover{
+    cursor: pointer;
+}
+.--tutor-edit-quiz-q1-content-container-n{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.--tutor-edit-quiz-q1-input-{
+    width: 87%;
+    margin-top: 10px;
+}
+.--tutor-edit-quiz-q1-input- >input{
+    padding: 9px 0px;
+    border-radius: 5px;
+    border: 2px solid #E5E5E5 ;
+    outline: none !important; 
+}
+
+@media screen and (max-width:1000px) {
+    .--tutor-edit-quiz-q1-input-{
+        width: 70%;
+    }   
+}
+.del-icon-absolute{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    border-radius: 2px;
+    background-color: white;
+   padding: 4px;
+    margin-right: 10px;
+    
+}
+.del-icon-absolute:hover{
+    cursor: pointer;
+}
+
+.nicon-dell-icon{
+   font-size: 13px;
+    color: #76AC2D;
+    
+}
+.tutor-quiz-edit-quiz-up-load--img--cont:hover{
+    cursor: pointer;
+}
+.tutor-edit-quiz-option---container{
+    border: 2px solid #E5E5E5;
+    border-radius: 5px;
+}
+.tutor-edit-quiz-option---container >h5{
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.tutor-edit-quiz-option---correct-cont{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #E9E9E9;
+    padding-right: 20px;
+}
+.tutor-edit-quiz-option---correct-cont >p{
+    margin-right: 7px;
+   
+}
+.tutor-edit-quiz-option---correct-cont >input{
+    width:16px;
+    height: 16px;
+    border: none;
+    outline: none;
+    border: 2px solid #76AC2D !important;
+}
+.tutor-edit-quiz-option---correct-cont >input:checked:before{
+    border: 1px solid #76AC2D !important;
+    outline: none !important;
+    background-color: none !important;
+    color: #76AC2D;
+}
+.tutor-edit-quiz-add-new--btn-cont{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.tutor-edit-quiz-add-new--btn-cont >button{
+    background-color: #76AC2D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    margin-top:25px;
+    text-transform: capitalize;
+    font-size: 15.5px;
+    margin-right: 12px;
+}
+.tutor-edit-quiz-add-new--btn-cont >button:hover{
+    cursor: pointer;
+}
+
+/* create quiz */
+
+.tutor-create-quiz-record-audio-btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.tutor-create-quiz-record-audio-btn >button{
+    background-color: #76AC2D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 25px;
+    margin-top:25px;
+    text-transform: capitalize;
+    font-size: 17px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tutor-create-quiz-record-audio-btn >button:hover{
+    cursor: pointer;
 }

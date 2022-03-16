@@ -962,3 +962,70 @@ export const QuizStatus = () => {
         </>
     )
 }
+
+// quiz & question title
+
+export const EditQuiztitle = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                  Quiz Title   
+                </p>
+                <div  >
+
+                    <input id='' placeholder='' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// purchase product 
+
+
+export const PurchaseProductSearchByName = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                  Search By Name 
+                </p>
+                <div  >
+
+                    <input id='' placeholder='' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// search by price 
+
+export const PurchaseProductSearchByPrice = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                  Search By Price 
+                </p>
+                <div  >
+
+                    <input id='' placeholder='' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}

@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import TablePagination from '@mui/material/TablePagination';
 import TableFooter from '@mui/material/TableFooter';
 import Table from '@mui/material/Table';
@@ -12,7 +12,9 @@ import promotionPic from '../../../assets/promotionImg.png'
 import quizPic from '../../../assets/quiz.png'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import PauseIcon from '@mui/icons-material/Pause';
-
+import { Menu } from '@mui/material'
+import './tables.css'
+import { Link } from 'react-router-dom'
 
 
 
@@ -519,6 +521,8 @@ export const QuizTable = () => {
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(5);
     const [isAudioTrue, setIsAudioTrue] = useState(false);
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const [anchorElm, setAnchorElm] = React.useState(null);
 
     const handleChangePage = (event, newPage) => {
         setPage(newPage);
@@ -529,9 +533,26 @@ export const QuizTable = () => {
         setPage(0);
     };
 
-    const  handleAudioClick = () => {
+    const handleAudioClick = () => {
         setIsAudioTrue(!isAudioTrue)
     }
+
+
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
+    const openTwo = Boolean(anchorElm);
+    const handleClickTwo = (event) => {
+        setAnchorElm(event.currentTarget);
+    };
+    const handleCloseTwo = () => {
+        setAnchorElm(null);
+    };
 
     const createQuiz = [
 
@@ -629,10 +650,10 @@ export const QuizTable = () => {
                                                 <button onClick={handleAudioClick} style={{ border: 'none', padding: '7px 9px', backgroundColor: '#76AC2D', borderRadius: '10px' }} >
                                                     {
                                                         isAudioTrue ?
-                                                            <PauseIcon style={{color:'white'}} />
+                                                            <PauseIcon style={{ color: 'white' }} />
                                                             :
 
-                                                            <PlayArrowIcon style={{color:'white'}} />
+                                                            <PlayArrowIcon style={{ color: 'white' }} />
 
                                                     }
                                                 </button>
@@ -645,19 +666,87 @@ export const QuizTable = () => {
                                             </TableCell>
                                             <TableCell align='center' >
                                                 <div>
-                                                    <p style={{backgroundColor:'#FFD1B0',padding:'5px',color:'#B84D00',borderRadius:'4px',width:'80px',margin:'auto'}} >
+                                                    <p id="demo-positioned-button"
+                                                        aria-controls={openTwo ? 'demo-positioned-menu' : undefined}
+                                                        aria-haspopup="true"
+                                                        aria-expanded={openTwo ? 'true' : undefined}
+                                                        onClick={handleClickTwo} style={{ backgroundColor: '#FFD1B0', padding: '5px', color: '#B84D00', borderRadius: '4px', width: '80px', margin: 'auto' }} >
                                                         pending
                                                     </p>
+                                                    <Menu
 
+                                                        anchorElm={setAnchorElm}
+                                                        open={openTwo}
+                                                        onClose={handleCloseTwo}
+                                                        id="demo-positioned-menu"
+                                                        aria-labelledby="demo-positioned-button"
+                                                        anchorOrigin={{
+                                                            vertical: 'bottom',
+                                                            horizontal: 'left',
+
+                                                        }}
+
+                                                    >
+                                                        <div style={{ width: 'auto', padding: '10px 0px' }} >
+                                                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                                                                All
+                                                            </p>
+                                                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                                                                Pending
+                                                            </p>
+                                                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                                                                Active
+                                                            </p>
+                                                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                                                                Deactive
+                                                            </p>
+                                                        </div>
+
+                                                    </Menu>
                                                 </div>
                                             </TableCell>
 
                                             <TableCell align='center' >
                                                 <div>
-                                                    <p style={{backgroundColor:'black',padding:'5px',color:'white',borderRadius:'4px',width:'80px',margin:'auto'}} >
+                                                    <p id="demo-positioned-button"
+                                                        aria-controls={open ? 'demo-positioned-menu' : undefined}
+                                                        aria-haspopup="true"
+                                                        aria-expanded={open ? 'true' : undefined}
+                                                        onClick={handleClick} className='tutor-create-quiz-action-p-btn-' style={{ backgroundColor: 'black', padding: '5px', color: 'white', borderRadius: '4px', width: '80px', margin: 'auto' }} >
                                                         Action
                                                     </p>
+                                                    <Menu
 
+                                                        anchorEl={anchorEl}
+                                                        open={open}
+                                                        onClose={handleClose}
+                                                        id="demo-positioned-menu"
+                                                        aria-labelledby="demo-positioned-button"
+                                                        anchorOrigin={{
+                                                            vertical: 'bottom',
+                                                            horizontal: 'left',
+
+                                                        }}
+
+                                                    >
+                                                        <div style={{ width: 'auto', padding: '10px 0px' }} >
+                                                            <div>
+                                                                <Link to='view' onClick={handleClose} style={{ textDecoration: 'none', color: 'black' }}  >
+                                                                   <p className='create-promotion-drop-down-items-style'  > View </p>
+                                                                </Link>
+                                                            </div>
+                                                            <div style={{marginTop:'5px'}} >
+                                                                <Link to='edit' onClick={handleClose}  style={{ textDecoration: 'none', color: 'black' }} >
+                                                                   <p className='create-promotion-drop-down-items-style'  >  Edit </p>
+                                                                </Link>
+                                                            </div>
+                                                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                                                                Delete
+                                                            </p>
+
+                                                        </div>
+
+                                                    </Menu>
                                                 </div>
                                             </TableCell>
 

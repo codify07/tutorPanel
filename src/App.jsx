@@ -33,6 +33,13 @@ import {Notification} from './pages/tutor-panal/notification/notification'
 import {MyWallet} from './pages/tutor-panal/myWallet/myWallet'
 import {CreateQuizParent} from './pages/tutor-panal/createQuiz/createQuizParent'
 import {CreateQuizTable} from './pages/tutor-panal/createQuiz/createQuiz'
+import {ViewQuizPage} from './pages/tutor-panal/createQuiz/viewQuiz'
+import {EditQuiz} from './pages/tutor-panal/createQuiz/editQuiz'
+import {ViewQuizParent} from './pages/tutor-panal/createQuiz/viewQuizParent'
+import {AddQuiz} from './pages/tutor-panal/createQuiz/addQuiz'
+import {PurchaseProductParent} from './pages/tutor-panal/purchaseProduct/purchaseProductParent'
+import {PurchaseProduct} from './pages/tutor-panal/purchaseProduct/purchaseProduct'
+import {ProductDetail} from './pages/tutor-panal/purchaseProduct/productDetail'
 
 
 
@@ -81,7 +88,16 @@ function App() {
               <Route path='my-wallet' element={<MyWallet />} /> 
               <Route path='create-quiz' element={<CreateQuizParent />}>
                 <Route path='' element={<CreateQuizTable />}  />
+                <Route path='view' element={<ViewQuizParent />} > 
+                  <Route path='' element={<ViewQuizPage/>} />
+                  <Route path='edit-quiz' element={<EditQuiz />} />
+                </Route>
+                <Route path='create-quiz' element={<AddQuiz />} />
               </Route> 
+              <Route path='purchase-product' element={<PurchaseProductParent />}> 
+                <Route path='' element={<PurchaseProduct />} />
+                <Route path='product-detail' element={<ProductDetail />} />
+              </Route>
           </Route>
 
 
