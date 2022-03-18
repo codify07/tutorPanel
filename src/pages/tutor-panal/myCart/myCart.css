@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.tutor-my-cart-cart-product-card-container{
+    border: 2px solid #E0E0E0;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 6px;
+    margin-top: 15px;
+    
+}
+.tutor-my-cart-payment-card-container{
+    padding: 15px;
+    border: 2px solid #E0E0E0;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.tutor-my-cart-payment-card-change-address-btn-container >button{
+    border: none !important;
+    color: #76AC2D;
+    text-transform: capitalize;
+    background-color: white !important;
+    text-decoration: underline;
+}
+.tutor-my-cart-payment-card-change-address-btn-container >button:hover{
+    cursor: pointer;
+}
+.tutor-my-cart-payment-card-change--address-p-container{
+    padding: 7px;
+    border-bottom: 1px solid #E0E0E0;
+    text-align: center;
+    font-weight: 500;
+}
+.tutor-my-cart-payment-card-subtotal-etc-{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.tutor-my-cart-payment-card-subtotal-etc--content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 13px;
+    font-weight: 490;
+}
+.tutor-my-cart-payment-card-total-amount-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.tutor-my-cart-payment-card-total-amount-container >p{
+    font-weight: 600;
+}
+.tutor-my-cart-payment-card-buy-now-btn-container{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 40%;
+    margin: auto;
+
+}
+.my-cart-buy-now---btn >button{
+    background-color: #76AC2D;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none !important;
+    padding: 8px 10px;
+    width: 100%;
+    text-align: center;
+}
+.my-cart-buy-now---btn >button:hover{
+    cursor: pointer;
+}
+.tutor-my-cart-payment-card-amount-show-container >p{
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 25%;
+    background-color: white;
+    margin-top: 20px;
+}
+.my-cart-continiue--btn{
+    background-color: #76AC2D;
+    color: white;
+    padding: 6px 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+/* thankuu */
+
+.tutor-my-cart-thanku-page--container{
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.tutuor-my-cart-checkout-thanky-text-container{
+    width: 35%;
+    margin: auto;
+}
+@media screen and (max-width:900px) {
+    .tutuor-my-cart-checkout-thanky-text-container{
+        width: 60%;
+        margin: auto;
+    }   
+}
+.tutuor-my-cart-checkout-thanky-text-container >p{
+    padding: 8px 20px;
+    width: 100%;
+    background-color: #76AC2D;
+    color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 25px;
+    text-align: center;
+}

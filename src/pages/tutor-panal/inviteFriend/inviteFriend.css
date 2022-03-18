@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tutor-invite-frnd-page-container-upper{
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: white;
+}
+
+.tutor-in-fr-pg-heading-container{
+    text-align: center;
+}
+.tutor-in-fr-pg-heading-container >p{
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.tutor-in-fr-pg-heading-desc-container{
+    padding: 0px 20px;
+    text-align: center;
+}
+.tutor-in-fr-pg-heading-desc-container >p{
+    text-align: center;
+}
+.tutor-in-fr-pg-href-tag-field-container{
+    border: 1.5px solid #A6A6A6;
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+.tutor-in-fr-pg-href-tag-field-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+    margin-top: 10px;
+}
+.tutor-in-fr-pg-href-tag-field-container >button{
+    background: none;
+    border: none;
+    color: #76AC2D;
+    font-size: 16px;
+}
+@media screen and (max-width:900px) {
+    .tutor-in-fr-pg-href-tag-field-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }   
+}
+
+.tutor-in-fri-seare-with-friends-main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.tutor-in-fri-seare-with-friends-icons-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.s-social-i-icon{
+    margin-right: 10px;
+}
+.tutor-in-fri--mask{
+    width: 60%;
+   margin: auto; 
+}
+@media screen and (max-width:900px) {
+    .tutor-in-fri--mask{
+        width: 90%;
+       margin: auto; 
+    }  
+}
+.tutor-invite-frnd-page-container-lowerrr{
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.tutor-invi-fri-filters-apply-btn-container{
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.tutor-invi-fri-filters-apply-btn-container >button{
+    background-color: #76AC2D;
+    color: white;
+    border: none !important;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 8px 40px;
+    font-size: 16px;
+}

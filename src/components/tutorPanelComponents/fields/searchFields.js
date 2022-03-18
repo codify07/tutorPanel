@@ -940,7 +940,7 @@ export const QuizStatus = () => {
                         }}
 
                     >
-                        <div style={{ width:'auto',padding:'10px 0px' }} >
+                        <div style={{ width: 'auto', padding: '10px 0px' }} >
                             <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
                                 All
                             </p>
@@ -972,7 +972,7 @@ export const EditQuiztitle = () => {
 
             <div className="tutor-panel-search-field-container" >
                 <p>
-                  Quiz Title   
+                    Quiz Title
                 </p>
                 <div  >
 
@@ -995,7 +995,7 @@ export const PurchaseProductSearchByName = () => {
 
             <div className="tutor-panel-search-field-container" >
                 <p>
-                  Search By Name 
+                    Search By Name
                 </p>
                 <div  >
 
@@ -1017,7 +1017,7 @@ export const PurchaseProductSearchByPrice = () => {
 
             <div className="tutor-panel-search-field-container" >
                 <p>
-                  Search By Price 
+                    Search By Price
                 </p>
                 <div  >
 
@@ -1029,3 +1029,387 @@ export const PurchaseProductSearchByPrice = () => {
         </>
     )
 }
+
+// invite friend 
+
+export const InviteFriendSByStuName = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    Search By Student Name
+                </p>
+                <div  >
+
+                    <input id='' placeholder='' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// invite friend search by country
+
+
+export const InviteFriendSByCountry = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    Search by Country
+                </p>
+                <div  >
+
+                    <input id='' placeholder='' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// search by booking
+
+
+export const DisputeSearchByBooking = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    Search by booking
+                </p>
+                <div  >
+
+                    <input id='' placeholder='' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// dispute adming status
+
+export const DisputeSearchByAdmin = () => {
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    Admin Status
+                </p>
+                <div  >
+
+                    <div className='tutor-panel-search-start-date-end-date-fields-container' id="demo-positioned-button"
+                        aria-controls={open ? 'demo-positioned-menu' : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={open ? 'true' : undefined}
+                        onClick={handleClick} >
+
+                        <input id='' placeholder='All' type='text' className="sd-ed-start-date-end-date-input-field" />
+                        <IconButton style={{ padding: '6px', marginRight: '2px' }}  >
+                            <KeyboardArrowDownIcon style={{ fontSize: '18px' }} />
+                        </IconButton>
+                    </div>
+                    <Menu
+
+                        anchorEl={anchorEl}
+                        open={open}
+                        onClose={handleClose}
+                        id="demo-positioned-menu"
+                        aria-labelledby="demo-positioned-button"
+                        anchorOrigin={{
+                            vertical: 'bottom',
+                            horizontal: 'left',
+
+                        }}
+
+                    >
+                        <div style={{ width: 'auto', padding: '10px 0px', width: '120px' }} >
+                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                                All
+                            </p>
+                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                                Read
+                            </p>
+                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                                Unread
+                            </p>
+
+                        </div>
+
+                    </Menu>
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// dispute status
+
+
+
+export const DisputeStatus = () => {
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    dispute Status
+                </p>
+                <div  >
+
+                    <div className='tutor-panel-search-start-date-end-date-fields-container' id="demo-positioned-button"
+                        aria-controls={open ? 'demo-positioned-menu' : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={open ? 'true' : undefined}
+                        onClick={handleClick} >
+
+                        <input id='' placeholder='All' type='text' className="sd-ed-start-date-end-date-input-field" />
+                        <IconButton style={{ padding: '6px', marginRight: '2px' }}  >
+                            <KeyboardArrowDownIcon style={{ fontSize: '18px' }} />
+                        </IconButton>
+                    </div>
+                    <Menu
+
+                        anchorEl={anchorEl}
+                        open={open}
+                        onClose={handleClose}
+                        id="demo-positioned-menu"
+                        aria-labelledby="demo-positioned-button"
+                        anchorOrigin={{
+                            vertical: 'bottom',
+                            horizontal: 'left',
+
+                        }}
+
+                    >
+                        <div style={{ width: 'auto', padding: '10px 0px', width: '120px' }} >
+                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                                All
+                            </p>
+                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                                Pending
+                            </p>
+                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                                Resolved
+                            </p>
+                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                                Terminated
+                            </p>
+                        </div>
+
+                    </Menu>
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// create dispute title
+
+export const CreateDisputeTitle = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    Title
+                </p>
+                <div  >
+
+                    <input id='' placeholder='' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// create dispute textarea 
+
+export const CreateDisputeTextArea = () => {
+    return (
+        <>
+            <div className='text-area-container-style--' >
+                <p>
+                    Dispute Descriptiion
+                </p>
+                <textarea placeholder='Enter Your Dispute Description...' />
+            </div>
+
+        </>
+    )
+}
+
+// transaction history 
+
+
+export const TransactionHistoryTitle = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    Search by title
+                </p>
+                <div  >
+
+                    <input id='' placeholder='' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// course start date 
+
+// start date
+
+
+export const CourseStartDate = () => {
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+    return (
+        <>
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                   Course Start Date
+                </p>
+                <div className='tutor-panel-search-start-date-end-date-fields-container' id="demo-positioned-button"
+                    aria-controls={open ? 'demo-positioned-menu' : undefined}
+                    aria-haspopup="true"
+                    aria-expanded={open ? 'true' : undefined}
+                    onClick={handleClick} >
+
+                    <input id='' placeholder='start date' type='text' className="sd-ed-start-date-end-date-input-field" />
+                    <IconButton style={{ padding: '12px', marginRight: '5px' }}  >
+                        <DateRangeIcon style={{ fontSize: '15px' }} />
+                    </IconButton>
+                </div>
+                <Menu
+
+                    anchorEl={anchorEl}
+                    open={open}
+                    onClose={handleClose}
+                    id="demo-positioned-menu"
+                    aria-labelledby="demo-positioned-button"
+                    anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'left',
+
+                    }}
+
+                >
+                    <div onClick={handleClose}  >
+                        <div style={{ height: '200px' }} >
+                            <CalendarComponent />
+                        </div>
+
+                    </div>
+
+                </Menu>
+            </div>
+
+        </>
+    )
+}
+
+
+// course end date 
+
+export const CourseEndDate = () => {
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+    return (
+        <>
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                   Course End Date
+                </p>
+                <div className='tutor-panel-search-start-date-end-date-fields-container' id="demo-positioned-button"
+                    aria-controls={open ? 'demo-positioned-menu' : undefined}
+                    aria-haspopup="true"
+                    aria-expanded={open ? 'true' : undefined}
+                    onClick={handleClick} >
+
+                    <input id='' placeholder='end date' type='text' className="sd-ed-start-date-end-date-input-field" />
+                    <IconButton style={{ padding: '12px', marginRight: '5px' }}  >
+                        <DateRangeIcon style={{ fontSize: '15px' }} />
+                    </IconButton>
+                </div>
+                <Menu
+
+                    anchorEl={anchorEl}
+                    open={open}
+                    onClose={handleClose}
+                    id="demo-positioned-menu"
+                    aria-labelledby="demo-positioned-button"
+                    anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'left',
+
+                    }}
+
+                >
+                    <div onClick={handleClose}  >
+                        <div style={{ height: '200px' }} >
+                            <CalendarComponent />
+                        </div>
+
+                    </div>
+
+                </Menu>
+            </div>
+
+        </>
+    )
+}
+

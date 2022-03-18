@@ -238,7 +238,7 @@ export const MyBookings = () => {
                     {/* search fields container */}
                     <div style={{ marginTop: '20px',marginBottom:'10px' }} >
                         <Grid container spacing={2} >
-                            <Grid item xs={12} md={2} >
+                            <Grid item xs={12} lg={3} md={4} >
                                 <div className='tutor-my-booking-search-field-container' >
                                     <p>
                                         Search by Student name
@@ -246,7 +246,7 @@ export const MyBookings = () => {
                                     <input type='text' />
                                 </div>
                             </Grid>
-                            <Grid item xs={12} md={2} >
+                            <Grid item xs={12} md={4} lg={3} >
                                 <div className='tutor-my-booking-search-field-container' >
                                     <p>
                                         Search by Price
@@ -254,7 +254,7 @@ export const MyBookings = () => {
                                     <input type='text' />
                                 </div>
                             </Grid>
-                            <Grid item xs={12} md={2} >
+                            <Grid item xs={12} md={4} lg={3} >
                                 <div className='tutor-my-booking-search-field-container' >
                                     <p>
                                         Search by Course
@@ -262,7 +262,7 @@ export const MyBookings = () => {
                                     <input type='text' />
                                 </div>
                             </Grid>
-                            <Grid item xs={12} md={2} >
+                            <Grid item xs={12} md={4} lg={3} >
                                 <div className='tutor-my-booking-search-field-container' >
                                     <p>
                                         Search by Country
@@ -270,7 +270,7 @@ export const MyBookings = () => {
                                     <input type='text' />
                                 </div>
                             </Grid>
-                            <Grid item xs={12} md={2} >
+                            <Grid item xs={12} md={4} lg={3} >
                                 <div className='tutor-my-booking-search-field-container' >
                                     <div className='first-tutor-add-new-course-text-field-with-calendar-contain-two' >
                                         <p>
@@ -303,7 +303,7 @@ export const MyBookings = () => {
                                     </Menu>
                                 </div>
                             </Grid>
-                            <Grid item xs={12} md={2} >
+                            <Grid item xs={12} md={4} lg={3} >
                                 <div className='tutor-my-booking-search-field-container' >
                                     <div className='first-tutor-add-new-course-text-field-with-calendar-contain-two' >
                                         <p>
@@ -361,7 +361,7 @@ export const MyBookings = () => {
                     <div style={{marginBottom:'30px'}} >
                         <Grid container spacing={2} >
                             <Grid item xs={12} >
-                                <div className='first-tutor-my-booking-apply-button-container' >
+                                <div className='first-tutor-my-booking-apply-button-container' style={{display:'flex',alignItems:'center',justifyContent:'flex-start'}} >
                                     <button  >
                                         apply
                                     </button>

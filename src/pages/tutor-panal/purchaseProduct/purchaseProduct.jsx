@@ -15,6 +15,8 @@ import mask2 from '../../../assets/pMask2.png'
 import mask3 from '../../../assets/pMask3.png'
 import mask4 from '../../../assets/pMask4.png'
 import { Link } from 'react-router-dom'
+import useMediaQuery from '@mui/material/useMediaQuery';
+import {useTheme} from '@mui/material'
 
 
 
@@ -23,6 +25,9 @@ import { Link } from 'react-router-dom'
 export const PurchaseProduct = () => {
     const [isAddTrue, setIsAddTrue] = useState(false)
     const [addToCart, setAddToCart] = useState(0);
+
+    const theme = useTheme();
+    const isMatch = useMediaQuery(theme.breakpoints.down('md'));
 
     const handlePlusBtn = () => {
         setAddToCart(addToCart + 1)
@@ -97,7 +102,7 @@ export const PurchaseProduct = () => {
                         <div className="courses-tabs-swiper-container" style={{ width: '100%', }} >
                             <Swiper modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                                 spaceBetween={10}
-                                slidesPerView={6}
+                                slidesPerView={ isMatch ? 2 : 6}
                                 navigation
                                 centeredSlides={true}
                                 hiddenClass='swiper-button-hidden'

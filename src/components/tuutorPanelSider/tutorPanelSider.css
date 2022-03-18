@@ -6,10 +6,10 @@
 .tutor-panel-sider-container{
     background-color: white;
     box-shadow: 4px 20px 10px rgba(0, 0, 0, 0.2);
-    height: 40rem;
+    height: 44rem;
     z-index: 1;
     padding-bottom: 60px;
-    position: fixed;
+    /* position: fixed; */
     overflow-y: scroll;
     direction: rtl;
     width: 16.9%;

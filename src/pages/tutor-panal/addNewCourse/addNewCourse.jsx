@@ -7,6 +7,7 @@ import DateRangeIcon from '@mui/icons-material/DateRange';
 import CloseIcon from '@mui/icons-material/Close';
 import EditIcon from '@mui/icons-material/Edit';
 import ReorderIcon from '@mui/icons-material/Reorder';
+import {CourseStartDate,CourseEndDate} from '../../../components/tutorPanelComponents/fields/searchFields'
 
 
 
@@ -197,7 +198,7 @@ export const AddNewCourse = () => {
                     </Grid>
                     {/* course start date */}
                     <Grid item xs={12} md={6} >
-                        <div className='first-tutor-add-new-course-text-field-with-calendar-contain' >
+                        {/* <div className='first-tutor-add-new-course-text-field-with-calendar-contain' >
                             <p>
                                 Course Start Date
                             </p>
@@ -207,11 +208,12 @@ export const AddNewCourse = () => {
                                     <DateRangeIcon style={{ fontSize: '20px' }} />
                                 </IconButton>
                             </div>
-                        </div>
+                        </div> */}
+                        <CourseStartDate />
                     </Grid>
                     {/* course end date */}
                     <Grid item xs={12} md={6} >
-                        <div className='first-tutor-add-new-course-text-field-with-calendar-contain' >
+                        {/* <div className='first-tutor-add-new-course-text-field-with-calendar-contain' >
                             <p>
                                 Course End Date
                             </p>
@@ -221,7 +223,8 @@ export const AddNewCourse = () => {
                                     <DateRangeIcon style={{ fontSize: '20px' }} />
                                 </IconButton>
                             </div>
-                        </div>
+                        </div> */}
+                        <CourseEndDate />
                     </Grid>
                     {/* set time */}
                     <Grid item xs={12} >

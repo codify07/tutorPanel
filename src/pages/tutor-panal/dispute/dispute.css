@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.tutor-panel-dispute-page-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.tutor-panel-dispute-page-header-container >button{
+    padding: 8px 30px;
+    background-color: #76AC2D;
+    color: white;
+    border: none !important;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-right: 12px;
+}
+.tutor-panel-dispute-page-header-container >button:hover{
+    cursor: pointer;
+}
+.tutor-panel-dispute-page-apply-btn-container >button{
+    padding: 8px 30px;
+    background-color: #76AC2D;
+    color: white;
+    border: none !important;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-right: 12px;
+    margin-top: 25px;
+}
+.tutor-panel-dispute-page-apply-btn-container >button:hover{
+    cursor: pointer;
+}
+.tutor-panel-dispute-page-header-create-dispute--btn{
+    padding: 8px 30px;
+    background-color: #76AC2D;
+    color: white;
+    border: none !important;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-right: 12px;
+    margin-top: 25px;
+}
+.tutor-panel-dispute-page-header-create-dispute--btn:hover{
+    cursor: pointer;
+}
+@media screen and (max-width:900px) {
+    .tutor-panel-dispute-page-apply-btn-container >button{
+        padding: 8px 30px;
+        background-color: #76AC2D;
+        color: white;
+        border: none !important;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-right: 12px;
+        margin-top: 10px;
+    }   
+}
+
+.create-dipute-submit-b-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.create-dipute-submit-b-btn-container >button{
+    padding: 8px 30px;
+    background-color: #76AC2D;
+    color: white;
+    border: none !important;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-right: 12px;
+    margin-top: 10px;
+    width: 30%;
+    text-align: center;
+}
+.create-dipute-submit-b-btn-container >button:hover{
+    cursor: pointer;
+}
+@media screen and (max-width:900px) {
+    .create-dipute-submit-b-btn-container >button{
+        padding: 8px 30px;
+        background-color: #76AC2D;
+        color: white;
+        border: none !important;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-right: 12px;
+        margin-top: 10px;
+        width: 70%;
+        text-align: center;
+    }
+}

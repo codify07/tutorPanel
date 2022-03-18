@@ -6,3 +6,11 @@
 .tutor-create-quiz-action-p-btn-:hover{
     cursor: pointer;
 }
+
+.transaction-history--table--paid--btn{
+    padding: 6px 15px;
+    background-color: #76Ac2D;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 5px;
+}

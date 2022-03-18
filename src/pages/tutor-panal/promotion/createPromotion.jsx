@@ -91,11 +91,11 @@ export const CreatePromotion = () => {
                     </Grid>
                     <Grid xs={12} >
                         <div style={{marginTop:'20px',display:'flex',alignItems:'center',justifyContent:'center'}} >
-                           <Link to='my-promotions' >
+                           
                                 <button className='tutor-create-promotion-submit-btn' >
                                     submit
                                 </button>
-                           </Link>
+                           
                         </div>
                     </Grid>
                 </Grid>

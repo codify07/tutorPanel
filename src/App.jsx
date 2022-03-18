@@ -21,26 +21,35 @@ import { AddNewPackage } from './pages/tutor-panal/addNewCourse/addNewPackage'
 import { ChatInbox } from './pages/tutor-panal/ChatInbox/chatInbox'
 import { StudentRegistration } from './components/registrationComponents/registrationComponents'
 import { TutorRegistration } from './components/registrationComponents/registrationComponents'
-import {RegisterTutor} from './pages/registerPage/tutor-register'
-import {Ratings} from './pages/tutor-panal/ratings/ratings'
-import {MyBookings} from './pages/tutor-panal/myBookings/myBookings'
-import {Analytics} from './pages/tutor-panal/myBookings/analytics'
-import {MyBookingParentPage} from './pages/tutor-panal/myBookings/myBookingParentPage'
-import {PromotionParentPage} from './pages/tutor-panal/promotion/promotionMainPage'
-import {MyPromotions} from './pages/tutor-panal/promotion/promotion'
-import {CreatePromotion} from './pages/tutor-panal/promotion/createPromotion'
-import {Notification} from './pages/tutor-panal/notification/notification'
-import {MyWallet} from './pages/tutor-panal/myWallet/myWallet'
-import {CreateQuizParent} from './pages/tutor-panal/createQuiz/createQuizParent'
-import {CreateQuizTable} from './pages/tutor-panal/createQuiz/createQuiz'
-import {ViewQuizPage} from './pages/tutor-panal/createQuiz/viewQuiz'
-import {EditQuiz} from './pages/tutor-panal/createQuiz/editQuiz'
-import {ViewQuizParent} from './pages/tutor-panal/createQuiz/viewQuizParent'
-import {AddQuiz} from './pages/tutor-panal/createQuiz/addQuiz'
-import {PurchaseProductParent} from './pages/tutor-panal/purchaseProduct/purchaseProductParent'
-import {PurchaseProduct} from './pages/tutor-panal/purchaseProduct/purchaseProduct'
-import {ProductDetail} from './pages/tutor-panal/purchaseProduct/productDetail'
-
+import { RegisterTutor } from './pages/registerPage/tutor-register'
+import { Ratings } from './pages/tutor-panal/ratings/ratings'
+import { MyBookings } from './pages/tutor-panal/myBookings/myBookings'
+import { Analytics } from './pages/tutor-panal/myBookings/analytics'
+import { MyBookingParentPage } from './pages/tutor-panal/myBookings/myBookingParentPage'
+import { PromotionParentPage } from './pages/tutor-panal/promotion/promotionMainPage'
+import { MyPromotions } from './pages/tutor-panal/promotion/promotion'
+import { CreatePromotion } from './pages/tutor-panal/promotion/createPromotion'
+import { Notification } from './pages/tutor-panal/notification/notification'
+import { MyWallet } from './pages/tutor-panal/myWallet/myWallet'
+import { CreateQuizParent } from './pages/tutor-panal/createQuiz/createQuizParent'
+import { CreateQuizTable } from './pages/tutor-panal/createQuiz/createQuiz'
+import { ViewQuizPage } from './pages/tutor-panal/createQuiz/viewQuiz'
+import { EditQuiz } from './pages/tutor-panal/createQuiz/editQuiz'
+import { ViewQuizParent } from './pages/tutor-panal/createQuiz/viewQuizParent'
+import { AddQuiz } from './pages/tutor-panal/createQuiz/addQuiz'
+import { PurchaseProductParent } from './pages/tutor-panal/purchaseProduct/purchaseProductParent'
+import { PurchaseProduct } from './pages/tutor-panal/purchaseProduct/purchaseProduct'
+import { ProductDetail } from './pages/tutor-panal/purchaseProduct/productDetail'
+import { MyCartParent } from './pages/tutor-panal/myCart/myCartParent'
+import { MyCart } from './pages/tutor-panal/myCart/myCart'
+import { Continue } from './pages/tutor-panal/myCart/checkWalletCardPage'
+import { Thanku } from './pages/tutor-panal/myCart/thankuPage'
+import {CheckWalletParent } from  './pages/tutor-panal/myCart/myWalletCardPageParent'
+import {InviteFriend} from './pages/tutor-panal/inviteFriend/inviteFriend'
+import {DisputeParent} from './pages/tutor-panal/dispute/disputeParent'
+import {Dispute} from './pages/tutor-panal/dispute/dispute'
+import {CreateDispute} from './pages/tutor-panal/dispute/createDispute'
+import {TransactionHistory} from './pages/tutor-panal/transaction/transactionHistory'
 
 
 function App() {
@@ -75,29 +84,42 @@ function App() {
               <Route path='add-new-package' element={<AddNewPackage />} />
             </Route>
             <Route path='chat-inbox' element={<ChatInbox />} />
-            <Route path='ratings' element={<Ratings/>} />
-            <Route path='my-booking' element={<MyBookingParentPage/>}  >
-            <Route path='' element={<MyBookings />} />
+            <Route path='ratings' element={<Ratings />} />
+            <Route path='my-booking' element={<MyBookingParentPage />}  >
+              <Route path='' element={<MyBookings />} />
               <Route path='analytics' element={<Analytics />} />
-             </Route>
-             <Route path='my-promotions' element={<PromotionParentPage />} >
-                <Route path='' element={<MyPromotions/>} />
-                <Route path='create-promotion' element={<CreatePromotion/>} />
-             </Route>
-              <Route path='notifications' element={<Notification />} /> 
-              <Route path='my-wallet' element={<MyWallet />} /> 
-              <Route path='create-quiz' element={<CreateQuizParent />}>
-                <Route path='' element={<CreateQuizTable />}  />
-                <Route path='view' element={<ViewQuizParent />} > 
-                  <Route path='' element={<ViewQuizPage/>} />
-                  <Route path='edit-quiz' element={<EditQuiz />} />
-                </Route>
-                <Route path='create-quiz' element={<AddQuiz />} />
-              </Route> 
-              <Route path='purchase-product' element={<PurchaseProductParent />}> 
-                <Route path='' element={<PurchaseProduct />} />
-                <Route path='product-detail' element={<ProductDetail />} />
+            </Route>
+            <Route path='my-promotions' element={<PromotionParentPage />} >
+              <Route path='' element={<MyPromotions />} />
+              <Route path='create-promotion' element={<CreatePromotion />} />
+            </Route>
+            <Route path='notifications' element={<Notification />} />
+            <Route path='my-wallet' element={<MyWallet />} />
+            <Route path='create-quiz' element={<CreateQuizParent />}>
+              <Route path='' element={<CreateQuizTable />} />
+              <Route path='view' element={<ViewQuizParent />} >
+                <Route path='' element={<ViewQuizPage />} />
+                <Route path='edit-quiz' element={<EditQuiz />} />
               </Route>
+              <Route path='create-quiz' element={<AddQuiz />} />
+            </Route>
+            <Route path='purchase-product' element={<PurchaseProductParent />}>
+              <Route path='' element={<PurchaseProduct />} />
+              <Route path='product-detail' element={<ProductDetail />} />
+            </Route>
+            <Route path='my-cart' element={<MyCartParent />} >
+              <Route path='' element={<MyCart />} />
+              <Route path='buy-now' element={<CheckWalletParent />}  >
+                <Route path='' element={<Continue />} />
+                <Route path='thanku' element={<Thanku />} />
+              </Route>
+            </Route>
+            <Route path='invite-friends' element={<InviteFriend />}  />
+            <Route path='dispute' element={<DisputeParent />} >
+              <Route path='' element={<Dispute />} />
+              <Route path='create-dispute' element={<CreateDispute />} />
+            </Route>
+            <Route path='transaction-history' element={<TransactionHistory />} />
           </Route>
 
 

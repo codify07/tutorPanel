@@ -21,6 +21,9 @@ import CloseIcon from '@mui/icons-material/Close';
 import { ProfileAddCertificate } from '../../../components/tutorPanelComponents/dialogs/tutorDialogs'
 import { ProfileAskRecomendation } from '../../../components/tutorPanelComponents/dialogs/tutorDialogs'
 import { Collapse } from '@mui/material'
+import { useTheme } from '@mui/material'
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 
 
 export const Profile = () => {
@@ -64,6 +67,8 @@ export const Profile = () => {
     const handleAskRecomendationClose = () => {
         setIsAskRecomendationOpen(false)
     }
+    const theme = useTheme();
+    const isMatch = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
         <>
@@ -77,7 +82,7 @@ export const Profile = () => {
 
                     </Grid>
                 </Grid>
-                <div className='tutor-profile-content-wrapper' >
+                <div className='tutor-profile-content-wrapper' style={{transform: isMatch ? 'translateY(-190px)' : '' }}  >
                     <div className='tutor-profile-upper-heading-content-wrapper' >
                         <Grid container spacing={2}>
                             <Grid item xs={12} >
