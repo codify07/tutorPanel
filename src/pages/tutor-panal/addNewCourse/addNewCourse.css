@@ -6,7 +6,7 @@
     width: 95%;
     margin: auto;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 .first-tutor-panel-add-course-page-save-btn-container{
     display: flex;
@@ -121,7 +121,11 @@
     border-radius: 5px;
     font-size: 15px;
     text-transform: uppercase;
+    width: fit-content;
         
+}
+.first-tutor-panel-add-course-upload-image-btn:hover{
+    cursor: pointer;
 }
 .first-tutor-panel-add-new-course-textar-area-container >p{
     font-size: 16px;
@@ -338,4 +342,48 @@
         font-size: 15px;
         
     }
+}
+
+
+/* add time */
+
+
+.tutor--add-time-clock-add-course{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 12px;
+}
+.tutor--add-time-clock-add-course >input{
+    border: 2px solid #E5E5E5;
+    border-radius: 5px;
+    outline: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+}
+.tutor--add-time-clock-add-course >input:focus{
+    outline: none !important;
+}
+
+
+/* add packages */
+
+
+.tutor-panel-add-new-course-add-packages-add-new-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tutor-panel-add-new-course-add-packages-add-new-container >button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    background: none !important;
+    font-size: 15px;
+    font-weight: 450;
+}
+.tutor-panel-add-new-course-up--pic:hover{
+    cursor: pointer;
 }

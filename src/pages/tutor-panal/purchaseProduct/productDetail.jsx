@@ -182,17 +182,84 @@ export const ProductDetail = () => {
                                     </div>
                                 </div>
                             </Grid>
-                            <Grid item xs={12} md={9} >
-                                <div>
-                                    <div>
-                                        <BorderLinearProgress variant="determinate" value={100} style={{ marginTop: '20px' }} />
-                                        <BorderLinearProgress variant="determinate" value={80} style={{ marginTop: '20px' }} />
-                                        <BorderLinearProgress variant="determinate" value={60} style={{ marginTop: '20px' }} />
-                                        <BorderLinearProgress variant="determinate" value={40} style={{ marginTop: '20px' }} />
-                                        <BorderLinearProgress variant="determinate" value={20} style={{ marginTop: '20px' }} />
+                            <Grid item xs={9} >
+                                <Grid container columnSpacing={2} >
+                                    <Grid item xs={11} alignSelf='center' >
+                                        <div>
+                                            <div>
+                                                <BorderLinearProgress variant="determinate" value={100} style={{ marginTop: '20px' }} />
 
-                                    </div>
-                                </div>
+                                            </div>
+                                        </div>
+                                    </Grid>
+                                    <Grid item xs={1} alignSelf='center' >
+                                        <div style={{ marginTop: '10px' }} >
+                                            <p>
+                                                5.0(30)
+                                            </p>
+                                        </div>
+                                    </Grid>
+                                    <Grid item xs={11} alignSelf='center' >
+                                        <div>
+                                            <div>
+                                                <BorderLinearProgress variant="determinate" value={80} style={{ marginTop: '20px' }} />
+
+                                            </div>
+                                        </div>
+                                    </Grid>
+                                    <Grid item xs={1} alignSelf='center' >
+                                        <div style={{ marginTop: '10px' }} >
+                                            <p>
+                                                4.0(30)
+                                            </p>
+                                        </div>
+                                    </Grid>
+                                    <Grid item xs={11} alignSelf='center' >
+                                        <div>
+                                            <div>
+                                                <BorderLinearProgress variant="determinate" value={60} style={{ marginTop: '20px' }} />
+
+                                            </div>
+                                        </div>
+                                    </Grid>
+                                    <Grid item xs={1} alignSelf='center' >
+                                        <div style={{ marginTop: '10px' }} >
+                                            <p>
+                                                3.0(30)
+                                            </p>
+                                        </div>
+                                    </Grid>
+                                    <Grid item xs={11} alignSelf='center' >
+                                        <div>
+                                            <div>
+                                                <BorderLinearProgress variant="determinate" value={40} style={{ marginTop: '20px' }} />
+
+                                            </div>
+                                        </div>
+                                    </Grid>
+                                    <Grid item xs={1} alignSelf='center' >
+                                        <div style={{ marginTop: '10px' }} >
+                                            <p>
+                                                2.0(30)
+                                            </p>
+                                        </div>
+                                    </Grid>
+                                    <Grid item xs={11} alignSelf='center' >
+                                        <div>
+                                            <div>
+                                                <BorderLinearProgress variant="determinate" value={20} style={{ marginTop: '20px' }} />
+
+                                            </div>
+                                        </div>
+                                    </Grid>
+                                    <Grid item xs={1} alignSelf='center' >
+                                        <div style={{ marginTop: '10px' }} >
+                                            <p>
+                                                1.0(30)
+                                            </p>
+                                        </div>
+                                    </Grid>
+                                </Grid>
                             </Grid>
 
                         </Grid>

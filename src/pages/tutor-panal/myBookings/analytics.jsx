@@ -4,7 +4,7 @@ import './myBookings.css'
 import { Avatar, Grid } from '@mui/material'
 import PurchaseCourseChart from '../../../components/charts/analyticsPurshaseCourse/purchaseCourseChart'
 import TotalEarningChart from '../../../components/charts/analyticsTotalEarningChart/analyticsTotalEarningChart'
-
+import {StartEndDateAnalytics,AnalyticsMonthly} from '../../../components/tutorPanelComponents/fields/searchFields'
 
 
 export const Analytics = () => {
@@ -44,6 +44,25 @@ export const Analytics = () => {
                 <div style={{ marginTop: '30px' }} >
                     <Grid container spacing={2} >
                         <Grid item xs={12} >
+                            <div style={{paddingBottom:'20px'}} >
+                                <Grid container spacing={2} >
+                                    <Grid item xs={12} md={7} >
+                                        <p style={{fontSize:'18px',fontWeight:'500'}} >
+                                            Total Earning
+                                        </p>
+                                    </Grid>
+                                    <Grid item xs={12} md={3} >
+                                        <div>
+                                            <StartEndDateAnalytics />
+                                        </div>
+                                    </Grid>
+                                    <Grid item xs={12} md={2} >
+                                        <div>
+                                            <AnalyticsMonthly />
+                                        </div>
+                                    </Grid>
+                                </Grid>
+                            </div>
                             <div>
                                 <TotalEarningChart />
                             </div>

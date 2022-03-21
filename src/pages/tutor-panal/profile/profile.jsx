@@ -17,9 +17,11 @@ import { EditOverview } from '../../../components/tutorPanelComponents/dialogs/t
 import { EditEperience } from '../../../components/tutorPanelComponents/dialogs/tutorDialogs'
 import { AddSkill } from '../../../components/tutorPanelComponents/dialogs/tutorDialogs'
 import { ProfileEducation } from '../../../components/tutorPanelComponents/dialogs/tutorDialogs'
+import { EditProfileEducation } from '../../../components/tutorPanelComponents/dialogs/tutorDialogs'
 import CloseIcon from '@mui/icons-material/Close';
 import { ProfileAddCertificate } from '../../../components/tutorPanelComponents/dialogs/tutorDialogs'
 import { ProfileAskRecomendation } from '../../../components/tutorPanelComponents/dialogs/tutorDialogs'
+import { AddEperience } from '../../../components/tutorPanelComponents/dialogs/tutorDialogs'
 import { Collapse } from '@mui/material'
 import { useTheme } from '@mui/material'
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -30,8 +32,10 @@ export const Profile = () => {
     const [isEditContactOpen, setIsEditContactOpen] = useState(false)
     const [isEditOverviewOpen, setIsEditOverviewOpen] = useState(false)
     const [isEditExperienceOpen, setIsEditExperienceOpen] = useState(false)
+    const [isAddExperienceOpen, setIsAddExperienceOpen] = useState(false)
     const [isAddSkillOpen, setIsAddSkillOpen] = useState(false)
     const [isAddEducationOpen, setIsAddEducationOpen] = useState(false)
+    const [isEditEducationOpen, setIsEditEducationOpen] = useState(false)
     const [isAddCertificate, setIsAddCertificateOpen] = useState(false)
     const [isAskRecomendationOpen, setIsAskRecomendationOpen] = useState(false)
     const [isViewDetailOpen, setIsViewDetailOpen] = useState(false)
@@ -59,6 +63,9 @@ export const Profile = () => {
     const handleAddEducation = () => {
         setIsAddEducationOpen(false)
     }
+    const handleEditEducation = () => {
+        setIsEditEducationOpen(false)
+    }
 
     const handleAddCertificateClose = () => {
         setIsAddCertificateOpen(false)
@@ -67,6 +74,11 @@ export const Profile = () => {
     const handleAskRecomendationClose = () => {
         setIsAskRecomendationOpen(false)
     }
+
+    const handleAddExperience = () => {
+        setIsAddExperienceOpen(false)
+    }
+
     const theme = useTheme();
     const isMatch = useMediaQuery(theme.breakpoints.down('md'));
 
@@ -82,7 +94,7 @@ export const Profile = () => {
 
                     </Grid>
                 </Grid>
-                <div className='tutor-profile-content-wrapper' style={{transform: isMatch ? 'translateY(-190px)' : '' }}  >
+                <div className='tutor-profile-content-wrapper' style={{ transform: isMatch ? 'translateY(-190px)' : '' }}  >
                     <div className='tutor-profile-upper-heading-content-wrapper' >
                         <Grid container spacing={2}>
                             <Grid item xs={12} >
@@ -188,7 +200,7 @@ export const Profile = () => {
                                         Experience
                                     </h4>
                                     <IconButton onClick={() => {
-                                        setIsEditExperienceOpen(true)
+                                        setIsAddExperienceOpen(true)
                                     }}  >
                                         <img src={plus} alt="plus" />
                                     </IconButton>
@@ -284,7 +296,7 @@ export const Profile = () => {
                                     </div>
                                     <div>
                                         <IconButton style={{ alignSelf: 'flex-end' }} onClick={() => {
-                                            setIsAddEducationOpen(true)
+                                            setIsEditEducationOpen(true)
                                         }} >
                                             <ModeEditIcon />
                                         </IconButton>
@@ -525,6 +537,28 @@ export const Profile = () => {
                         </div>
                     </Grid>
                 </Dialog>
+                {/* add experience */}
+
+                <Dialog open={isAddExperienceOpen} fullWidth maxWidth='md' onClose={handleAddExperience}  >
+                    <div className='first-tutor-panel-dialog-close-btn-icon-container' >
+                        <IconButton className='first-tutor-panel-dialog-close-icon' onClick={() => {
+                            handleAddExperience();
+                        }} >
+                            <CloseIcon />
+                        </IconButton>
+                    </div>
+                    <AddEperience />
+                    <Grid item xs={12}  >
+                        <div className='first-tutor-panel-add-course-add-section-button-container' style={{ marginTop: "20px", marginBottom: '20px' }} >
+                            <button onClick={() => {
+                                handleAddExperience();
+                            }} >
+                                Add
+                            </button>
+                        </div>
+                    </Grid>
+                </Dialog>
+
                 {/* edit experience dialog*/}
                 <Dialog open={isEditExperienceOpen} fullWidth maxWidth='md' onClose={handleEditExperience}  >
                     <div className='first-tutor-panel-dialog-close-btn-icon-container' >
@@ -579,6 +613,26 @@ export const Profile = () => {
                         <div className='first-tutor-panel-add-course-add-section-button-container' style={{ marginTop: "20px", marginBottom: '20px' }} >
                             <button onClick={() => {
                                 handleAddEducation();
+                            }} >
+                                ADD
+                            </button>
+                        </div>
+                    </Grid>
+                </Dialog>
+                {/* edit your education */}
+                <Dialog open={isEditEducationOpen} fullWidth maxWidth='md' onClose={handleEditEducation} >
+                    <div className='first-tutor-panel-dialog-close-btn-icon-container' >
+                        <IconButton className='first-tutor-panel-dialog-close-icon' onClick={() => {
+                            handleEditEducation();
+                        }} >
+                            <CloseIcon />
+                        </IconButton>
+                    </div>
+                    <EditProfileEducation />
+                    <Grid item xs={12}  >
+                        <div className='first-tutor-panel-add-course-add-section-button-container' style={{ marginTop: "20px", marginBottom: '20px' }} >
+                            <button onClick={() => {
+                                handleEditEducation();
                             }} >
                                 save
                             </button>
