@@ -543,6 +543,7 @@ export const QuizTable = () => {
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
+
     const handleClose = () => {
         setAnchorEl(null);
     };
@@ -668,15 +669,15 @@ export const QuizTable = () => {
                                             <TableCell align='center' >
                                                 <div>
                                                     <p id="demo-positioned-button"
-                                                        aria-controls={openTwo ? 'demo-positioned-menu' : undefined}
+                                                        aria-controls={open ? 'demo-positioned-menu' : undefined}
                                                         aria-haspopup="true"
-                                                        aria-expanded={openTwo ? 'true' : undefined}
-                                                        onClick={handleClickTwo} style={{ backgroundColor: '#FFD1B0', padding: '5px', color: '#B84D00', borderRadius: '4px', width: '80px', margin: 'auto' }} >
+                                                        aria-expanded={open ? 'true' : undefined}
+                                                        onClick={handleClickTwo} className='tutor-p-status-cell-hover' style={{ backgroundColor: '#FFD1B0', padding: '5px', color: '#B84D00', borderRadius: '4px', width: '80px', margin: 'auto' }} >
                                                         pending
                                                     </p>
                                                     <Menu
 
-                                                        anchorElm={setAnchorElm}
+                                                        anchorEl={anchorElm}
                                                         open={openTwo}
                                                         onClose={handleCloseTwo}
                                                         id="demo-positioned-menu"
@@ -689,18 +690,20 @@ export const QuizTable = () => {
 
                                                     >
                                                         <div style={{ width: 'auto', padding: '10px 0px' }} >
-                                                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
-                                                                All
-                                                            </p>
-                                                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
-                                                                Pending
-                                                            </p>
-                                                            <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
-                                                                Active
-                                                            </p>
+                                                            <div>
+                                                                <Link to='view' onClick={handleClose} style={{ textDecoration: 'none', color: 'black' }}  >
+                                                                    <p className='create-promotion-drop-down-items-style'  > Active </p>
+                                                                </Link>
+                                                            </div>
+                                                            <div style={{ marginTop: '5px' }} >
+                                                                <Link to='edit' onClick={handleClose} style={{ textDecoration: 'none', color: 'black' }} >
+                                                                    <p className='create-promotion-drop-down-items-style'  >  Pending </p>
+                                                                </Link>
+                                                            </div>
                                                             <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
                                                                 Deactive
                                                             </p>
+
                                                         </div>
 
                                                     </Menu>

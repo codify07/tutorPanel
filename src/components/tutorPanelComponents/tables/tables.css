@@ -14,3 +14,7 @@
     text-transform: capitalize;
     border-radius: 5px;
 }
+
+.tutor-p-status-cell-hover:hover{
+    cursor: pointer;
+}

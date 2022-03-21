@@ -50,18 +50,7 @@ export const EditContactDialog = () => {
                             <input type="text" placeholder='Your Course Title' />
                         </div>
                     </Grid>
-                    <Grid item xs={12} md={6} >
-                        <div className='first-tutor-panel-selection-btn-container' >
-                            <p>
-                                Country
-                            </p>
-                            <select id="category" name="category"  >
-                                <option></option>
-
-                            </select>
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} md={6} >
+                    <Grid item xs={12} md={12} >
                         <div className='first-tutor-panel-selection-btn-container' >
                             <p>
                                 City
@@ -241,6 +230,115 @@ export const EditEperience = () => {
     )
 }
 
+// add experience
+
+
+export const AddEperience = () => {
+    return (
+        <>
+            <Grid container spacing={3} >
+                <Grid item xs={12} md={12} >
+                    <div className='tutor-profile-contact-edit-dialog-contact-container' >
+                        <p>
+                            Add Experience
+                        </p>
+                    </div>
+                </Grid>
+            </Grid>
+            <div className='tutor-profile-edit-contact-dialog-content-wrapper' >
+                <Grid container spacing={3} >
+                    <Grid item xs={12}>
+                        <div className='first-tutor-panel-edit-contact-text-field-container' >
+                            <p>
+                                Title
+                            </p>
+                            <input type="text" placeholder='Your Course Title' />
+                        </div>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <div className='first-tutor-panel-edit-contact-text-field-container' >
+                            <p>
+                                Employment Type
+                            </p>
+                            <input type="text" placeholder='Your Course Title' />
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <div className='first-tutor-panel-edit-contact-text-field-container' >
+                            <p>
+                                Company name
+                            </p>
+                            <input type="text" placeholder='Your Course Title' />
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <div className='first-tutor-panel-edit-contact-text-field-container' >
+                            <p>
+                                Location
+                            </p>
+                            <input type="text" placeholder='Your Course Title' />
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} >
+                        <div>
+                            <input type="checkbox" id="workingRole" name="workingRole" style={{ marginLeft: '6px' }} />
+                            <label htmlFor="forWorkingRole" style={{ fontSize: '15px', marginLeft: '12px' }} > I am currently working in this role </label><br />
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} >
+                        <div className='first-tutor-panel-selection-btn-container' >
+                            <p>
+                                Start Date
+                            </p>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} md={6} >
+                        <div className='first-tutor-panel-selection-btn-container' style={{ marginTop: '-5%' }} >
+                            <select id="StartDate" name="StartDate"  >
+                                <option>March</option>
+
+                            </select>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} md={6} >
+                        <div className='first-tutor-panel-selection-btn-container' style={{ marginTop: '-5%' }} >
+                            <select id="category" name="category"  >
+                                <option style={{ backgroundColor: 'greenyellow' }} >2018</option>
+
+                            </select>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} >
+                        <div className='first-tutor-panel-selection-btn-container' >
+                            <p>
+                                End Date
+                            </p>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} md={6} >
+                        <div className='first-tutor-panel-selection-btn-container' style={{ marginTop: '-7%' }} >
+                            <select id="EndDate" name="EndDate"  >
+                                <option>May</option>
+
+                            </select>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} md={6} >
+                        <div className='first-tutor-panel-selection-btn-container' style={{ marginTop: '-7%' }} >
+                            <select id="category" name="category"  >
+                                <option>2022</option>
+
+                            </select>
+                        </div>
+                    </Grid>
+
+                </Grid>
+            </div>
+
+        </>
+    )
+}
+
 
 // add your Skill
 
@@ -286,6 +384,101 @@ export const ProfileEducation = () => {
                     <div className='tutor-profile-contact-edit-dialog-contact-container' >
                         <p>
                             Add Your Education
+                        </p>
+                    </div>
+                </Grid>
+
+            </Grid>
+            <div className='tutor-profile-edit-contact-dialog-content-wrapper' >
+                <Grid container spacing={3} >
+                    <Grid item xs={12} md={6}>
+                        <div className='first-tutor-panel-edit-contact-text-field-container' >
+                            <p>
+                                University
+                            </p>
+                            <input type="text" placeholder='' />
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <div className='first-tutor-panel-edit-contact-text-field-container' >
+                            <p>
+                                Degree
+                            </p>
+                            <input type="text" placeholder="Bachelor's degree, computer science" />
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} md={12}>
+                        <div className='first-tutor-panel-edit-contact-text-field-container' >
+                            <p>
+                                Session
+                            </p>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} >
+                        <div className='first-tutor-panel-selection-btn-container' >
+                            <p>
+                                Start Date
+                            </p>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} md={6} >
+                        <div className='first-tutor-panel-selection-btn-container' style={{ marginTop: '-5%' }} >
+                            <select id="StartDate" name="StartDate"  >
+                                <option>March</option>
+
+                            </select>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} md={6} >
+                        <div className='first-tutor-panel-selection-btn-container' style={{ marginTop: '-5%' }} >
+                            <select id="category" name="category"  >
+                                <option style={{ backgroundColor: 'greenyellow' }} >2017</option>
+
+                            </select>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} >
+                        <div className='first-tutor-panel-selection-btn-container' >
+                            <p>
+                                End Date
+                            </p>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} md={6} >
+                        <div className='first-tutor-panel-selection-btn-container' style={{ marginTop: '-7%' }} >
+                            <select id="EndDate" name="EndDate"  >
+                                <option>May</option>
+
+                            </select>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} md={6} >
+                        <div className='first-tutor-panel-selection-btn-container' style={{ marginTop: '-7%' }} >
+                            <select id="category" name="category"  >
+                                <option>2021</option>
+
+                            </select>
+                        </div>
+                    </Grid>
+
+                </Grid>
+            </div>
+
+        </>
+    )
+}
+
+// edit profile education 
+
+
+export const EditProfileEducation = () => {
+    return (
+        <>
+            <Grid container spacing={3} >
+                <Grid item xs={12} md={12} >
+                    <div className='tutor-profile-contact-edit-dialog-contact-container' >
+                        <p>
+                            Edit Your Education
                         </p>
                     </div>
                 </Grid>

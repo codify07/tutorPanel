@@ -170,6 +170,65 @@ export const StartEndDate = () => {
     )
 }
 
+// start end date for analytics 
+
+
+export const StartEndDateAnalytics = () => {
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+    return (
+        <>
+            <div className="tutor-panel-search-field-container" >
+                
+                <div className='tutor-panel-search-start-date-end-date-fields-container' id="demo-positioned-button"
+                    aria-controls={open ? 'demo-positioned-menu' : undefined}
+                    aria-haspopup="true"
+                    aria-expanded={open ? 'true' : undefined}
+                    onClick={handleClick} >
+
+                    <input id='' placeholder='start date' type='text' className="sd-ed-start-date-end-date-input-field" />
+                    <img src={dateIcon} alt='icon' />
+                    <input id='' placeholder='end date' type='text' className="sd-ed-start-date-end-date-input-field-two" />
+                    <IconButton style={{ padding: '3px', marginRight: '5px' }}  >
+                        <DateRangeIcon style={{ fontSize: '15px' }} />
+                    </IconButton>
+                </div>
+                <Menu
+
+                    anchorEl={anchorEl}
+                    open={open}
+                    onClose={handleClose}
+                    id="demo-positioned-menu"
+                    aria-labelledby="demo-positioned-button"
+                    anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'left',
+
+                    }}
+
+                >
+                    <div onClick={handleClose} style={{ display: 'flex' }} >
+                        <div style={{ width: '300px' }} >
+                            <CalendarComponent />
+                        </div>
+                        <div style={{ marginLeft: '20px', width: '300px' }} >
+                            <CalendarComponent />
+                        </div>
+                    </div>
+
+                </Menu>
+            </div>
+
+        </>
+    )
+}
+
 
 // promotion type
 export const PromotionType = () => {
@@ -1315,7 +1374,7 @@ export const CourseStartDate = () => {
         <>
             <div className="tutor-panel-search-field-container" >
                 <p>
-                   Course Start Date
+                    Course Start Date
                 </p>
                 <div className='tutor-panel-search-start-date-end-date-fields-container' id="demo-positioned-button"
                     aria-controls={open ? 'demo-positioned-menu' : undefined}
@@ -1372,7 +1431,7 @@ export const CourseEndDate = () => {
         <>
             <div className="tutor-panel-search-field-container" >
                 <p>
-                   Course End Date
+                    Course End Date
                 </p>
                 <div className='tutor-panel-search-start-date-end-date-fields-container' id="demo-positioned-button"
                     aria-controls={open ? 'demo-positioned-menu' : undefined}
@@ -1413,3 +1472,374 @@ export const CourseEndDate = () => {
     )
 }
 
+// add new course price per lesson
+
+export const AddPricePerLesson = () => {
+
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+    return (
+        <>
+            <div className='tutor-create-promotion-prive-before-container--' style={{ borderBottom: '1px solid #E5E5E5', paddingBottom: '20px' }}  >
+                <p>
+                    Add Price Per Lesson
+                </p>
+                <div className='tutor-create-promotion-price-before-field-container--' >
+                    <button id="demo-positioned-button"
+                        aria-controls={open ? 'demo-positioned-menu' : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={open ? 'true' : undefined}
+                        onClick={handleClick}  >
+                        <p>
+                            $
+                        </p>
+                        <IconButton >
+                            <KeyboardArrowDownIcon />
+                        </IconButton>
+                    </button>
+                    <input id="" type='text' placeholder='20' />
+                </div>
+                <Menu
+
+                    anchorEl={anchorEl}
+                    open={open}
+                    onClose={handleClose}
+                    id="demo-positioned-menu"
+                    aria-labelledby="demo-positioned-button"
+                    anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'left',
+
+                    }}
+
+                >
+                    <div style={{ width: '60px' }} >
+                        <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                            $
+                        </p>
+                        <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                            $
+                        </p>
+                        <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                            $
+                        </p>
+                        <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                            $
+                        </p>
+                    </div>
+
+                </Menu>
+            </div>
+
+        </>
+    )
+}
+
+// add new course package in add new course
+
+export const AddNewCoursePackageTitle = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    title
+                </p>
+                <div  >
+
+                    <input id='' placeholder='' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// add new course package subtitle in add new course
+
+
+export const AddNewCoursePackageSubTitle = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    subtitle
+                </p>
+                <div  >
+
+                    <input id='' placeholder='' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// add new course price  
+
+export const AddNewPackagePrice = () => {
+
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+    return (
+        <>
+            <div className='tutor-create-promotion-prive-before-container--' style={{ borderBottom: '1px solid #E5E5E5', paddingBottom: '20px' }}  >
+                <p>
+                    Price
+                </p>
+                <div className='tutor-create-promotion-price-before-field-container--' >
+                    <button id="demo-positioned-button"
+                        aria-controls={open ? 'demo-positioned-menu' : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={open ? 'true' : undefined}
+                        onClick={handleClick}  >
+                        <p>
+                            $
+                        </p>
+                        <IconButton >
+                            <KeyboardArrowDownIcon style={{fontSize:'15px',padding:'1px'}} />
+                        </IconButton>
+                    </button>
+                    <input id="" type='text' placeholder='20' />
+                </div>
+                <Menu
+
+                    anchorEl={anchorEl}
+                    open={open}
+                    onClose={handleClose}
+                    id="demo-positioned-menu"
+                    aria-labelledby="demo-positioned-button"
+                    anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'left',
+
+                    }}
+
+                >
+                    <div style={{ width: '60px' }} >
+                        <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                            $
+                        </p>
+                        <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                            $
+                        </p>
+                        <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                            $
+                        </p>
+                        <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                            $
+                        </p>
+                    </div>
+
+                </Menu>
+            </div>
+
+        </>
+    )
+}
+
+// add new course package description in add new course
+
+
+export const AddNewCoursePackageDescription = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    description
+                </p>
+                <div  >
+
+                    <input id='' placeholder='' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// add new package no
+
+export const AddNewCoursePackagePackageNO = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    Package NO
+                </p>
+                <div  >
+
+                    <input id='' placeholder='' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// add new section in add new course
+
+export const AddNewCourseAddNewSectionSectionNO = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    Section NO
+                </p>
+                <div  >
+
+                    <input id='' placeholder='' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+export const AddNewCourseAddNewSectionSectionName = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    Section Name
+                </p>
+                <div  >
+
+                    <input id='' placeholder='' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+export const AddNewCourseAddNewSectionLectureName = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    Lacture Name
+                </p>
+                <div  >
+
+                    <input id='' placeholder='' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// what you will teach
+
+export const AddNewCourseAddWhatYouWillTeach = () => {
+    return (
+
+        <>
+
+            <div className="tutor-panel-search-field-container" >
+                <p>
+                    What You Will Teach
+                </p>
+                <div  >
+
+                    <input id='' placeholder='' type='text' className="tutor-panel-search-field-input" />
+
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+// analytics
+
+export const AnalyticsMonthly = () => {
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+    return (
+        <>
+            <div className="tutor-panel-search-field-container" >
+                
+                <div className='tutor-panel-search-start-date-end-date-fields-container' id="demo-positioned-button"
+                    aria-controls={open ? 'demo-positioned-menu' : undefined}
+                    aria-haspopup="true"
+                    aria-expanded={open ? 'true' : undefined}
+                    onClick={handleClick} >
+
+                    <input id='' placeholder='All' type='text' className="sd-ed-start-date-end-date-input-field" />
+                    <IconButton style={{ padding: '4px', marginRight: '5px' }}  >
+                        <KeyboardArrowDownIcon style={{ fontSize: '15px' }} />
+                    </IconButton>
+                </div>
+                <Menu
+
+                    anchorEl={anchorEl}
+                    open={open}
+                    onClose={handleClose}
+                    id="demo-positioned-menu"
+                    aria-labelledby="demo-positioned-button"
+                    anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'left',
+
+                    }}
+                    
+
+                >
+                    <div style={{ width: '200px' }} >
+                        <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                            All
+                        </p>
+                        <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                            Monthly
+                        </p>
+                        <p onClick={handleClose} className='create-promotion-drop-down-items-style'  >
+                            Yearly
+                        </p>
+                    </div>
+
+                </Menu>
+            </div>
+
+        </>
+    )
+}
